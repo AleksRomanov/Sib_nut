@@ -1,0 +1,115 @@
+.catalog {
+  position: relative;
+  width: 100%;
+  min-height: 1000px;
+  background-image: url("../images/productionUnit/vetki_sverhu.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 260px 140px 0 140px;
+  box-sizing: border-box;
+
+
+  &::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-image: url("../images/svg/zig-zag.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    transform: scale(1, -1);
+  }
+}
+
+.catalog__button {
+  display: inline-block;
+  position: relative;
+  padding: 17px 19px;
+  border-radius: 30px;
+  color: #FFFFFF;
+  background-color: #F47220;
+  font-size: 30px;
+  font-weight: 700;
+  box-sizing: border-box;
+  width: 354px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  min-height: 69px;
+}
+
+.catalog__wrapper-list {
+  display: flex;
+  align-items: center;
+}
+
+.catalog__wrapper-controls {
+  min-width: 536px;
+}
+
+.catalog__wrapper-controls label {
+  background-color: transparent;
+  color: black;
+  font-size: 30px;
+  line-height: 33px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.catalog__wrapper-box {
+  //min-width: 1104px;
+}
+
+.catalog__wrapper-box-item p {
+  font-size: 26px;
+  line-height: 44px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.catalog__wrapper-box-item h3 {
+  font-size: 30px;
+  line-height: 33px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.catalog__wrapper-box-items {
+  list-style: none;
+}
+
+.catalog__wrapper-box-packing {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+  & span {
+    margin-bottom: 10px;
+  }
+
+  & h3 {
+    margin-bottom: 10px;
+  }
+}
+
+.catalog__wrapper-box-packing > * {
+  margin: 0;
+}
+
+.catalog__wrapper-box-packing-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog__wrapper-box-packing-list-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+}

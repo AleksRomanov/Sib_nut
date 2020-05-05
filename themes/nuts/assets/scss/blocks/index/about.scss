@@ -1,0 +1,134 @@
+.about {
+  position: relative;
+  width: 100%;
+  //margin: 0 auto;
+  min-height: 1080px;
+  background-image: url("../images/about/background_about.jpg");
+  background-size: cover;
+
+  @include desktop-min {
+    background-image: url("../images/about/background_about_tablet.jpg");
+    background-size: cover;
+  }
+
+  &::before {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url("../images/svg/zig-zag.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 10px;
+  }
+}
+
+.about__container {
+  position: relative;
+  //max-width: 1920px;
+  min-height: 646px;
+  padding-top: 105px;
+  //margin: 0 auto;
+
+  @include desktop-min {
+    padding: 0;
+  }
+}
+
+.about__container-list {
+  //max-width: 1640px;
+  justify-content: center;
+  min-height: 646px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 auto;
+  align-items: center;
+  list-style: none;
+
+  @include desktop-min {
+    padding: 0 20px 20px 20px;
+  }
+}
+
+.about__list-item {
+  max-width: 520px;
+  height: 646px;
+  //border: 2px solid red;
+  border-radius: 92px;
+  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.4);
+  margin: 0 8px;
+  background-color: #FFFFFF;
+  padding: 50px;
+  box-sizing: border-box;
+
+  @include desktop-min {
+    min-width: 90%;
+    //margin: 0;
+    height: auto;
+    margin: 8px 10px;
+  }
+
+  @include mobile-width {
+    margin-bottom: 20px;
+    padding: 20px;
+    min-width: 100%;
+  }
+
+  & h3 {
+    display: block;
+    width: 100%;
+    font-size: 44px;
+    line-height: 47px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-align: center;
+
+    @include desktop-min {
+      //margin: 0;
+    }
+
+    @include mobile-width {
+      font-size: 24px;
+      line-height: 27px;
+      margin: 10px;
+    }
+  }
+
+  & svg {
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  & span {
+    max-width: 445px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    text-align: center;
+
+    @include desktop-min {
+      min-width: 100%;
+      font-size: 23px;
+      line-height: 26px;
+    }
+
+    @include mobile-width {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+}
+
+.about__list-item-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  & svg {
+    align-self: center;
+  }
+}
+

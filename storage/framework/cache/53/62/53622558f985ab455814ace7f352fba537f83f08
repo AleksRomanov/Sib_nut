@@ -1,0 +1,119 @@
+1586937060a:1:{s:11:"default.htm";a:8:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:2230:"description = "Default layout"
+useContent = 1
+default = 0
+==
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>{{ this.page.title }}</title>
+    <link rel="preload" href="fonts/gilroylight.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/gilroyextrabold.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--     <link rel="icon" href="img/favicons/icon-16х16.png" sizes="16x16" type="image">
+        <link rel="icon" href="img/favicons/icon-32х32.png" sizes="32x32" type="image"> -->
+
+    <!--
+        <meta name="description" content="{{ this.page.meta_description }}">
+        <link rel="icon" href="{{ 'assets/images/october.png' | theme }}"> -->
+    <link href="{{ 'assets/css/theme.min.css' | theme }}" rel="stylesheet">
+    {% styles %}
+</head>
+
+<body>
+
+
+<section id="layout-content">
+    {% page %}
+</section>
+
+<script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
+<script src="{{ 'assets/vendor/bootstrap.js'|theme }}"></script>
+<script src="{{ 'assets/js/theme.min.js' | theme }}"></script>
+
+{% framework extras %}
+{% scripts %}
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+        m[i] = m[i] || function () {
+            (m[i].a = m[i].a || []).push(arguments)
+        };
+        m[i].l = 1 * new Date();
+        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(53369515, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true
+    });
+</script>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/53369515" style="position:absolute; left:-9999px;" alt=""></div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+</html>";s:5:"mtime";i:1581964626;s:6:"markup";s:2165:"<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>{{ this.page.title }}</title>
+    <link rel="preload" href="fonts/gilroylight.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/gilroyextrabold.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--     <link rel="icon" href="img/favicons/icon-16х16.png" sizes="16x16" type="image">
+        <link rel="icon" href="img/favicons/icon-32х32.png" sizes="32x32" type="image"> -->
+
+    <!--
+        <meta name="description" content="{{ this.page.meta_description }}">
+        <link rel="icon" href="{{ 'assets/images/october.png' | theme }}"> -->
+    <link href="{{ 'assets/css/theme.min.css' | theme }}" rel="stylesheet">
+    {% styles %}
+</head>
+
+<body>
+
+
+<section id="layout-content">
+    {% page %}
+</section>
+
+<script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
+<script src="{{ 'assets/vendor/bootstrap.js'|theme }}"></script>
+<script src="{{ 'assets/js/theme.min.js' | theme }}"></script>
+
+{% framework extras %}
+{% scripts %}
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+        m[i] = m[i] || function () {
+            (m[i].a = m[i].a || []).push(arguments)
+        };
+        m[i].l = 1 * new Date();
+        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(53369515, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true
+    });
+</script>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/53369515" style="position:absolute; left:-9999px;" alt=""></div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+</html>";s:4:"code";N;s:11:"description";s:14:"Default layout";s:10:"useContent";s:1:"1";s:7:"default";s:1:"0";}}

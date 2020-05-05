@@ -1,0 +1,68 @@
+1588331277a:1:{s:23:"site/productionUnit.htm";a:5:{s:8:"fileName";s:23:"site/productionUnit.htm";s:7:"content";s:2058:"<section id="layout-content" class="productionUnit">
+  <h2 class="visually-hidden"></h2>
+  <div class="advantages-box container">
+    <div class="advantages-list">
+      <input class="visually-hidden" type="radio" value="1" id="advantage-1" name="tog" checked>
+      <input class="visually-hidden" type="radio" value="2" id="advantage-2" name="tog">
+      <input class="visually-hidden" type="radio" value="3" id="advantage-3" name="tog">
+      <div class="advantage-controls">
+        <label class="button advantage-controls-item advantage-controls-item--1" for="advantage-1">Доставка</label>
+        <label class="button advantage-controls-item advantage-controls-item--2" for="advantage-2">Гарантия</label>
+        <label class="button advantage-controls-item advantage-controls-item--3" for="advantage-3">Кредит</label>
+      </div>
+      <ul class="advantages-items">
+        <li class="advantage-item">
+          <h3>Доставка</h3>
+          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+            заработаем, поднимая его на ваш этаж.</p>
+        </li>
+        <li class="advantage-item">
+          <h3>Гарантия</h3>
+          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам
+            новый.</p>
+          <p>Товар, не дом, конечно же.</p>
+        </li>
+        <li class="advantage-item">
+          <h3>Кредит</h3>
+          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
+            кредита. Выгодные для нашего банка, разумеется.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+";s:5:"mtime";i:1588330676;s:6:"markup";s:2055:"<section id="layout-content" class="productionUnit">
+  <h2 class="visually-hidden"></h2>
+  <div class="advantages-box container">
+    <div class="advantages-list">
+      <input class="visually-hidden" type="radio" value="1" id="advantage-1" name="tog" checked>
+      <input class="visually-hidden" type="radio" value="2" id="advantage-2" name="tog">
+      <input class="visually-hidden" type="radio" value="3" id="advantage-3" name="tog">
+      <div class="advantage-controls">
+        <label class="button advantage-controls-item advantage-controls-item--1" for="advantage-1">Доставка</label>
+        <label class="button advantage-controls-item advantage-controls-item--2" for="advantage-2">Гарантия</label>
+        <label class="button advantage-controls-item advantage-controls-item--3" for="advantage-3">Кредит</label>
+      </div>
+      <ul class="advantages-items">
+        <li class="advantage-item">
+          <h3>Доставка</h3>
+          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+            заработаем, поднимая его на ваш этаж.</p>
+        </li>
+        <li class="advantage-item">
+          <h3>Гарантия</h3>
+          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам
+            новый.</p>
+          <p>Товар, не дом, конечно же.</p>
+        </li>
+        <li class="advantage-item">
+          <h3>Кредит</h3>
+          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
+            кредита. Выгодные для нашего банка, разумеется.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>";s:4:"code";N;}}

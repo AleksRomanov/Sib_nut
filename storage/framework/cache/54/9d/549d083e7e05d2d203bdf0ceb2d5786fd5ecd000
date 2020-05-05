@@ -1,0 +1,54 @@
+1586937060a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:858:"title = "Олег SE. Строительство домов в Москве и Московской области"
+url = "/"
+layout = "default"
+is_hidden = 0
+
+[contenteditor]
+==
+{% partial 'sprite' %}
+
+{% partial 'header' %}
+
+<main class="page-main">
+    {% partial 'main-page/teaser' %}
+    {% partial 'main-page/video' %}
+    {% partial 'main-page/about-me' %}
+    {% partial 'main-page/why-aerocrete' %}
+    {% partial 'main-page/clients' %}
+    {% partial 'main-page/partners' %}
+    {% partial 'main-page/pricing' %}
+    {% partial 'main-page/cost' %}
+    {% partial 'main-page/faq' %}
+    {% partial 'main-page/grater' %}
+</main>
+
+{% partial 'footer' %}
+
+{% partial 'modal-vacancies' %}
+{% partial 'modal-write-us' %}
+{% partial 'modal-teaser-video' %}
+{% partial 'modal-grater-video' %}
+{% partial 'modal-grater-shop' %}";s:5:"mtime";i:1581810438;s:6:"markup";s:672:"{% partial 'sprite' %}
+
+{% partial 'header' %}
+
+<main class="page-main">
+    {% partial 'main-page/teaser' %}
+    {% partial 'main-page/video' %}
+    {% partial 'main-page/about-me' %}
+    {% partial 'main-page/why-aerocrete' %}
+    {% partial 'main-page/clients' %}
+    {% partial 'main-page/partners' %}
+    {% partial 'main-page/pricing' %}
+    {% partial 'main-page/cost' %}
+    {% partial 'main-page/faq' %}
+    {% partial 'main-page/grater' %}
+</main>
+
+{% partial 'footer' %}
+
+{% partial 'modal-vacancies' %}
+{% partial 'modal-write-us' %}
+{% partial 'modal-teaser-video' %}
+{% partial 'modal-grater-video' %}
+{% partial 'modal-grater-shop' %}";s:4:"code";N;s:5:"title";s:105:"Олег SE. Строительство домов в Москве и Московской области";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:13:"contenteditor";a:0:{}}}

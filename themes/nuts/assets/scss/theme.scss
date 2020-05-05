@@ -1,0 +1,23 @@
+@import "global/variables";
+@import "global/normalize";
+@import "global/global";
+@import "blocks/button";
+@import "global/mixins";
+
+//libraries styles
+@import "libs/sal";
+@import "libs/hamburgers";
+@import "libs/mmenu";
+
+
+//Common blocks
+@import "blocks/page-header";
+@import "blocks/page-footer";
+//@import "blocks/modal";
+
+//Sections blocks
+@import "blocks/index/teaser";
+@import "blocks/index/about";
+//@import "blocks/index/products";
+@import "blocks/index/catalog";
+@import "blocks/index/quality";

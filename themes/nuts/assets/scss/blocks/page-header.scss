@@ -1,0 +1,155 @@
+.page-header {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+
+  @include tablet-width {
+    padding-bottom: 20px;
+  }
+}
+
+.page-header__wrapper {
+  max-width: 1640px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  min-height: 152px;
+
+  @include tablet-width {
+    flex-wrap: wrap;
+  }
+}
+
+.page-header__logo {
+  text-decoration: none;
+  width: 260px;
+
+  @include tablet-width {
+    width: 180px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+
+.page-header__logo-image {
+  @include effect-opacity;
+
+  @include tablet-width {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.page-header__contacts {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  //margin: 0 8px 0 8px;
+  align-items: flex-end;
+
+  @include tablet-width {
+    width: 100%;
+    margin-left: unset;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 0 8px;
+  }
+}
+
+.page-header__contact-button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+
+  & span {
+    margin-right: 28px;
+    font-size: 20px;
+    font-weight: bold;
+
+    @include effect-opacity;
+
+  }
+
+  & svg {
+    @include effect-opacity;
+  }
+
+  @include tablet-width {
+    width: 150px;
+
+
+    & span {
+      font-size: 15px;
+      margin-right: 10px;
+    }
+
+    & svg {
+      width: 40px;
+    }
+  }
+}
+
+.page-header__language-en {
+  position: relative;
+  min-width: 122px;
+  margin: 0 8px 0 8px;
+}
+
+.page-header__language-en-image {
+  @include tablet-width {
+    max-width: 80px;
+  }
+}
+
+.hamburger {
+  width: 122px;
+  height: 45px;
+  padding: 0;
+
+  @include tablet-width {
+    margin-left: auto;
+  }
+
+  .hamburger-box {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 63px;
+    height: 45px;
+
+    .hamburger-inner,
+    .hamburger-inner::after,
+    .hamburger-inner::before {
+      background-color: #FFFFFF;
+      width: 64px;
+      height: 3px;
+      border-radius: 0;
+    }
+
+    .hamburger-inner:after {
+      top: 18px;
+    }
+
+    .hamburger-inner:before {
+      top: -18px;
+    }
+  }
+}
+
+.page-header__language-en-image {
+  display: block;
+  margin: 0 auto;
+
+  @include effect-opacity;
+}
+
