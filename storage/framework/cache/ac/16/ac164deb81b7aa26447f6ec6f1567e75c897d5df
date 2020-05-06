@@ -1,4 +1,4 @@
-1588682380a:1:{s:9:"index.htm";a:8:{s:8:"fileName";s:9:"index.htm";s:7:"content";s:359:"title = "Ядро кедрового ореха"
+1588793332a:1:{s:9:"index.htm";a:8:{s:8:"fileName";s:9:"index.htm";s:7:"content";s:479:"title = "Ядро кедрового ореха"
 url = "/"
 layout = "default"
 ==
@@ -19,7 +19,13 @@ layout = "default"
 <!-- Quality section -->
 {% partial 'site/quality' %}
 
-";s:5:"mtime";i:1588612739;s:6:"markup";s:274:"<!-- Teaser section -->
+<!-- Gallery section -->
+{% partial 'site/gallery' %}
+
+<!-- Certificates section -->
+{% partial 'site/certificates' %}
+
+";s:5:"mtime";i:1588783058;s:6:"markup";s:394:"<!-- Teaser section -->
 {% partial 'site/teaser' %}
 
 <!-- About section -->
@@ -32,4 +38,10 @@ layout = "default"
 {% partial 'site/catalog' %}
 
 <!-- Quality section -->
-{% partial 'site/quality' %}";s:4:"code";N;s:5:"title";s:38:"Ядро кедрового ореха";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";}}
+{% partial 'site/quality' %}
+
+<!-- Gallery section -->
+{% partial 'site/gallery' %}
+
+<!-- Certificates section -->
+{% partial 'site/certificates' %}";s:4:"code";N;s:5:"title";s:38:"Ядро кедрового ореха";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";}}

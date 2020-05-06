@@ -72,6 +72,22 @@ class __TwigTemplate_0565c3116ccbf2fb68c06a1e7a06af40d7c18c053908e8dddce296be323
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/quality"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
+        // line 15
+        echo "
+<!-- Gallery section -->
+";
+        // line 17
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/gallery"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+        // line 18
+        echo "
+<!-- Certificates section -->
+";
+        // line 20
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/certificates"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
     }
 
     public function getTemplateName()
@@ -86,7 +102,7 @@ class __TwigTemplate_0565c3116ccbf2fb68c06a1e7a06af40d7c18c053908e8dddce296be323
 
     public function getDebugInfo()
     {
-        return array (  72 => 14,  68 => 12,  64 => 11,  60 => 9,  56 => 8,  52 => 6,  48 => 5,  44 => 3,  40 => 2,  37 => 1,);
+        return array (  88 => 20,  84 => 18,  80 => 17,  76 => 15,  72 => 14,  68 => 12,  64 => 11,  60 => 9,  56 => 8,  52 => 6,  48 => 5,  44 => 3,  40 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -104,6 +120,12 @@ class __TwigTemplate_0565c3116ccbf2fb68c06a1e7a06af40d7c18c053908e8dddce296be323
 {% partial 'site/catalog' %}
 
 <!-- Quality section -->
-{% partial 'site/quality' %}", "/Applications/MAMP/htdocs/nuts/themes/nuts/pages/index.htm", "");
+{% partial 'site/quality' %}
+
+<!-- Gallery section -->
+{% partial 'site/gallery' %}
+
+<!-- Certificates section -->
+{% partial 'site/certificates' %}", "/Applications/MAMP/htdocs/nuts/themes/nuts/pages/index.htm", "");
     }
 }

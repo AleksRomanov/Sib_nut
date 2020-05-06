@@ -94,7 +94,12 @@ class __TwigTemplate_a3f18d5ce76dcbf8ddd992c75bf27cc66982809eab0e161f8b136d8c6bf
               <span>40кг</span>
             </li>
           </ul>
-          <button class=\"catalog__button\">ЗАКАЗАТЬ</button>
+          <div class=\"catalog__wrapper-box-storage\">
+            <button class=\"catalog__button\">ЗАКАЗАТЬ</button>
+            <span>Срок годности:<br>
+            - при температуре от +8°C до +20°C  - 12 месяцев<br>- при температуре от 0°C до +7°C - 24 месяца
+              </span>
+          </div>
         </div>
       </div>
     </div>
@@ -174,7 +179,12 @@ class __TwigTemplate_a3f18d5ce76dcbf8ddd992c75bf27cc66982809eab0e161f8b136d8c6bf
               <span>40кг</span>
             </li>
           </ul>
-          <button class=\"catalog__button\">ЗАКАЗАТЬ</button>
+          <div class=\"catalog__wrapper-box-storage\">
+            <button class=\"catalog__button\">ЗАКАЗАТЬ</button>
+            <span>Срок годности:<br>
+            - при температуре от +8°C до +20°C  - 12 месяцев<br>- при температуре от 0°C до +7°C - 24 месяца
+              </span>
+          </div>
         </div>
       </div>
     </div>

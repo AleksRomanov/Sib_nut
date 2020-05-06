@@ -21,47 +21,21 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     );
 
-    document.addEventListener( 'click', function( evnt ) {
-        var anchor = evnt.target.closest( 'a[href^="#/"]' );
-        if ( anchor ) {
+    document.addEventListener('click', function (evnt) {
+        var anchor = evnt.target.closest('a[href^="#/"]');
+        if (anchor) {
             alert('Thank you for clicking, but that\'s a demo link.');
             evnt.preventDefault();
         }
     });
 
-    // $("#my-menu").Mmenu({
-    //     pageScroll: true,
-    //     extensions: ['theme-black', 'fx-menu-slide', 'pagedim-black'],
-    //     // navbar: {
-    //     //     title: '<img src="image/svg/logo.svg" alt="Магазин Строительных Материалов СтройРемонт24">'
-    //     // },
-    //     offCanvas: {
-    //         position: 'right'
-    //     }
-    // })
-
-
-    // let menu = document.getElementById('my-menu');
-    // menu.mmenu();
-// $(function () {
-//
-//     $("#my-menu").mmenu({
-//         pageScroll: true,
-//         extensions: ['theme-black', 'fx-menu-slide', 'pagedim-black'],
-//         // navbar: {
-//         //     title: '<img src="image/svg/logo.svg" alt="Магазин Строительных Материалов СтройРемонт24">'
-//         // },
-//         offCanvas: {
-//             position: 'right'
+//     var mySwiper = new Swiper('.swiper-container', {
+//         speed: 400,
+//         spaceBetween: 100
 //     });
 //
+//     var mySwiper = document.querySelector('.swiper-container').swiper
 //
-//     var api = $("#my-menu").data("mmenu");
-//     api.bind("open:finish", function () {
-//         $(".hamburger").addClass("is-active");
-//     }).bind("close:finish", function () {
-//         $(".hamburger").removeClass("is-active");
-//     });
-//
-//     });
+// // Now you can use all slider methods like
+//     mySwiper.slideNext();
 });

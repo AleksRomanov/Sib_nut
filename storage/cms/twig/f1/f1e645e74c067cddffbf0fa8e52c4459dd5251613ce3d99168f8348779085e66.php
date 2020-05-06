@@ -57,13 +57,13 @@ class __TwigTemplate_9c421e739713c2b3f0c5da2c7f3731cc48725a2af609393eb1bd8315c64
         // line 11
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/october.png");
         echo "\">
-<!--        <link href=\"";
+        <link href=\"";
         // line 12
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/vendor.css");
-        echo "\" rel=\"stylesheet\">-->
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/theme.min.css");
+        echo "\" rel=\"stylesheet\">
         <link href=\"";
         // line 13
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/theme.min.css");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/scss/libs/swiper.scss");
         echo "\" rel=\"stylesheet\">
 
         ";
@@ -120,34 +120,37 @@ class __TwigTemplate_9c421e739713c2b3f0c5da2c7f3731cc48725a2af609393eb1bd8315c64
         echo "\"></script>-->
 <!--        <script src=\"";
         // line 36
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/libs/mmenu/jquery.mmenu.js");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/libs/swiper.js");
         echo "\"></script>-->
-<!--        <script src=\"";
-        // line 37
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/libs/mmenu/jquery.mmenu.all.js");
-        echo "\"></script>-->
-<!--        <script src=\"";
+        <!-- Swiper JS -->
+        <script src=\"";
         // line 38
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/libs/mmenu/jquery.mmenu.debugger.js");
-        echo "\"></script>-->
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/libs/swiper.js");
+        echo "\"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container');
+        </script>
 
 
         <script src=\"";
-        // line 41
+        // line 46
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/libs/sal.js");
         echo "\"></script>
 <!--        <script src=\"";
-        // line 42
+        // line 47
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendor/bootstrap.js");
         echo "\"></script>-->
         <script src=\"";
-        // line 43
+        // line 48
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/app.js");
         echo "\"></script>
 
 
+
         ";
-        // line 46
+        // line 52
         $_minify = System\Classes\CombineAssets::instance()->useMinify;
         if ($_minify) {
             echo '<script src="' . Request::getBasePath() . '/modules/system/assets/js/framework.combined-min.js"></script>'.PHP_EOL;
@@ -158,11 +161,11 @@ class __TwigTemplate_9c421e739713c2b3f0c5da2c7f3731cc48725a2af609393eb1bd8315c64
         }
         echo '<link rel="stylesheet" property="stylesheet" href="' . Request::getBasePath() .'/modules/system/assets/css/framework.extras'.($_minify ? '-min' : '').'.css">'.PHP_EOL;
         unset($_minify);
-        // line 47
+        // line 53
         echo "        ";
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
-        // line 48
+        // line 54
         echo "
     </body>
 </html>";
@@ -180,7 +183,7 @@ class __TwigTemplate_9c421e739713c2b3f0c5da2c7f3731cc48725a2af609393eb1bd8315c64
 
     public function getDebugInfo()
     {
-        return array (  166 => 48,  162 => 47,  151 => 46,  145 => 43,  141 => 42,  137 => 41,  131 => 38,  127 => 37,  123 => 36,  119 => 35,  115 => 34,  111 => 33,  106 => 30,  102 => 29,  97 => 26,  95 => 25,  90 => 22,  86 => 21,  83 => 20,  79 => 19,  74 => 16,  71 => 15,  66 => 13,  62 => 12,  58 => 11,  51 => 7,  47 => 6,  43 => 5,  37 => 1,);
+        return array (  169 => 54,  165 => 53,  154 => 52,  147 => 48,  143 => 47,  139 => 46,  128 => 38,  123 => 36,  119 => 35,  115 => 34,  111 => 33,  106 => 30,  102 => 29,  97 => 26,  95 => 25,  90 => 22,  86 => 21,  83 => 20,  79 => 19,  74 => 16,  71 => 15,  66 => 13,  62 => 12,  58 => 11,  51 => 7,  47 => 6,  43 => 5,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -196,8 +199,8 @@ class __TwigTemplate_9c421e739713c2b3f0c5da2c7f3731cc48725a2af609393eb1bd8315c64
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
         <meta name=\"generator\" content=\"OctoberCMS\">
         <link rel=\"icon\" type=\"image/png\" href=\"{{ 'assets/images/october.png'|theme }}\">
-<!--        <link href=\"{{ 'assets/css/vendor.css'|theme }}\" rel=\"stylesheet\">-->
         <link href=\"{{ 'assets/css/theme.min.css'|theme }}\" rel=\"stylesheet\">
+        <link href=\"{{ 'assets/scss/libs/swiper.scss'|theme }}\" rel=\"stylesheet\">
 
         {% styles %}
     </head>
@@ -220,14 +223,20 @@ class __TwigTemplate_9c421e739713c2b3f0c5da2c7f3731cc48725a2af609393eb1bd8315c64
         <script src=\"{{ 'assets/js/libs/jquery.js'|theme }}\"></script>
         <script src=\"{{ 'assets/js/libs/mmenu.js'|theme }}\"></script>
 <!--        <script src=\"{{ 'assets/js/libs/swiper.js'|theme }}\"></script>-->
-<!--        <script src=\"{{ 'assets/js/libs/mmenu/jquery.mmenu.js'|theme }}\"></script>-->
-<!--        <script src=\"{{ 'assets/js/libs/mmenu/jquery.mmenu.all.js'|theme }}\"></script>-->
-<!--        <script src=\"{{ 'assets/js/libs/mmenu/jquery.mmenu.debugger.js'|theme }}\"></script>-->
+<!--        <script src=\"{{ 'assets/js/libs/swiper.js'|theme }}\"></script>-->
+        <!-- Swiper JS -->
+        <script src=\"{{ 'assets/js/libs/swiper.js'|theme }}\"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container');
+        </script>
 
 
         <script src=\"{{ 'assets/js/libs/sal.js'|theme }}\"></script>
 <!--        <script src=\"{{ 'assets/vendor/bootstrap.js'|theme }}\"></script>-->
         <script src=\"{{ 'assets/js/app.js'|theme }}\"></script>
+
 
 
         {% framework extras %}

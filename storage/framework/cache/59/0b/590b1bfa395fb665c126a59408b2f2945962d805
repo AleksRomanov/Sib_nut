@@ -1,4 +1,4 @@
-1588682380a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1868:"description = "Default layout"
+1588793332a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1891:"description = "Default layout"
 ==
 <!DOCTYPE html>
 <html>
@@ -11,8 +11,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="generator" content="OctoberCMS">
         <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
-<!--        <link href="{{ 'assets/css/vendor.css'|theme }}" rel="stylesheet">-->
         <link href="{{ 'assets/css/theme.min.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/scss/libs/swiper.scss'|theme }}" rel="stylesheet">
 
         {% styles %}
     </head>
@@ -35,9 +35,14 @@
         <script src="{{ 'assets/js/libs/jquery.js'|theme }}"></script>
         <script src="{{ 'assets/js/libs/mmenu.js'|theme }}"></script>
 <!--        <script src="{{ 'assets/js/libs/swiper.js'|theme }}"></script>-->
-<!--        <script src="{{ 'assets/js/libs/mmenu/jquery.mmenu.js'|theme }}"></script>-->
-<!--        <script src="{{ 'assets/js/libs/mmenu/jquery.mmenu.all.js'|theme }}"></script>-->
-<!--        <script src="{{ 'assets/js/libs/mmenu/jquery.mmenu.debugger.js'|theme }}"></script>-->
+<!--        <script src="{{ 'assets/js/libs/swiper.js'|theme }}"></script>-->
+        <!-- Swiper JS -->
+        <script src="{{ 'assets/js/libs/swiper.js'|theme }}"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container');
+        </script>
 
 
         <script src="{{ 'assets/js/libs/sal.js'|theme }}"></script>
@@ -45,12 +50,13 @@
         <script src="{{ 'assets/js/app.js'|theme }}"></script>
 
 
+
         {% framework extras %}
         {% scripts %}
 
     </body>
 </html>
-";s:5:"mtime";i:1588348188;s:6:"markup";s:1833:"<!DOCTYPE html>
+";s:5:"mtime";i:1588789538;s:6:"markup";s:1856:"<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -61,8 +67,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="generator" content="OctoberCMS">
         <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
-<!--        <link href="{{ 'assets/css/vendor.css'|theme }}" rel="stylesheet">-->
         <link href="{{ 'assets/css/theme.min.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/scss/libs/swiper.scss'|theme }}" rel="stylesheet">
 
         {% styles %}
     </head>
@@ -85,14 +91,20 @@
         <script src="{{ 'assets/js/libs/jquery.js'|theme }}"></script>
         <script src="{{ 'assets/js/libs/mmenu.js'|theme }}"></script>
 <!--        <script src="{{ 'assets/js/libs/swiper.js'|theme }}"></script>-->
-<!--        <script src="{{ 'assets/js/libs/mmenu/jquery.mmenu.js'|theme }}"></script>-->
-<!--        <script src="{{ 'assets/js/libs/mmenu/jquery.mmenu.all.js'|theme }}"></script>-->
-<!--        <script src="{{ 'assets/js/libs/mmenu/jquery.mmenu.debugger.js'|theme }}"></script>-->
+<!--        <script src="{{ 'assets/js/libs/swiper.js'|theme }}"></script>-->
+        <!-- Swiper JS -->
+        <script src="{{ 'assets/js/libs/swiper.js'|theme }}"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container');
+        </script>
 
 
         <script src="{{ 'assets/js/libs/sal.js'|theme }}"></script>
 <!--        <script src="{{ 'assets/vendor/bootstrap.js'|theme }}"></script>-->
         <script src="{{ 'assets/js/app.js'|theme }}"></script>
+
 
 
         {% framework extras %}

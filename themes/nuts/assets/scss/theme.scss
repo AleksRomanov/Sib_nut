@@ -8,6 +8,7 @@
 @import "libs/sal";
 @import "libs/hamburgers";
 @import "libs/mmenu";
+@import "libs/swiper";
 
 
 //Common blocks
@@ -18,6 +19,8 @@
 //Sections blocks
 @import "blocks/index/teaser";
 @import "blocks/index/about";
-//@import "blocks/index/products";
+@import "blocks/index/products";
 @import "blocks/index/catalog";
 @import "blocks/index/quality";
+@import "blocks/index/gallery";
+@import "blocks/index/certificates";

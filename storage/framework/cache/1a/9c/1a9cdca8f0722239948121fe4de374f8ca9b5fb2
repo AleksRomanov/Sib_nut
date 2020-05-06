@@ -1,4 +1,4 @@
-1588682380a:1:{s:16:"site/catalog.htm";a:5:{s:8:"fileName";s:16:"site/catalog.htm";s:7:"content";s:5439:"<section id="layout-content" class="catalog">
+1588793332a:1:{s:16:"site/catalog.htm";a:5:{s:8:"fileName";s:16:"site/catalog.htm";s:7:"content";s:5744:"<section id="layout-content" class="catalog">
   <h2 class="visually-hidden"></h2>
   <div class="catalog__wrapper">
     <div class="catalog__wrapper-list" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
@@ -58,7 +58,12 @@
               <span>40кг</span>
             </li>
           </ul>
-          <button class="catalog__button">ЗАКАЗАТЬ</button>
+          <div class="catalog__wrapper-box-storage">
+            <button class="catalog__button">ЗАКАЗАТЬ</button>
+            <span>Срок годности:<br>
+            - при температуре от +8°C до +20°C  - 12 месяцев<br>- при температуре от 0°C до +7°C - 24 месяца
+              </span>
+          </div>
         </div>
       </div>
     </div>
@@ -66,7 +71,7 @@
 </section>
 
 
-";s:5:"mtime";i:1588616082;s:6:"markup";s:5436:"<section id="layout-content" class="catalog">
+";s:5:"mtime";i:1588763191;s:6:"markup";s:5741:"<section id="layout-content" class="catalog">
   <h2 class="visually-hidden"></h2>
   <div class="catalog__wrapper">
     <div class="catalog__wrapper-list" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
@@ -126,7 +131,12 @@
               <span>40кг</span>
             </li>
           </ul>
-          <button class="catalog__button">ЗАКАЗАТЬ</button>
+          <div class="catalog__wrapper-box-storage">
+            <button class="catalog__button">ЗАКАЗАТЬ</button>
+            <span>Срок годности:<br>
+            - при температуре от +8°C до +20°C  - 12 месяцев<br>- при температуре от 0°C до +7°C - 24 месяца
+              </span>
+          </div>
         </div>
       </div>
     </div>
