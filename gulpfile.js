@@ -62,7 +62,7 @@ const svgstore = require("gulp-svgstore");
 
 function browsersync() {
     browserSync.init({
-        proxy: localhost,
+        proxy: theme,
         notify: false,
         online: online
     })
