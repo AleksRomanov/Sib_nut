@@ -1,4 +1,4 @@
-1588793332a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1891:"description = "Default layout"
+1588848262a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1813:"description = "Default layout"
 ==
 <!DOCTYPE html>
 <html>
@@ -12,7 +12,6 @@
         <meta name="generator" content="OctoberCMS">
         <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
         <link href="{{ 'assets/css/theme.min.css'|theme }}" rel="stylesheet">
-        <link href="{{ 'assets/scss/libs/swiper.scss'|theme }}" rel="stylesheet">
 
         {% styles %}
     </head>
@@ -37,7 +36,7 @@
 <!--        <script src="{{ 'assets/js/libs/swiper.js'|theme }}"></script>-->
 <!--        <script src="{{ 'assets/js/libs/swiper.js'|theme }}"></script>-->
         <!-- Swiper JS -->
-        <script src="{{ 'assets/js/libs/swiper.js'|theme }}"></script>
+        <script src="{{ 'assets/js/libs/swiper.min.js'|theme }}"></script>
 
         <!-- Initialize Swiper -->
         <script>
@@ -56,7 +55,7 @@
 
     </body>
 </html>
-";s:5:"mtime";i:1588789538;s:6:"markup";s:1856:"<!DOCTYPE html>
+";s:5:"mtime";i:1588846715;s:6:"markup";s:1778:"<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -68,7 +67,6 @@
         <meta name="generator" content="OctoberCMS">
         <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
         <link href="{{ 'assets/css/theme.min.css'|theme }}" rel="stylesheet">
-        <link href="{{ 'assets/scss/libs/swiper.scss'|theme }}" rel="stylesheet">
 
         {% styles %}
     </head>
@@ -93,7 +91,7 @@
 <!--        <script src="{{ 'assets/js/libs/swiper.js'|theme }}"></script>-->
 <!--        <script src="{{ 'assets/js/libs/swiper.js'|theme }}"></script>-->
         <!-- Swiper JS -->
-        <script src="{{ 'assets/js/libs/swiper.js'|theme }}"></script>
+        <script src="{{ 'assets/js/libs/swiper.min.js'|theme }}"></script>
 
         <!-- Initialize Swiper -->
         <script>

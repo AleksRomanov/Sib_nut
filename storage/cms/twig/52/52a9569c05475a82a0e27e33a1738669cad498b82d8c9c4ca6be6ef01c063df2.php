@@ -88,6 +88,14 @@ class __TwigTemplate_0565c3116ccbf2fb68c06a1e7a06af40d7c18c053908e8dddce296be323
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/certificates"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
+        // line 21
+        echo "
+<!-- Partners section -->
+";
+        // line 23
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/partners"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
     }
 
     public function getTemplateName()
@@ -102,7 +110,7 @@ class __TwigTemplate_0565c3116ccbf2fb68c06a1e7a06af40d7c18c053908e8dddce296be323
 
     public function getDebugInfo()
     {
-        return array (  88 => 20,  84 => 18,  80 => 17,  76 => 15,  72 => 14,  68 => 12,  64 => 11,  60 => 9,  56 => 8,  52 => 6,  48 => 5,  44 => 3,  40 => 2,  37 => 1,);
+        return array (  96 => 23,  92 => 21,  88 => 20,  84 => 18,  80 => 17,  76 => 15,  72 => 14,  68 => 12,  64 => 11,  60 => 9,  56 => 8,  52 => 6,  48 => 5,  44 => 3,  40 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -126,6 +134,9 @@ class __TwigTemplate_0565c3116ccbf2fb68c06a1e7a06af40d7c18c053908e8dddce296be323
 {% partial 'site/gallery' %}
 
 <!-- Certificates section -->
-{% partial 'site/certificates' %}", "/Applications/MAMP/htdocs/nuts/themes/nuts/pages/index.htm", "");
+{% partial 'site/certificates' %}
+
+<!-- Partners section -->
+{% partial 'site/partners' %}", "/Applications/MAMP/htdocs/nuts/themes/nuts/pages/index.htm", "");
     }
 }

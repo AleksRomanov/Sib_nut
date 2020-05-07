@@ -8,7 +8,7 @@
 @import "libs/sal";
 @import "libs/hamburgers";
 @import "libs/mmenu";
-@import "libs/swiper";
+@import "themes/nuts/assets/scss/libs/swiper.min";
 
 
 //Common blocks
@@ -24,3 +24,4 @@
 @import "blocks/index/quality";
 @import "blocks/index/gallery";
 @import "blocks/index/certificates";
+@import "blocks/index/partners";

@@ -29,13 +29,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-//     var mySwiper = new Swiper('.swiper-container', {
-//         speed: 400,
-//         spaceBetween: 100
-//     });
-//
-//     var mySwiper = document.querySelector('.swiper-container').swiper
-//
-// // Now you can use all slider methods like
-//     mySwiper.slideNext();
+    new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+    });
 });

@@ -61,71 +61,67 @@ class __TwigTemplate_9c421e739713c2b3f0c5da2c7f3731cc48725a2af609393eb1bd8315c64
         // line 12
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/theme.min.css");
         echo "\" rel=\"stylesheet\">
-        <link href=\"";
-        // line 13
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/scss/libs/swiper.scss");
-        echo "\" rel=\"stylesheet\">
 
         ";
-        // line 15
+        // line 14
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('css');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('styles');
-        // line 16
+        // line 15
         echo "    </head>
     <body>
         <!-- Sprite -->
         ";
-        // line 19
+        // line 18
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("sprite"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 20
+        // line 19
         echo "
         ";
-        // line 21
+        // line 20
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/header"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 22
+        // line 21
         echo "
         <!-- Content -->
         <div>
             ";
-        // line 25
+        // line 24
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
-        // line 26
+        // line 25
         echo "        </div>
         <!-- Footer -->
         <footer id=\"layout-footer\">
             ";
-        // line 29
+        // line 28
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 30
+        // line 29
         echo "        </footer>
 
         <!-- Scripts -->
         <script src=\"";
-        // line 33
+        // line 32
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/libs/jquery.js");
         echo "\"></script>
         <script src=\"";
-        // line 34
+        // line 33
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/libs/mmenu.js");
         echo "\"></script>
+<!--        <script src=\"";
+        // line 34
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/libs/swiper.js");
+        echo "\"></script>-->
 <!--        <script src=\"";
         // line 35
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/libs/swiper.js");
         echo "\"></script>-->
-<!--        <script src=\"";
-        // line 36
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/libs/swiper.js");
-        echo "\"></script>-->
         <!-- Swiper JS -->
         <script src=\"";
-        // line 38
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/libs/swiper.js");
+        // line 37
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/libs/swiper.min.js");
         echo "\"></script>
 
         <!-- Initialize Swiper -->
@@ -135,22 +131,22 @@ class __TwigTemplate_9c421e739713c2b3f0c5da2c7f3731cc48725a2af609393eb1bd8315c64
 
 
         <script src=\"";
-        // line 46
+        // line 45
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/libs/sal.js");
         echo "\"></script>
 <!--        <script src=\"";
-        // line 47
+        // line 46
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendor/bootstrap.js");
         echo "\"></script>-->
         <script src=\"";
-        // line 48
+        // line 47
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/app.js");
         echo "\"></script>
 
 
 
         ";
-        // line 52
+        // line 51
         $_minify = System\Classes\CombineAssets::instance()->useMinify;
         if ($_minify) {
             echo '<script src="' . Request::getBasePath() . '/modules/system/assets/js/framework.combined-min.js"></script>'.PHP_EOL;
@@ -161,11 +157,11 @@ class __TwigTemplate_9c421e739713c2b3f0c5da2c7f3731cc48725a2af609393eb1bd8315c64
         }
         echo '<link rel="stylesheet" property="stylesheet" href="' . Request::getBasePath() .'/modules/system/assets/css/framework.extras'.($_minify ? '-min' : '').'.css">'.PHP_EOL;
         unset($_minify);
-        // line 53
+        // line 52
         echo "        ";
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
-        // line 54
+        // line 53
         echo "
     </body>
 </html>";
@@ -183,7 +179,7 @@ class __TwigTemplate_9c421e739713c2b3f0c5da2c7f3731cc48725a2af609393eb1bd8315c64
 
     public function getDebugInfo()
     {
-        return array (  169 => 54,  165 => 53,  154 => 52,  147 => 48,  143 => 47,  139 => 46,  128 => 38,  123 => 36,  119 => 35,  115 => 34,  111 => 33,  106 => 30,  102 => 29,  97 => 26,  95 => 25,  90 => 22,  86 => 21,  83 => 20,  79 => 19,  74 => 16,  71 => 15,  66 => 13,  62 => 12,  58 => 11,  51 => 7,  47 => 6,  43 => 5,  37 => 1,);
+        return array (  165 => 53,  161 => 52,  150 => 51,  143 => 47,  139 => 46,  135 => 45,  124 => 37,  119 => 35,  115 => 34,  111 => 33,  107 => 32,  102 => 29,  98 => 28,  93 => 25,  91 => 24,  86 => 21,  82 => 20,  79 => 19,  75 => 18,  70 => 15,  67 => 14,  62 => 12,  58 => 11,  51 => 7,  47 => 6,  43 => 5,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -200,7 +196,6 @@ class __TwigTemplate_9c421e739713c2b3f0c5da2c7f3731cc48725a2af609393eb1bd8315c64
         <meta name=\"generator\" content=\"OctoberCMS\">
         <link rel=\"icon\" type=\"image/png\" href=\"{{ 'assets/images/october.png'|theme }}\">
         <link href=\"{{ 'assets/css/theme.min.css'|theme }}\" rel=\"stylesheet\">
-        <link href=\"{{ 'assets/scss/libs/swiper.scss'|theme }}\" rel=\"stylesheet\">
 
         {% styles %}
     </head>
@@ -225,7 +220,7 @@ class __TwigTemplate_9c421e739713c2b3f0c5da2c7f3731cc48725a2af609393eb1bd8315c64
 <!--        <script src=\"{{ 'assets/js/libs/swiper.js'|theme }}\"></script>-->
 <!--        <script src=\"{{ 'assets/js/libs/swiper.js'|theme }}\"></script>-->
         <!-- Swiper JS -->
-        <script src=\"{{ 'assets/js/libs/swiper.js'|theme }}\"></script>
+        <script src=\"{{ 'assets/js/libs/swiper.min.js'|theme }}\"></script>
 
         <!-- Initialize Swiper -->
         <script>

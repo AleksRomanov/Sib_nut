@@ -1,4 +1,4 @@
-1588793332a:1:{s:9:"index.htm";a:8:{s:8:"fileName";s:9:"index.htm";s:7:"content";s:479:"title = "Ядро кедрового ореха"
+1588848262a:1:{s:9:"index.htm";a:8:{s:8:"fileName";s:9:"index.htm";s:7:"content";s:535:"title = "Ядро кедрового ореха"
 url = "/"
 layout = "default"
 ==
@@ -25,7 +25,9 @@ layout = "default"
 <!-- Certificates section -->
 {% partial 'site/certificates' %}
 
-";s:5:"mtime";i:1588783058;s:6:"markup";s:394:"<!-- Teaser section -->
+<!-- Partners section -->
+{% partial 'site/partners' %}
+";s:5:"mtime";i:1588828843;s:6:"markup";s:451:"<!-- Teaser section -->
 {% partial 'site/teaser' %}
 
 <!-- About section -->
@@ -44,4 +46,7 @@ layout = "default"
 {% partial 'site/gallery' %}
 
 <!-- Certificates section -->
-{% partial 'site/certificates' %}";s:4:"code";N;s:5:"title";s:38:"Ядро кедрового ореха";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";}}
+{% partial 'site/certificates' %}
+
+<!-- Partners section -->
+{% partial 'site/partners' %}";s:4:"code";N;s:5:"title";s:38:"Ядро кедрового ореха";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";}}
