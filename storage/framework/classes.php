@@ -4,6 +4,5 @@
   'backend\\Controllers\\auth' => 'modules/backend/controllers/auth.php',
   'system\\Controllers\\settings' => 'modules/system/controllers/settings.php',
   'cms\\Controllers\\themes' => 'modules/cms/controllers/themes.php',
-  'backend\\Controllers\\users' => 'modules/backend/controllers/users.php',
-  'backend\\Controllers\\preferences' => 'modules/backend/controllers/preferences.php',
+  'backend\\Controllers\\users' => 'modules\\backend\\controllers\\users.php',
 );

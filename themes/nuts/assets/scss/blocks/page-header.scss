@@ -111,41 +111,6 @@
   }
 }
 
-.hamburger {
-  width: 122px;
-  height: 45px;
-  padding: 0;
-
-  @include tablet-width {
-    margin-left: auto;
-  }
-
-  .hamburger-box {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    width: 63px;
-    height: 45px;
-
-    .hamburger-inner,
-    .hamburger-inner::after,
-    .hamburger-inner::before {
-      background-color: #FFFFFF;
-      width: 64px;
-      height: 3px;
-      border-radius: 0;
-    }
-
-    .hamburger-inner:after {
-      top: 18px;
-    }
-
-    .hamburger-inner:before {
-      top: -18px;
-    }
-  }
-}
-
 .page-header__language-en-image {
   display: block;
   margin: 0 auto;
@@ -153,3 +118,6 @@
   @include effect-opacity;
 }
 
+.mm-menu {
+  --mm-color-background: brown;
+}
