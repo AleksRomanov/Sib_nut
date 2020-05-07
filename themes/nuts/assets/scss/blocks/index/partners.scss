@@ -5,6 +5,8 @@
   min-height: 1080px;
   background-image: url("../images/partners/background_partners.jpg");
   background-size: cover;
+  padding: 30px 140px;
+  box-sizing: border-box;
 
   //@include desktop-min {
   //  background-image: url("../images/about/background_about_tablet.jpg");
@@ -15,7 +17,7 @@
     content: " ";
     position: absolute;
     top: 0;
-    left: 0;
+    left: 10px;
     background-image: url("../images/svg/zig-zag.svg");
     background-repeat: repeat-x;
     background-position: top;
@@ -35,5 +37,15 @@
     background-position: bottom;
     width: 100%;
     height: 10px;
+  }
+}
+
+.partners__container {
+  min-width: 1920px;
+  min-height: 123px;
+  background-color: rgba(0, 0, 0, .6);
+
+  & h1 {
+    margin: 0;
   }
 }
