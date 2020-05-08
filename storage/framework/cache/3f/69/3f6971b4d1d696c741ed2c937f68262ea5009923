@@ -1,4 +1,4 @@
-1588849015a:1:{s:15:"site/header.htm";a:5:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:1970:"<div class="page-header" id="layout-header">
+1588963720a:1:{s:15:"site/header.htm";a:5:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:1970:"<div class="page-header" id="layout-header">
   <div class="page-header__wrapper">
     <div href="index.html" class="page-header__logo" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
       <img class="page-header__logo-image" src="themes/nuts/assets/images/svg/logo.svg" width="294" height="120" alt="SibNut" aria-label="Главная">

@@ -5,7 +5,7 @@
   min-height: 1080px;
   background-image: url("../images/certificates/background_certificates.jpg");
   background-size: cover;
-  padding: 40px 144px;
+  padding: 40px 140px;
   box-sizing: border-box;
   text-align: center;
 
@@ -33,11 +33,9 @@
   display: flex;
   flex-wrap: wrap;
 
-  & h3 {
+  & h1 {
     display: block;
-    //content: " ";
-    //position: absolute;
-    //top: 0;
+    text-transform: uppercase;
     margin: 0 auto;
     font-size: 60px;
     line-height: 72px;
@@ -81,7 +79,7 @@
 
 .certificates__protocols {
   background-color: rgba(0, 0, 0, .6);
-  min-width: 1518px;
+  max-width: 1518px;
   min-height: 167px;
   display: flex;
   align-items: center;
@@ -93,7 +91,7 @@
     font-size: 39px;
     line-height: 47px;
     font-weight: 200;
-    min-width: 1392px;
+    max-width: 1392px;
   }
 
   & svg {

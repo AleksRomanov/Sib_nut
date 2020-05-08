@@ -52,16 +52,16 @@ class __TwigTemplate_a3f18d5ce76dcbf8ddd992c75bf27cc66982809eab0e161f8b136d8c6bf
         <label class=\"button catalog__wrapper-controls-item catalog__wrapper-controls-item--5\" for=\"advantage-5\">ПЛЁНКА КЕДРОВОГО ОРЕХА</label>
         <label class=\"button catalog__wrapper-controls-item catalog__wrapper-controls-item--6\" for=\"advantage-6\">КОЛОТОЕ ЯДРО КЕДРОВОГО ОРЕХА (НЕКОНДИЦИЯ)</label>
       </div>
-      <div class=\"catalog__wrapper-box\">
+      <div class=\"catalog__wrapper-box\" data-sal=\"slide-up\" data-sal-duration=\"2000\" data-sal-easing=\"ease-out-back\">
         <div class=\"catalog__wrapper-box-items\">
-          <div class=\"catalog__wrapper-box-item\">
+          <div class=\"catalog__wrapper-box-item\" data-sal=\"slide-up\" data-sal-duration=\"2000\" data-sal-easing=\"ease-out-back\">
             <h3>ЯДРО КЕДРОВОГО ОРЕХА</h3>
             <p>Представляет собой готовый продукт, полученный в процессе переработки семян кедровой сосны сибирской (бот. Pinus Sibirica). Ядро кедрового ореха издавна считается кладезем витаминов и полезных веществ, так необходимых современному человеку сегодня. Имеет приятный сладковатый вкус,
               цвет варьируется от молочного белого до бледно-желтого. Ядро насыщенно макро- и микроэлементами, такими как фосфор, магний, калий, натрий и кальций; железо, марганец, медь, цинк, молибден, кремний, алюминий, йод, бор, никель, кобальт, свинец, стронций. Используется как готовый продукт,
               так и в качестве ингредиента блюд разных стран.</p>
           </div>
         </div>
-        <div class=\"catalog__wrapper-box-packing\">
+        <div class=\"catalog__wrapper-box-packing\" data-sal=\"slide-up\" data-sal-duration=\"2000\" data-sal-easing=\"ease-out-back\">
           <h3>Фасовка</h3>
           <span>Вакуумные пакеты весом:</span>
           <ul class=\"catalog__wrapper-box-packing-list\">
@@ -137,16 +137,16 @@ class __TwigTemplate_a3f18d5ce76dcbf8ddd992c75bf27cc66982809eab0e161f8b136d8c6bf
         <label class=\"button catalog__wrapper-controls-item catalog__wrapper-controls-item--5\" for=\"advantage-5\">ПЛЁНКА КЕДРОВОГО ОРЕХА</label>
         <label class=\"button catalog__wrapper-controls-item catalog__wrapper-controls-item--6\" for=\"advantage-6\">КОЛОТОЕ ЯДРО КЕДРОВОГО ОРЕХА (НЕКОНДИЦИЯ)</label>
       </div>
-      <div class=\"catalog__wrapper-box\">
+      <div class=\"catalog__wrapper-box\" data-sal=\"slide-up\" data-sal-duration=\"2000\" data-sal-easing=\"ease-out-back\">
         <div class=\"catalog__wrapper-box-items\">
-          <div class=\"catalog__wrapper-box-item\">
+          <div class=\"catalog__wrapper-box-item\" data-sal=\"slide-up\" data-sal-duration=\"2000\" data-sal-easing=\"ease-out-back\">
             <h3>ЯДРО КЕДРОВОГО ОРЕХА</h3>
             <p>Представляет собой готовый продукт, полученный в процессе переработки семян кедровой сосны сибирской (бот. Pinus Sibirica). Ядро кедрового ореха издавна считается кладезем витаминов и полезных веществ, так необходимых современному человеку сегодня. Имеет приятный сладковатый вкус,
               цвет варьируется от молочного белого до бледно-желтого. Ядро насыщенно макро- и микроэлементами, такими как фосфор, магний, калий, натрий и кальций; железо, марганец, медь, цинк, молибден, кремний, алюминий, йод, бор, никель, кобальт, свинец, стронций. Используется как готовый продукт,
               так и в качестве ингредиента блюд разных стран.</p>
           </div>
         </div>
-        <div class=\"catalog__wrapper-box-packing\">
+        <div class=\"catalog__wrapper-box-packing\" data-sal=\"slide-up\" data-sal-duration=\"2000\" data-sal-easing=\"ease-out-back\">
           <h3>Фасовка</h3>
           <span>Вакуумные пакеты весом:</span>
           <ul class=\"catalog__wrapper-box-packing-list\">
