@@ -17,6 +17,9 @@ let paths = {
             // 'plugins/nms/plugin/assets/js/plugin.js', // Plugin script example
             'themes/' + theme + '/assets/js/app.js' // Theme app.js. Always at the end
         ],
+        source: 'themes/' + theme + '/assets/js/main.js',
+        mode: `iife`,
+        srcLibs: 'themes/' + theme + '/assets/js/libs/**/*.js'
     },
 
     deploy: {
@@ -57,7 +60,11 @@ const posthtml = require("gulp-posthtml");
 const include = require("posthtml-include");
 const rename = require("gulp-rename");
 const svgstore = require("gulp-svgstore");
-
+const plumber = require(`gulp-plumber`);
+const rollup = require(`gulp-better-rollup`);
+const commonjs = require(`rollup-plugin-commonjs`);
+const nodeResolve = require(`rollup-plugin-node-resolve`);
+const babel = require(`rollup-plugin-babel`);
 
 
 function browsersync() {
@@ -66,14 +73,6 @@ function browsersync() {
         notify: false,
         online: online
     })
-}
-
-function scripts() {
-    return src(paths.scripts.src)
-        .pipe(concat('theme.min.js'))
-        .pipe(uglify())
-        .pipe(dest('themes/' + theme + '/assets/js'))
-        .pipe(browserSync.stream())
 }
 
 function styles() {
@@ -131,10 +130,45 @@ function htm() {
         .pipe(dest('themes/' + theme + '/partials/'));
 }
 
+// function scripts() {
+//     return src(paths.scripts.src)
+//         .pipe(concat('theme.min.js'))
+//         .pipe(uglify())
+//         .pipe(dest('themes/' + theme + '/assets/js'))
+//         .pipe(browserSync.stream())
+// }
+
+function scripts() {
+    return src(paths.scripts.source)
+        .pipe(plumber())
+        .pipe(
+            rollup(
+                {
+                    plugins: [commonjs(), nodeResolve(), babel()]
+                },
+                paths.scripts.mode
+            )
+        )
+        .pipe(uglify())
+        .pipe(plumber())
+        .pipe(rename({suffix: `.min`}))
+        .pipe(gulp.dest('themes/' + theme + '/assets/js'));
+}
+
+function scriptsLibs() {
+    return gulp
+        .src(paths.scripts.srcLibs)
+        .pipe(plumber())
+        .pipe(concat(`vendor.js`))
+        .pipe(uglify())
+        .pipe(rename({suffix: `.min`}))
+        .pipe(gulp.dest('themes/' + theme + '/assets/js'));
+}
+
 exports.browsersync = browsersync;
 exports.assets = parallel(styles, scripts);
 exports.styles = styles;
 exports.scripts = scripts;
 exports.deploy = deploy;
 exports.sprite = sprite;
-exports.default = parallel(sprite, htm, styles, scripts, browsersync, startwatch);
+exports.default = parallel(sprite, htm, styles, scriptsLibs, scripts, browsersync, startwatch);
