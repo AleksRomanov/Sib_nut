@@ -63,6 +63,8 @@
   padding: 50px;
   box-sizing: border-box;
 
+  @include effect-opacity;
+
   @include desktop-min {
     min-width: 90%;
     //margin: 0;
