@@ -1,0 +1,107 @@
+.certificates {
+  position: relative;
+  width: 100%;
+  //margin: 0 auto;
+  min-height: 1080px;
+  background-image: url("../images/certificates/background_certificates.jpg");
+  background-size: cover;
+  padding: 40px 140px;
+  box-sizing: border-box;
+  text-align: center;
+
+
+  //@include desktop-min {
+  //  background-image: url("../images/certificates/background_about_tablet.jpg");
+  //  background-size: cover;
+  //}
+
+  &::before {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url("../images/svg/zig-zag.svg");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    width: 100%;
+    height: 10px;
+  }
+}
+
+.certificates__titles {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+
+  & h1 {
+    display: block;
+    text-transform: uppercase;
+    margin: 0 auto;
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 700;
+    padding-bottom: 30px;
+  }
+
+  & span {
+    display: block;
+    //content: " ";
+    //position: absolute;
+    //top: 100px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 400;
+    padding-bottom: 40px;
+  }
+}
+
+
+.swiper-container {
+  min-height: 500px;
+  //padding-top: 366px;
+}
+
+.swiper-wrapper {
+  margin: 0 auto;
+  //box-sizing: border-box;
+  //padding: 0 46px;
+}
+
+.swiper-slide {
+  min-height: 570px;
+  background-image: url("../images/certificates/1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 20px;
+}
+
+.certificates__protocols {
+  background-color: rgba(0, 0, 0, .6);
+  max-width: 1518px;
+  min-height: 167px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+
+  & span {
+    display: block;
+    color: #FFFFFF;
+    font-size: 39px;
+    line-height: 47px;
+    font-weight: 200;
+    max-width: 1392px;
+  }
+
+  & svg {
+    min-width: 116px;
+
+    @include effect-opacity;
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  @include effect-opacity;
+}

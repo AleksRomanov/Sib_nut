@@ -3,6 +3,8 @@
   position: absolute;
   z-index: 1;
   border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  box-sizing: border-box;
+  padding: 0 140px;
 
   @include tablet-width {
     padding-bottom: 20px;
@@ -119,5 +121,5 @@
 }
 
 .mm-menu {
-  --mm-color-background: brown;
+  --mm-color-background: #251109;
 }

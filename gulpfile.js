@@ -69,7 +69,7 @@ const babel = require(`rollup-plugin-babel`);
 
 function browsersync() {
     browserSync.init({
-        proxy: theme,
+        proxy: localhost,
         notify: false,
         online: online
     })
