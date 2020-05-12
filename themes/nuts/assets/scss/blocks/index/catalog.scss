@@ -26,11 +26,27 @@
 .catalog__wrapper-list {
   display: flex;
   align-items: center;
-  margin-bottom: 58px;
+  //margin-bottom: 58px;
+
+  @include desktop-width {
+    flex-direction: column;
+    flex-wrap: wrap;
+
+  }
 }
 
 .catalog__wrapper-controls {
   min-width: 30%;
+
+  @include desktop-width {
+    padding-bottom: 10px;
+
+    & label {
+      text-align: left;
+      align-self: flex-start;
+    }
+  }
+
 }
 
 .catalog__wrapper-controls label {
@@ -105,9 +121,17 @@
 .catalog__wrapper-box-storage {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  @include desktop-width {
+    flex-wrap: nowrap;
+  }
+
+  @include tablet-width {
+    flex-wrap: wrap;
+  }
 
   //& h3 {
   //  width: 30%;

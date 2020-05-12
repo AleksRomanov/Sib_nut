@@ -26,10 +26,11 @@
 .map__container {
   position: relative;
   background-color: rgba(0, 0, 0, .15);
-  min-width: 1640px;
+  max-width: 1640px;
   height: 708px;
   box-sizing: border-box;
   padding: 35px;
+  margin: 0 auto;
 
   &::before {
     content: " ";

@@ -9,4 +9,7 @@
 node_modules/
 npm-debug.*
 Thumbs.db
-/storage/
+/storage/cms/cache/
+/storage/cms/twig/
+/storage/framework/cache/
+/storage/framework/sessions/
