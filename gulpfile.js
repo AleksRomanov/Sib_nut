@@ -162,7 +162,7 @@ function scriptsLibs() {
         .pipe(concat(`vendor.js`))
         .pipe(uglify())
         .pipe(rename({suffix: `.min`}))
-        .pipe(gulp.dest('themes/' + theme + '/assets/js/libs'));
+        .pipe(gulp.dest('themes/' + theme + '/assets/js'));
 }
 
 exports.browsersync = browsersync;

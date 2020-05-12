@@ -60,10 +60,17 @@
   box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.4);
   margin: 0 8px;
   background-color: #FFFFFF;
-  padding: 50px;
+  padding: 40px;
   box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 
-  @include effect-opacity;
+  //@include effect-opacity;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
 
   @include desktop-min {
     min-width: 90%;
@@ -102,6 +109,7 @@
     margin: 0 auto;
     width: 100%;
     margin-bottom: 15px;
+    align-self: center;
   }
 
   & span {
@@ -124,13 +132,13 @@
   }
 }
 
-.about__list-item-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-
-  & svg {
-    align-self: center;
-  }
-}
+//.about__list-item-wrapper {
+//  display: flex;
+//  flex-wrap: wrap;
+//  align-items: center;
+//
+//  & svg {
+//    align-self: center;
+//  }
+//}
 

@@ -1,3 +1,4 @@
+import swiperSertificates from "./swiper";
 import salAnimation from "./sal";
 import mmenu from "./mmenu";
 
@@ -15,6 +16,7 @@ class App {
     //   window.objectFitImages();
     // }
 
+    swiperSertificates();
     salAnimation();
     mmenu();
 
