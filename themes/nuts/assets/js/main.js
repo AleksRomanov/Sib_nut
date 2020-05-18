@@ -1,4 +1,5 @@
-import swiperSertificates from "./swiper";
+import swiperSertificates from "./swiper_sertificates";
+import swiperProducts from "./swiper_products";
 import salAnimation from "./sal";
 import mmenu from "./mmenu";
 
@@ -17,6 +18,7 @@ class App {
     // }
 
     swiperSertificates();
+    swiperProducts();
     salAnimation();
     mmenu();
 
