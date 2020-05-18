@@ -21,6 +21,7 @@
 
   @include tablet-width {
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -105,6 +106,10 @@
   position: relative;
   min-width: 122px;
   margin: 0 8px 0 8px;
+
+  @include tablet-width {
+    max-width: 80px;
+  }
 }
 
 .page-header__language-en-image {

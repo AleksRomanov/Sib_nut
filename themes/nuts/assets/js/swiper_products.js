@@ -1,5 +1,5 @@
-const swiperSertificates = () => {
-    new Swiper('.swiper-container', {
+const swiperProducts = () => {
+    new Swiper('.products__swiper', {
         slidesPerView: 1,
         spaceBetween: 30,
         navigation: {
@@ -9,4 +9,4 @@ const swiperSertificates = () => {
     });
 };
 
-export default swiperSertificates;
+export default swiperProducts;
