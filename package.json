@@ -16,6 +16,7 @@
     "url": "https://github.com/agragregra/OctoberCMS-Gulp-Starter/issues"
   },
   "homepage": "https://github.com/agragregra/OctoberCMS-Gulp-Starter#readme",
+
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",

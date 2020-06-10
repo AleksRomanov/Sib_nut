@@ -39,7 +39,7 @@
   padding-top: 110px;
   padding-bottom: 110px;
 
-  @include tablet-width {
+  @include tablet {
     padding: 0;
   }
 }
