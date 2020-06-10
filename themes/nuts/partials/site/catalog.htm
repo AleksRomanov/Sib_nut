@@ -2,39 +2,38 @@
   <h2 class="visually-hidden"></h2>
   <div class="catalog__wrapper">
     <div class="catalog__wrapper-list">
-      <input class="visually-hidden" type="radio" value="1" id="advantage-1" name="tog" checked>
-      <input class="visually-hidden" type="radio" value="2" id="advantage-2" name="tog">
-      <input class="visually-hidden" type="radio" value="3" id="advantage-3" name="tog">
-      <input class="visually-hidden" type="radio" value="4" id="advantage-4" name="tog">
-      <input class="visually-hidden" type="radio" value="5" id="advantage-5" name="tog">
-      <input class="visually-hidden" type="radio" value="6" id="advantage-6" name="tog">
-      <ul class="catalog__wrapper-controls">
-
-        <li class="catalog__controls">
-          <label class="button catalog__wrapper-controls-item catalog__wrapper-controls-item--1" for="advantage-1">ОЧИЩЕННОЕ ЯДРО КЕДРОВОГО ОРЕХА</label>
-          <label class="button catalog__wrapper-controls-item catalog__wrapper-controls-item--2" for="advantage-2">МАСЛО КЕДРОВОЕ НЕРАФИНИРОВАННОЕ</label>
-          <label class="button catalog__wrapper-controls-item catalog__wrapper-controls-item--3" for="advantage-3">КЕДРОВЫЙ ЖМЫХ</label>
-          <label class="button catalog__wrapper-controls-item catalog__wrapper-controls-item--4" for="advantage-4">СКОРЛУПА КЕДРОВОГО ОРЕХА</label>
-          <label class="button catalog__wrapper-controls-item catalog__wrapper-controls-item--5" for="advantage-5">ПЛЁНКА КЕДРОВОГО ОРЕХА</label>
-          <label class="button catalog__wrapper-controls-item catalog__wrapper-controls-item--6" for="advantage-6">КОЛОТОЕ ЯДРО КЕДРОВОГО ОРЕХА (НЕКОНДИЦИЯ)</label>
-        </li>
-
-
-        <li class="catalog__slide" id="advantage-1">
-          <div class="catalog__wrapper-box-items">
-            <div class="catalog__wrapper-box-item">
-              <h3>ЯДРО КЕДРОВОГО ОРЕХА</h3>
-              <p>Представляет собой готовый продукт, полученный в процессе переработки семян кедровой сосны сибирской (бот. Pinus Sibirica). Ядро кедрового ореха издавна считается кладезем витаминов и полезных веществ, так необходимых современному человеку сегодня. Имеет приятный сладковатый вкус,
-                цвет варьируется от молочного белого до бледно-желтого. Ядро насыщенно макро- и микроэлементами, такими как фосфор, магний, калий, натрий и кальций; железо, марганец, медь, цинк, молибден, кремний, алюминий, йод, бор, никель, кобальт, свинец, стронций. Используется как готовый
-                продукт,
-                так и в качестве ингредиента блюд разных стран.</p>
-            </div>
-          </div>
-          <div class="catalog__wrapper-box-packing">
-            <h3>Фасовка</h3>
+      <input class="visually-hidden" type="radio" value="1" id="advantage-1" name="toggle" checked>
+      <input class="visually-hidden" type="radio" value="2" id="advantage-2" name="toggle">
+      <input class="visually-hidden" type="radio" value="3" id="advantage-3" name="toggle">
+      <input class="visually-hidden" type="radio" value="4" id="advantage-4" name="toggle">
+      <input class="visually-hidden" type="radio" value="5" id="advantage-5" name="toggle">
+      <input class="visually-hidden" type="radio" value="6" id="advantage-6" name="toggle">
+      <!--      <ul class="catalog__wrapper-controls">-->
+      <!--        <li class="catalog__controls">-->
+      <div class="catalog__wrapper-controls" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
+        <label class="button catalog__controls catalog__wrapper-controls-item catalog__wrapper-controls-item--1" for="advantage-1">ОЧИЩЕННОЕ ЯДРО КЕДРОВОГО ОРЕХА</label>
+        <label class="button catalog__controls catalog__wrapper-controls-item catalog__wrapper-controls-item--2" for="advantage-2">МАСЛО КЕДРОВОЕ НЕРАФИНИРОВАННОЕ</label>
+        <label class="button catalog__controls catalog__wrapper-controls-item catalog__wrapper-controls-item--3" for="advantage-3">КЕДРОВЫЙ ЖМЫХ</label>
+        <label class="button catalog__controls catalog__wrapper-controls-item catalog__wrapper-controls-item--4" for="advantage-4">СКОРЛУПА КЕДРОВОГО ОРЕХА</label>
+        <label class="button catalog__controls catalog__wrapper-controls-item catalog__wrapper-controls-item--5" for="advantage-5">ПЛЁНКА КЕДРОВОГО ОРЕХА</label>
+        <label class="button catalog__controls catalog__wrapper-controls-item catalog__wrapper-controls-item--6" for="advantage-6">КОЛОТОЕ ЯДРО КЕДРОВОГО ОРЕХА (НЕКОНДИЦИЯ)</label>
+      </div>
+      <!--        </li>-->
+      <ul class="catalog__list" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
+        <li class="catalog__slide" id="advantage-1" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
+          <div class="catalog__wrapper-box-item">
+            <h3>ЯДРО КЕДРОВОГО ОРЕХА</h3>
+            <p>Представляет собой готовый продукт, полученный в процессе переработки семян кедровой сосны сибирской (бот. Pinus Sibirica). Ядро кедрового ореха издавна считается кладезем витаминов и полезных веществ, так необходимых современному человеку сегодня. Имеет приятный сладковатый вкус,
+              цвет варьируется от молочного белого до бледно-желтого. Ядро насыщенно макро- и микроэлементами, такими как фосфор, магний, калий, натрий и кальций; железо, марганец, медь, цинк, молибден, кремний, алюминий, йод, бор, никель, кобальт, свинец, стронций. Используется как готовый
+              продукт,
+              так и в качестве ингредиента блюд разных стран.</p>
+            <p class="catalog__wrapper-box-item-packing">Фасовка</p>
             <span>Вакуумные пакеты весом:</span>
+          </div>
+
+          <div class="catalog__wrapper-box-packing">
             <ul class="catalog__wrapper-box-packing-list">
-              <li class="catalog__wrapper-box-packing-list-item">
+              <li class="catalog__wrapper-box-packing-list-item" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
                 <img class="" src="themes/nuts/assets/images/productionUnit/0,1.jpg" width="259" height="255" alt="0,1кг" aria-label="0,1кг">
                 <span>0,1кг</span>
               </li>
@@ -59,92 +58,159 @@
                 <span>12,5кг</span>
               </li>
               <li class="catalog__wrapper-box-packing-list-item">
-                <img class="" src="themes/nuts/assets/images/productionUnit/12,5.jpg" width="259" height="255" alt="40кг" aria-label="40кг">
+                <img class="" src="themes/nuts/assets/images/productionUnit/40.jpg" width="259" height="255" alt="40кг" aria-label="40кг">
                 <span>40кг</span>
               </li>
             </ul>
             <div class="catalog__wrapper-box-storage">
               <button class="catalog__button">ЗАКАЗАТЬ</button>
               <span>Срок годности:<br>
-            - при температуре от +8°C до +20°C  - 12 месяцев<br>- при температуре от 0°C до +7°C - 24 месяца
+            - при температуре от +8°C до +20°C  - 12 месяцев<br>- при температуре от 0°C до +7°C - 24 месяца.
               </span>
             </div>
           </div>
         </li>
 
-        <li class="catalog__slide" id="advantage-2">
-
+        <li class="catalog__slide" id="advantage-2" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
           <div class="catalog__wrapper-box-items">
             <div class="catalog__wrapper-box-item">
-              <h3>ЯДРО КЕДРОВОГО ОРЕХА2</h3>
-              <p>Представляет собой готовый продукт, полученный в процессе переработки семян кедровой сосны сибирской (бот. Pinus Sibirica). Ядро кедрового ореха издавна считается кладезем витаминов и полезных веществ, так необходимых современному человеку сегодня. Имеет приятный сладковатый вкус,
-                цвет варьируется от молочного белого до бледно-желтого. Ядро насыщенно макро- и микроэлементами, такими как фосфор, магний, калий, натрий и кальций; железо, марганец, медь, цинк, молибден, кремний, алюминий, йод, бор, никель, кобальт, свинец, стронций. Используется как готовый
-                продукт,
-                так и в качестве ингредиента блюд разных стран.</p>
+              <h3>МАСЛО КЕДРОВОЕ НЕРАФИНИРОВАННОЕ</h3>
+              <p>Производится путем холодного прессования семян сосны сибирской, что позволяет сохранить все полезные свойства, заложенные природой. Кедровое масло богато витаминами А, D, E, F и витаминами группы B; полиненасыщенными жирными кислотами — олеиновой, линоленовой, линолевой, пиноленовой
+                и т. д.; фосфолипидами; насыщенными жирными кислотами — стеариновой, эйкозановой и пальмитиновой; макро и микроэлементами — фосфором, магнием, калием, цинком, натрием, йодом, марганцем, железом, медью. Является продуктом, готовым к употреблению, широко применяется в кулинарии,
+                косметологии и медицине.
+                N.B.: Кедровое масло имеет не только лечебные свойства, но и противопоказания.
+              </p>
+              <p class="catalog__wrapper-box-item-packing">Фасовка</p>
+              <span> - стеклянная бутылка объемом 0,25 мл</span>
             </div>
           </div>
           <div class="catalog__wrapper-box-packing">
-            <h3>Фасовка</h3>
-            <span>Вакуумные пакеты весом:</span>
             <ul class="catalog__wrapper-box-packing-list">
               <li class="catalog__wrapper-box-packing-list-item">
-                <img class="" src="themes/nuts/assets/images/productionUnit/0,1.jpg" width="259" height="255" alt="0,1кг" aria-label="0,1кг">
+                <img class="" src="themes/nuts/assets/images/productionUnit/oil.jpg" width="259" height="255" alt="Масло">
                 <span>0,1кг</span>
-              </li>
-              <li class="catalog__wrapper-box-packing-list-item">
-                <img class="" src="themes/nuts/assets/images/productionUnit/0,2.jpg" width="259" height="255" alt="0,2кг" aria-label="0,10,2кг">
-                <span>0,2кг</span>
-              </li>
-              <li class="catalog__wrapper-box-packing-list-item">
-                <img class="" src="themes/nuts/assets/images/productionUnit/0,3.jpg" width="259" height="255" alt="0,3кг" aria-label="0,3кг">
-                <span>0,3кг</span>
-              </li>
-              <li class="catalog__wrapper-box-packing-list-item">
-                <img class="" src="themes/nuts/assets/images/productionUnit/0,5.jpg" width="259" height="255" alt="0,5кг" aria-label="0,5кг">
-                <span>0,5кг</span>
-              </li>
-              <li class="catalog__wrapper-box-packing-list-item">
-                <img class="" src="themes/nuts/assets/images/productionUnit/1.jpg" width="259" height="255" alt="1кг" aria-label="1кг">
-                <span>1кг</span>
-              </li>
-              <li class="catalog__wrapper-box-packing-list-item">
-                <img class="" src="themes/nuts/assets/images/productionUnit/12,5.jpg" width="259" height="255" alt="12,5кг" aria-label="12,5кг">
-                <span>12,5кг</span>
-              </li>
-              <li class="catalog__wrapper-box-packing-list-item">
-                <img class="" src="themes/nuts/assets/images/productionUnit/12,5.jpg" width="259" height="255" alt="40кг" aria-label="40кг">
-                <span>40кг</span>
               </li>
             </ul>
             <div class="catalog__wrapper-box-storage">
               <button class="catalog__button">ЗАКАЗАТЬ</button>
               <span>Срок годности:<br>
-            - при температуре от +8°C до +20°C  - 12 месяцев<br>- при температуре от 0°C до +7°C - 24 месяца
+             - 6 месяцев при соблюдении условий хранения.<br>
+                  *уточняйте наличие
               </span>
             </div>
           </div>
         </li>
 
-        <li class="catalog__slide" id="advantage-3">
-          <span>lohhhhhhhhhh</span>
+        <li class="catalog__slide" id="advantage-3" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
+          <div class="catalog__wrapper-box-items">
+            <div class="catalog__wrapper-box-item">
+              <h3>КЕДРОВЫЙ ЖМЫХ</h3>
+              <p>Представляет собой сухую массу, оставшуюся от орешков после отжима масла. Жмых сохраняет полезные свойства кедровых орехов, но имеет меньшее содержание жиров, что прекрасно подходит для спортсменов, и тех, кто придерживается правильного питания. Жмых – это продукт, готовый к
+                употреблению в пищу, широко используется в кулинарии и для последующего изготовления кедровой муки.
+              </p>
+              <p class="catalog__wrapper-box-item-packing">Фасовка</p>
+              <span> - вакуумный пакет весом 0,5кг и 1 кг</span>
+            </div>
+          </div>
+          <div class="catalog__wrapper-box-packing">
+
+            <ul class="catalog__wrapper-box-packing-list">
+              <li class="catalog__wrapper-box-packing-list-item">
+                <img class="" src="themes/nuts/assets/images/productionUnit/jmickh.jpg" width="260" height="256" alt="Жмых">
+              </li>
+            </ul>
+            <div class="catalog__wrapper-box-storage">
+              <button class="catalog__button">ЗАКАЗАТЬ</button>
+              <span>Срок годности:<br>
+              - 24 месяца.<br>
+                  *уточняйте наличие
+              </span>
+            </div>
+          </div>
         </li>
 
-        <li class="catalog__slide" id="advantage-4">
-          <span>lohhhhhhhhhh</span>
+        <li class="catalog__slide" id="advantage-4" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
+          <div class="catalog__wrapper-box-items">
+            <div class="catalog__wrapper-box-item">
+              <h3>СКОРЛУПА КЕДРОВОГО ОРЕХА</h3>
+              <p>Ценный продукт, получаемый в процессе переработки кедрового ореха. Содержит в себе клетчатку, целлюлозу, полисахариды, глютаминовую кислоту, витамин С, кальций, дубильные вещества и другие компоненты. Применяется для приготовления различных настоев; изготовления скрабов в
+                косметологии; в качестве экологически чистого топлива для специально оборудованных котельных; в качестве сырья для изготовления кедропласта; при ландшафтных работах и на сельскохозяйственных предприятиях.
+              </p>
+              <p class="catalog__wrapper-box-item-packing">Фасовка</p>
+              <span> - полипропиленовые мешки по 20кг -25кг</span>
+            </div>
+          </div>
+          <div class="catalog__wrapper-box-packing">
 
+            <ul class="catalog__wrapper-box-packing-list">
+              <li class="catalog__wrapper-box-packing-list-item">
+                <img class="" src="themes/nuts/assets/images/productionUnit/skorlupa.jpg" width="260" height="256" alt="Скорлупа">
+              </li>
+            </ul>
+            <div class="catalog__wrapper-box-storage">
+              <button class="catalog__button">ЗАКАЗАТЬ</button>
+              <span>Срок годности:<br>
+               - 24 месяца при соблюдении условий хранения.<br>
+                  *уточняйте наличие
+              </span>
+            </div>
+          </div>
         </li>
 
-        <li class="catalog__slide" id="advantage-5">
-          <span>lohhhhhhhhhh</span>
+        <li class="catalog__slide" id="advantage-5" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
+          <div class="catalog__wrapper-box-items">
+            <div class="catalog__wrapper-box-item">
+              <h3>ПЛЁНКА КЕДРОВОГО ОРЕХА</h3>
+              <p>Околоплодная плёнка кедрового ореха представляет собой тонкую пленочку золотисто-коричневого цвета, образуется при шелушении кедрового ореха в специальном станке, который разделяет орех на скорлупу, плёнку и ядро. Плёнка поднимается вверх потоками воздуха и по трубопроводу поступает
+                в герметичный бункер. Из бункера плёнка сразу попадает в упаковку. Околоплодная оболочка семян содержит макро- и микроэлементы такие, как фосфор, сера, кальций, калий, железо, марганец и кремний. Пленка используется в качестве наполнителя для подушек, которые будут обладать приятным
+                кедровым ароматом. Также кедровая пленка находит применение в фармацевтике и косметологии.
+              </p>
+              <p class="catalog__wrapper-box-item-packing">Фасовка</p>
+              <span> - полипропиленовые мешки по 6кг</span>
+            </div>
+          </div>
+          <div class="catalog__wrapper-box-packing">
 
+            <ul class="catalog__wrapper-box-packing-list">
+              <li class="catalog__wrapper-box-packing-list-item">
+                <img class="" src="themes/nuts/assets/images/productionUnit/plenka.jpg" width="260" height="256" alt="Жмых">
+              </li>
+            </ul>
+            <div class="catalog__wrapper-box-storage">
+              <button class="catalog__button">ЗАКАЗАТЬ</button>
+              <span>Срок годности:<br>
+                - 12 месяцеа при соблюдении условий хранения.
+              </span>
+            </div>
+          </div>
         </li>
 
-        <li class="catalog__slide" id="advantage-6">
-          <span>lohhhhhhhhhh</span>
+        <li class="catalog__slide" id="advantage-6" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
+          <div class="catalog__wrapper-box-items">
+            <div class="catalog__wrapper-box-item">
+              <h3>КОЛОТОЕ ЯДРО КЕДРОВОГО ОРЕХА (НЕКОНДИЦИЯ)</h3>
+              <p>Продукт, образующийся на этапе сортировки ядра. Обладает теми же полезными свойствами, что и очищенное ядро, но не соответствует требованиям ГОСТа по органолептическим свойствам (внешний вид, цвет, вкус, запах). Не пригоден для употребления в пищу человеком, но подходит в качестве
+                добавки к ежедневному рациону курей, свиней, собак. Используется в качестве природного удобрения в сельском хозяйстве.
+              </p>
+              <p class="catalog__wrapper-box-item-packing">Фасовка</p>
+              <span> - по запросу</span>
+            </div>
+          </div>
+          <div class="catalog__wrapper-box-packing">
 
+            <ul class="catalog__wrapper-box-packing-list">
+              <li class="catalog__wrapper-box-packing-list-item">
+                <img class="" src="themes/nuts/assets/images/productionUnit/kolotoe_yadro.jpg" width="260" height="256" alt="Колотое ядро">
+              </li>
+            </ul>
+            <div class="catalog__wrapper-box-storage">
+              <button class="catalog__button">ЗАКАЗАТЬ</button>
+              <span>Срок годности:<br>
+                 - 8 месяцев.
+              </span>
+            </div>
+          </div>
         </li>
-
-
       </ul>
 
     </div>

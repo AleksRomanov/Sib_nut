@@ -63,7 +63,7 @@
   text-decoration: none;
   width: 260px;
 
-  @include tablet-width {
+  @include tablet {
     width: 180px;
     margin: 0 auto;
     margin-top: 20px;
@@ -73,7 +73,7 @@
 .footer__logo-image {
   @include effect-opacity;
 
-  @include tablet-width {
+  @include tablet {
     margin: 0 auto;
     display: block;
   }
