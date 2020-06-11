@@ -188,13 +188,7 @@
   }
 }
 
-//.about__list-item-wrapper {
-//  display: flex;
-//  flex-wrap: wrap;
-//  align-items: center;
-//
-//  & svg {
-//    align-self: center;
-//  }
-//}
-
+.swiper-button-prev,
+.swiper-button-next {
+  @include effect-opacity;
+}
