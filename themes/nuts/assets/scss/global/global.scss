@@ -30,7 +30,9 @@ a {
 }
 
 body {
+  position: relative;
   min-height: 100vh;
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: "akrobat", "Arial", sans-serif;
@@ -44,6 +46,10 @@ body {
     width: 0;
   }
 }
+
+//.mm-page {
+//  height: 100%;
+//}
 
 img {
   max-width: 100%;

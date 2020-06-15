@@ -1,4 +1,5 @@
-import swiperAbout from "./about__container";
+import swiperAbout from "./swiper_about";
+import swiperQuality from "./swiper_quality";
 import swiperSertificates from "./swiper_sertificates";
 import swiperProducts from "./swiper_products";
 import salAnimation from "./sal";
@@ -19,6 +20,7 @@ class App {
     // }
 
     swiperAbout();
+    swiperQuality();
     swiperSertificates();
     swiperProducts();
     salAnimation();
