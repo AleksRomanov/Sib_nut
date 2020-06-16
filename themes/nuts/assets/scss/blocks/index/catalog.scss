@@ -259,6 +259,11 @@ p.catalog__wrapper-box-item-packing {
     @include tablet {
       width: 35%;
     }
+
+    @include mobile-max {
+      width: 100%;
+      order: 1;
+    }
   }
 
   @include tablet {
@@ -268,6 +273,10 @@ p.catalog__wrapper-box-item-packing {
   & span {
     width: 65%;
     text-align: right;
+
+    @include mobile-max {
+      width: 100%;
+    }
   }
 }
 

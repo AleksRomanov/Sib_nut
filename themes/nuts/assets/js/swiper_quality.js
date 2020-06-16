@@ -1,9 +1,12 @@
 const swiperQuality = () => {
     new Swiper('.quality__wrapper', {
         direction: 'vertical',
-        spaceBetween: 50,
+        spaceBetween: 20,
         slidesPerView: 4,
-        height: 1500,
+        // slidesPerColumnFill: 'row',
+        // slidesPerColumn: 5,
+        // autoHeight: true,
+        // height: 250,
 
         navigation: {
             nextEl: '.swiper-button-next',
