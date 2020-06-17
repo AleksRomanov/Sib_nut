@@ -1,12 +1,16 @@
 .quality {
   position: relative;
-  width: 100%;
+  //width: 100%;
   //margin: 0 auto;
-  min-height: 1277px;
+  //min-height: 1277px;
+  //height: 100%;
   background-image: url("../images/quality/background_quality.jpg");
   background-size: cover;
-  padding: 0 7.3%;
-  box-sizing: border-box;
+
+  @include tablet-max {
+    background-image: url("../images/quality/background_quality_tablet.jpg");
+  }
+
 
   &::before {
     content: " ";
@@ -34,12 +38,27 @@
   }
 }
 
-.quality__wrapper {
-  padding-left: 30%;
-  padding-top: 110px;
-  padding-bottom: 110px;
+.quality__wrapper-box {
+  padding: 4.1% 7.3%;
+  box-sizing: border-box;
+}
 
-  @include tablet {
+.quality__wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  //height: 100%;
+  padding-left: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  //padding-right: 5%;
+  //padding-top: 110px;
+  //padding-bottom: 110px;
+
+  @include desktop-min {
+    padding-left: 20px;
+  }
+
+  @include tablet-max {
     padding: 0;
   }
 }
@@ -49,13 +68,28 @@
 }
 
 .quality__wrapper-list-item {
-  position: relative;
+  width: 100%;
+  //text-align: center;
+  font-size: 18px;
+  //max-width: 1089px;
+  //position: relative;
   box-sizing: border-box;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 44px;
+  //margin-bottom: 44px;
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
 
   @include effect-opacity;
+
+  @include  tablet-max {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 
   & h3 {
     margin: 0;
@@ -63,12 +97,22 @@
     font-size: 60px;
     line-height: 72px;
     font-weight: 700;
+
+    @include mobile-max {
+      font-size: 30px;
+      line-height: 42px;
+    }
   }
 
   & span {
     font-size: 26px;
     line-height: 42px;
     font-weight: 400;
+
+    @include mobile-max {
+      font-size: 21px;
+      line-height: 32px;
+    }
   }
 
 
@@ -82,4 +126,8 @@
     height: 97.9%;
     border: 3px solid #F47220;
   }
+}
+
+.quality__swiper-control {
+  display: none;
 }

@@ -19,16 +19,26 @@ description = "Default layout"
         <!-- Sprite -->
         {% partial 'sprite' %}
 
-        {% partial 'site/header' %}
 
         <!-- Content -->
+        <div id="mmenu-wrapper">
+            {% partial 'site/header' %}
+
+            <!-- Teaser section -->
+            {% partial 'site/teaser' %}
+
+            <!-- About section -->
+            {% partial 'site/about' %}
+
+        </div>
         <div>
             {% page %}
         </div>
+
         <!-- Footer -->
-<!--        <footer id="layout-footer">-->
-<!--            {% partial 'site/footer' %}-->
-<!--        </footer>-->
+        <footer id="layout-footer">
+            {% partial 'site/footer' %}
+        </footer>
 
         <!-- Scripts -->
         <script src="{{ 'assets/js/vendor.min.js'|theme }}"></script>

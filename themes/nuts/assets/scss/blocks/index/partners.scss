@@ -1,11 +1,16 @@
 .partners {
   position: relative;
   width: 100%;
-  min-height: 1080px;
+  //min-height: 1080px;
   background-image: url("../images/partners/background_partners.jpg");
   background-size: cover;
-  padding: 150px 140px 20px 140px;
+  //padding: 150px 140px 20px 140px;
+  padding: 140px 7.3%;
   box-sizing: border-box;
+
+  @include tablet-max {
+    padding-bottom: 50px;
+  }
 
   &::before {
     z-index: 1;
@@ -46,6 +51,21 @@
     color: #FFFFFF;
     letter-spacing: 3.3px;
     padding-bottom: 5px;
+
+    @include tablet-max {
+      font-size: 23px;
+      line-height: 32px;
+    }
+
+    @include tablet {
+      font-size: 19px;
+      line-height: 27px;
+    }
+
+    @include mobile-max {
+      font-size: 15px;
+      line-height: 21px;
+    }
   }
 }
 
@@ -70,6 +90,12 @@
     font-weight: 700;
     text-transform: uppercase;
     color: #FFFFFF;
+
+    @include tablet-max {
+      font-size: 40px;
+      line-height: 52px;
+      letter-spacing: 10px;
+    }
   }
 }
 
@@ -84,11 +110,18 @@
   max-width: 1640px;
   background-color: rgba(0, 0, 0, .6);
   margin-bottom: 56px;
-  padding: 28px 0 28px 40px ;
+  //padding: 28px 0 28px 40px;
+  padding: 20px;
   box-sizing: border-box;
   border-radius: 88px;
   display: flex;
   align-items: center;
+
+  @include mobile-max {
+    margin-bottom: 20px;
+    flex-direction: column;
+    padding: 10px;
+  }
 
   @include effect-opacity;
 
@@ -100,7 +133,27 @@
     letter-spacing: 1px;
     padding: 0;
     width: 50%;
-    margin-right: 60px;
+    //margin-right: 60px;
+
+    @include desktop-min {
+      font-size: 33px;
+    }
+
+    @include tablet-max {
+      font-size: 21px;
+      line-height: 26px;
+      letter-spacing: 0;
+    }
+
+    @include tablet {
+      font-size: 14px;
+      line-height: 15px;
+      letter-spacing: 0;
+    }
+
+    @include mobile-max {
+      padding-top: 30px;
+    }
   }
 }
 
@@ -109,11 +162,46 @@
   position: absolute;
   top: 25%;
   left: 2%;
+
+  @include tablet-max {
+    top: 26%;
+    left: 3%;
+    width: 40px;
+  }
+
+  @include tablet {
+    top: 11%;
+    left: 5%;
+    width: 25px;
+  }
+
+  @include mobile-max {
+    top: -6%;
+    left: 45%;
+  }
 }
 
 .partners__list-item-arrow {
   content: " ";
   position: absolute;
-  top: 25%;
+  top: 27%;
   left: 45%;
+
+  @include tablet-max {
+    top: 32%;
+    left: 42%;
+    height: 40px;
+  }
+
+  @include tablet {
+    top: 33%;
+    left: 40%;
+    height: 25px;
+  }
+
+  @include mobile-max {
+    top: 42%;
+    left: 39%;
+    rotation: 45deg;
+  }
 }

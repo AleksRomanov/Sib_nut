@@ -32,15 +32,15 @@
   padding: 35px;
   margin: 0 auto;
 
-  &::before {
-    content: " ";
-    position: absolute;
-    top: 30px;
-    left: 35px;
-    background-image: url("../images/map/map.jpg");
-    background-size: contain;
-    //background-repeat: no-repeat;
-    width: 96%;
-    min-height: 644px;
-  }
+  //&::before {
+  //  content: " ";
+  //  position: absolute;
+  //  top: 30px;
+  //  left: 35px;
+  //  background-image: url("../images/map/map.jpg");
+  //  background-size: contain;
+  //  //background-repeat: no-repeat;
+  //  width: 96%;
+  //  min-height: 644px;
+  //}
 }
