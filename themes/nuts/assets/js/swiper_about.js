@@ -1,6 +1,6 @@
 const swiperAbout = () => {
     new Swiper('.about__container', {
-        slidesPerView: 3,
+        // slidesPerView: 3,
         spaceBetween: 8,
         navigation: {
             nextEl: '.swiper-button-next',
@@ -16,9 +16,9 @@ const swiperAbout = () => {
                 slidesPerView: 2,
                 // height: 1024,
             },
-            // 320: {
-            //     height: 640,
-            // }
+            320: {
+                height: 640,
+            }
         }
     });
 
