@@ -1,19 +1,27 @@
 .footer {
   width: 100%;
   position: absolute;
-  bottom: 0;
+  //bottom: 0;
   left: 0;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, .6);
   min-height: 158px;
-  padding: 20px 140px;
+  padding: 20px 0;
   box-sizing: border-box;
+  z-index: 10000000;
+
+  @include desktop-min {
+    padding: 20px 80px;
+  }
+
+  @include tablet-max {
+    padding: 20px 7.3%;
+  }
 
   &::before {
     z-index: 1;
     content: " ";
     position: absolute;
-    top: -8px;
+    top: -9px;
     left: 0;
     background-image: url("../images/svg/zig-zag_footer.svg");
     background-repeat: repeat-x;
@@ -28,12 +36,19 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 1640px;
+  margin: 0 auto;
 }
 
 .footer__container-contacts {
   display: flex;
   flex-direction: column;
-  min-width: 374px;
+  //min-width: 374px;
+  width: 35%;
+
+  @include tablet {
+    width: 30%;
+  }
 }
 
 .footer__container-contact-button {
@@ -45,6 +60,10 @@
   align-items: center;
   padding: 8px 0;
 
+  @include tablet {
+    padding: 0;
+  }
+
   & span {
     margin-left: 28px;
     font-size: 20px;
@@ -52,35 +71,56 @@
 
     @include effect-opacity;
 
+    @include tablet-max {
+      font-size: 17px;
+    }
+
+    @include tablet {
+      font-size: 12px;
+      margin-left: 5px;
+    }
   }
 
   & svg {
     @include effect-opacity;
+
+    @include tablet-max {
+      width: 40px;
+    }
+
+    @include tablet {
+      width: 25px;
+    }
   }
 }
 
 .footer__logo {
   text-decoration: none;
-  width: 260px;
+  //width: 260px;
+  width: 30%;
 
   @include tablet {
-    width: 180px;
-    margin: 0 auto;
-    margin-top: 20px;
+    //width: 180px;
+    //margin: 0 auto;
+    //margin-top: 20px;
+    width: 35%;
   }
 }
 
 .footer__logo-image {
+  display: block;
+  margin: 0 auto;
   @include effect-opacity;
 
   @include tablet {
-    margin: 0 auto;
+    //margin: 0 auto;
     display: block;
   }
 }
 
 .footer__container-rights {
-  max-width: 464px;
+  //max-width: 464px;
+  width: 35%;
   text-align: right;
   color: #FFFFFF;
 
@@ -89,12 +129,29 @@
     line-height: 36px;
     font-weight: 700;
     margin: 0;
+
+    @include tablet-max {
+      font-size: 24px;
+    }
+
+    @include tablet {
+      font-size: 18px;
+    }
   }
 
   & span {
     font-size: 20px;
     line-height: 24px;
     font-weight: 400;
+
+    @include tablet-max {
+      font-size: 12px;
+    }
+
+    @include tablet {
+      font-size: 10px;
+      line-height: 12px;
+    }
   }
 }
 
