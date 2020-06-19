@@ -7,6 +7,7 @@
   background-image: url("../images/quality/background_quality.jpg");
   background-size: cover;
 
+
   @include tablet-max {
     background-image: url("../images/quality/background_quality_tablet.jpg");
   }
