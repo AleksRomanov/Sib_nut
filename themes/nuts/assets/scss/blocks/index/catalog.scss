@@ -78,6 +78,10 @@
       margin-bottom: 0;
       padding: 0 10px;
     }
+
+    @include mobile-max {
+      font-size: 17px;
+    }
   }
 }
 
@@ -106,6 +110,7 @@
       font-size: 21px;
     }
   }
+
 }
 
 .catalog__wrapper-controls-item {
@@ -184,6 +189,11 @@
     font-size: 20px;
     line-height: 32px;
   }
+
+  @include mobile-max {
+    font-size: 16px;
+    line-height: 21px;
+  }
 }
 
 .catalog__wrapper-box-item span {
@@ -191,6 +201,11 @@
   margin-bottom: 10px;
   text-align: center;
   display: block;
+
+  @include mobile-max {
+    font-size: 16px;
+    line-height: 21px;
+  }
 }
 
 .catalog__wrapper-box-item h3 {
@@ -200,6 +215,10 @@
   margin: 0;
   margin-bottom: 20px;
 
+  @include mobile-max {
+    text-align: center;
+    font-size: 28px;
+  }
 }
 
 p.catalog__wrapper-box-item-packing {
@@ -216,6 +235,11 @@ p.catalog__wrapper-box-item-packing {
 
   & span {
     margin-bottom: 10px;
+
+    @include mobile-max {
+      font-size: 16px;
+      line-height: 21px;
+    }
   }
 
   & h3 {
@@ -245,6 +269,10 @@ p.catalog__wrapper-box-item-packing {
   width: 20%;
 
   @include effect-opacity;
+
+  @include mobile-max {
+    width: 29%;
+  }
 }
 
 .catalog__wrapper-box-storage {
@@ -255,6 +283,10 @@ p.catalog__wrapper-box-item-packing {
   align-items: center;
 
   .catalog__button {
+
+    @include  tablet-max {
+      width: 50%;
+    }
 
     @include tablet {
       width: 35%;
@@ -276,6 +308,7 @@ p.catalog__wrapper-box-item-packing {
 
     @include mobile-max {
       width: 100%;
+      text-align: center;
     }
   }
 }
