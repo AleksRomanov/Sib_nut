@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   //margin: 0 auto;
-  min-height: 1241px;
+  //min-height: 1241px;
   background-image: url("../images/gallery/background_gallery.jpg");
   background-size: cover;
   box-sizing: border-box;
@@ -46,7 +46,7 @@
 
 .gallery__title {
   background-color: rgba(0, 0, 0, .8);
-  width: 364px;
+  max-width: 364px;
   margin: 0 auto;
 
   & span {
@@ -57,6 +57,10 @@
     color: #FFFFFF;
     text-transform: uppercase;
     text-align: center;
+
+    @include mobile-max {
+      font-size: 40px;
+    }
   }
 }
 
@@ -64,9 +68,18 @@
   position: relative;
   max-width: 1641px;
   margin: 0 auto;
-  min-height: 1001px;
-  background-image: url("../images/gallery/video_skrin.jpg");
+  padding-bottom: 140px;
+  //min-height: 1001px;
+  //background-image: url("../images/gallery/video_skrin.jpg");
   //background-size: cover;
+
+  @include desktop-min {
+    padding-bottom: 70px;
+  }
+
+  @include tablet-max {
+    padding-bottom: 70px;
+  }
 
   & svg {
     display: block;
@@ -75,15 +88,15 @@
     @include effect-opacity;
   }
 
-  &::after {
-    content: " ";
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-image: url("../images/svg/sound_on.svg");
-    width: 67px;
-    height: 67px;
-
-    @include effect-opacity;
-  }
+  //&::after {
+  //  content: " ";
+  //  position: absolute;
+  //  top: 10px;
+  //  right: 10px;
+  //  background-image: url("../images/svg/sound_on.svg");
+  //  width: 67px;
+  //  height: 67px;
+  //
+  //  @include effect-opacity;
+  //}
 }

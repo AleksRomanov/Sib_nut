@@ -82,6 +82,10 @@
   position: absolute;
   left: 0;
 
+  @include mobile-max {
+    margin-bottom: 0;
+  }
+
   & h1 {
     margin: 0 auto;
     max-width: 1640px;
@@ -153,6 +157,7 @@
 
     @include mobile-max {
       padding-top: 30px;
+      width: 100%;
     }
   }
 }
@@ -177,7 +182,13 @@
 
   @include mobile-max {
     top: -6%;
-    left: 45%;
+    left: 47%;
+  }
+
+  @include mobile {
+    top: 48%;
+    left: 39%;
+    transform: rotate(90deg);
   }
 }
 
@@ -200,8 +211,14 @@
   }
 
   @include mobile-max {
-    top: 42%;
+    top: 47%;
     left: 39%;
-    rotation: 45deg;
+    transform: rotate(90deg);
+  }
+
+  @include mobile {
+    top: 48%;
+    left: 39%;
+    transform: rotate(90deg);
   }
 }

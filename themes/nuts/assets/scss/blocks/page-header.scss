@@ -98,7 +98,7 @@
     //width: 100%;
     align-items: center;
     flex-wrap: nowrap;
-    flex-direction: row;
+    flex-direction: row-reverse;
   }
 }
 
@@ -112,20 +112,16 @@
   padding: 8px 0;
   justify-content: flex-end;
 
+  @include effect-opacity;
+
   & span {
     margin-right: 28px;
     font-size: 20px;
     font-weight: bold;
 
-    @include effect-opacity;
-
     @include desktop-min {
       justify-content: flex-end;
     }
-  }
-
-  & svg {
-    @include effect-opacity;
   }
 
   @include tablet-max {
@@ -155,6 +151,12 @@
     }
 
     padding: 0;
+  }
+
+  @include mobile-max {
+    width: 50%;
+    justify-content: center;
+
   }
 }
 
