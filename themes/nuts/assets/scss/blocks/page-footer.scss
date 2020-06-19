@@ -60,6 +60,9 @@
   align-items: center;
   padding: 8px 0;
 
+  @include effect-opacity;
+
+
   @include tablet {
     padding: 0;
   }
@@ -68,8 +71,6 @@
     margin-left: 28px;
     font-size: 20px;
     font-weight: bold;
-
-    @include effect-opacity;
 
     @include tablet-max {
       font-size: 17px;
@@ -82,7 +83,6 @@
   }
 
   & svg {
-    @include effect-opacity;
 
     @include tablet-max {
       width: 40px;
