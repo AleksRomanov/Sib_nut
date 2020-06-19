@@ -19,7 +19,7 @@ let paths = {
         ],
         source: 'themes/' + theme + '/assets/js/main.js',
         mode: `iife`,
-        srcLibs: 'themes/' + theme + '/assets/js/libs/**/*.js'
+        srcLibs: 'themes/' + theme + '/assets/js/libs/*.js'
     },
 
     deploy: {
