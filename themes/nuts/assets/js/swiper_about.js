@@ -16,6 +16,10 @@ const swiperAbout = () => {
                 slidesPerView: 1,
                 // height: 1024,
             },
+            576: {
+                slidesPerView: 1,
+                // height: 1024,
+            },
             320: {
                 height: 640,
             }
