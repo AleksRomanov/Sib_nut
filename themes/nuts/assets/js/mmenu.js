@@ -3,6 +3,7 @@ const mmenu = () => {
     let hamburgerMenu = document.querySelector('.hamburger')
 
     new Mmenu("#my-menu", {
+        // "pageScroll": true,
         navbar: {
             title: "Меню"
         },

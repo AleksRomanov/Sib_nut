@@ -1,0 +1,122 @@
+const scrollPages = () => {
+    // Скроллер
+    var currentYPosition = function () {
+        // Firefox, Chrome, Opera, Safari
+        if (self.pageYOffset) {
+            return self.pageYOffset;
+        }
+        // Internet Explorer 6 - standards mode
+        if (document.documentElement && document.documentElement.scrollTop) {
+            return document.documentElement.scrollTop;
+        }
+        // Internet Explorer 6, 7 and 8
+        if (document.body.scrollTop) {
+            return document.body.scrollTop;
+        }
+        return 0;
+    };
+
+    var elmYPosition = function (eID) {
+        var elm = document.getElementById(eID);
+        var y = elm.offsetTop;
+        var node = elm;
+        while (node.offsetParent && node.offsetParent !== document.body) {
+            node = node.offsetParent;
+            y += node.offsetTop;
+        }
+        return y;
+    };
+
+    var smoothScroll = function (eID) {
+        var startY = currentYPosition();
+        var stopY = elmYPosition(eID);
+        var distance = stopY > startY ? stopY - startY : startY - stopY;
+
+        if (distance < 100) {
+            scrollTo(0, stopY);
+            return;
+        }
+
+        var speed = Math.round(distance / 100);
+
+        if (speed >= 10) {
+            speed = 30;
+        }
+
+        var timer = 0;
+        var step = Math.round(distance / 25);
+        var leapY = stopY > startY ? startY + step : startY - step;
+
+        if (stopY > startY) {
+            for (var i = startY; i < stopY; i += step) {
+                var bottomScrollHandler = 'window.scrollTo(0, ' + leapY + ')';
+                setTimeout(bottomScrollHandler, timer * speed);
+                leapY += step;
+                if (leapY > stopY) {
+                    leapY = stopY;
+                }
+                timer++;
+            }
+            return;
+        }
+
+        for (var j = startY; j > stopY; j -= step) {
+            var topScrollHandler = 'window.scrollTo(0, ' + leapY + ')';
+            setTimeout(topScrollHandler, timer * speed);
+            leapY -= step;
+            if (leapY < stopY) {
+                leapY = stopY;
+            }
+            timer++;
+        }
+
+    };
+
+    var scrollSetup = function (scrollButton, scrollDestination) {
+        if (scrollButton) {
+            scrollButton.addEventListener('click', function () {
+                smoothScroll(scrollDestination);
+            });
+        }
+    };
+
+    var scrollSettings = {
+        map: {
+            scrollButtonClass: '.my-menu__link--map',
+            scrollDestinationID: 'section_map'
+        },
+        partners: {
+            scrollButtonClass: '.my-menu__link--partners',
+            scrollDestinationID: 'section_partners'
+        },
+        // gallery: {
+        //     scrollButtonClass: '.button--gallery',
+        //     scrollDestinationID: 'gallery'
+        // },
+        // catalog: {
+        //     scrollButtonClass: '.button--catalog',
+        //     scrollDestinationID: 'see-our-catalog'
+        // },
+        // contacts: {
+        //     scrollButtonClass: '.button--contacts',
+        //     scrollDestinationID: 'contact'
+        // }
+
+    }
+
+    for (var key in scrollSettings) {
+
+        var scrollButtons = document.querySelectorAll(scrollSettings[key].scrollButtonClass);
+
+        if (scrollButtons) {
+            var sectionID = scrollSettings[key].scrollDestinationID;
+
+            for (var i = 0; i <= scrollButtons.length - 1; i++) {
+                scrollSetup(scrollButtons[i], sectionID);
+
+            }
+        }
+    }
+};
+
+export default scrollPages;

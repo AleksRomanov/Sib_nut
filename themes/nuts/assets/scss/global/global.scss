@@ -52,6 +52,22 @@ body {
   }
 }
 
+.top {
+  transition: all 1s ease;
+  position: fixed;
+  right: -100px;
+  bottom: 50px;
+  transform: rotate(180deg);
+  //display: none;
+}
+
+.active {
+  transition: all 1s ease;
+
+  right: 50px;
+  //display: block;
+}
+
 
 .test-wrapper {
   position: relative;
