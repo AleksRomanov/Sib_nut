@@ -10,6 +10,10 @@ const scrollTop = () => {
         $('html, body').stop().animate({scrollTop: 0}, 'slow', 'swing');
     });
 
+    $('.scroll-to-teaser—js').click(function () {
+        $('html, body').stop().animate({scrollTop: 0}, 'slow', 'swing');
+    });
+
 
 };
 

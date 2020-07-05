@@ -269,7 +269,8 @@ p.catalog__wrapper-box-item-packing {
   //width: 20%;
 
   & img {
-    width: 100%;
+    //width: 100%;
+    border-radius: 50px;
   }
 
   @include effect-opacity;

@@ -81,6 +81,26 @@ const scrollPages = () => {
     };
 
     var scrollSettings = {
+        teaser: {
+            scrollButtonClass: '.my-menu__link--teaser',
+            scrollDestinationID: 'section_teaser'
+        },
+        about: {
+            scrollButtonClass: '.my-menu__link--about',
+            scrollDestinationID: 'section_about'
+        },
+        catalog: {
+            scrollButtonClass: '.my-menu__link--catalog',
+            scrollDestinationID: 'section_catalog'
+        },
+        quality: {
+            scrollButtonClass: '.my-menu__link--quality',
+            scrollDestinationID: 'section_quality'
+        },
+        gallery: {
+            scrollButtonClass: '.my-menu__link--gallery',
+            scrollDestinationID: 'section_gallery'
+        },
         map: {
             scrollButtonClass: '.my-menu__link--map',
             scrollDestinationID: 'section_map'
@@ -89,18 +109,17 @@ const scrollPages = () => {
             scrollButtonClass: '.my-menu__link--partners',
             scrollDestinationID: 'section_partners'
         },
-        // gallery: {
-        //     scrollButtonClass: '.button--gallery',
-        //     scrollDestinationID: 'gallery'
-        // },
-        // catalog: {
-        //     scrollButtonClass: '.button--catalog',
-        //     scrollDestinationID: 'see-our-catalog'
-        // },
-        // contacts: {
-        //     scrollButtonClass: '.button--contacts',
-        //     scrollDestinationID: 'contact'
-        // }
+        certificates: {
+            scrollButtonClass: '.my-menu__link--certificates',
+            scrollDestinationID: 'section_certificates'
+        },
+
+        contacts: {
+            scrollButtonClass: '.button--contacts',
+            scrollDestinationID: 'contact'
+        },
+
+
 
     }
 

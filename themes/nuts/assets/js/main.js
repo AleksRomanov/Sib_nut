@@ -6,6 +6,7 @@ import scrollPages from "./scroll_pages";
 import swiperProducts from "./swiper_products";
 import salAnimation from "./sal";
 import mmenu from "./mmenu";
+import formsSubmit from "./forms-submit";
 
 
 
@@ -29,6 +30,7 @@ class App {
     scrollPages();
     salAnimation();
     mmenu();
+    formsSubmit();
 
   }
 }
