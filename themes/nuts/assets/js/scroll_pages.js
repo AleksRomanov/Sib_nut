@@ -81,8 +81,12 @@ const scrollPages = () => {
     };
 
     var scrollSettings = {
+        // teaser: {
+        //     scrollButtonClass: '.my-menu__link--teaser',
+        //     scrollDestinationID: 'section_teaser'
+        // },
         teaser: {
-            scrollButtonClass: '.my-menu__link--teaser',
+            scrollButtonClass: '.link-to-teaser',
             scrollDestinationID: 'section_teaser'
         },
         about: {
