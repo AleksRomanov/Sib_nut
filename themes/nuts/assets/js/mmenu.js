@@ -3,6 +3,7 @@ const mmenu = () => {
     let hamburgerMenu = document.querySelector('.hamburger')
 
     new Mmenu("#my-menu", {
+        // "pageScroll": true,
         navbar: {
             title: "Меню"
         },
@@ -28,13 +29,13 @@ const mmenu = () => {
     });
 
 
-    document.addEventListener('click', function (evnt) {
-        var anchor = evnt.target.closest('a[href^="#/"]');
-        if (anchor) {
-            alert('Thank you for clicking, but that\'s a demo link.');
-            evnt.preventDefault();
-        }
-    });
+    // document.addEventListener('click', function (evnt) {
+    //     var anchor = evnt.target.closest('a[href^="#/"]');
+    //     if (anchor) {
+    //         alert('Thank you for clicking, but that\'s a demo link.');
+    //         evnt.preventDefault();
+    //     }
+    // });
 
 
 

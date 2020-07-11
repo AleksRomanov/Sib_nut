@@ -3,6 +3,7 @@
   position: absolute;
   z-index: 1;
   border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  top: 0;
   //box-sizing: border-box;
   //padding: 0 140px;
 
@@ -201,4 +202,8 @@
 
 #my-menu {
   z-index: 10000000000;
+}
+
+.client-text {
+  width: 80%;
 }

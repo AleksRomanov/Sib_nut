@@ -19,37 +19,66 @@ description = "Default layout"
         <!-- Sprite -->
         {% partial 'sprite' %}
 
+        <div id="my-page">
 
-        <!-- Content -->
-        <div id="mmenu-wrapper">
+
             {% partial 'site/header' %}
+            <!-- Content -->
+            <div id="my-content">
 
-            <!-- Teaser section -->
-            {% partial 'site/teaser' %}
+                <!-- Teaser section -->
+                {% partial 'site/teaser' %}
 
-            <!-- About section -->
-            {% partial 'site/about' %}
+                <!-- About section -->
+                {% partial 'site/about' %}
 
+                <!-- About section -->
+                {% partial 'site/products' %}
+
+                <!-- ProductsUnit section -->
+                {% partial 'site/catalog' %}
+
+                <!-- Quality section -->
+                {% partial 'site/quality' %}
+
+                <!-- Gallery section -->
+                {% partial 'site/gallery' %}
+
+                <!-- Certificates section -->
+                {% partial 'site/certificates' %}
+
+                <!-- Partners section -->
+                {% partial 'site/partners' %}
+
+                <!-- Map section -->
+                {% partial 'site/map' %}
+
+            </div>
+<!--            <div>-->
+<!--    &lt;!&ndash;            {% page %}&ndash;&gt;-->
+<!--            </div>-->
+
+            <!-- Footer -->
+    <!--        <footer id="layout-footer">-->
+                {% partial 'site/footer' %}
+    <!--        </footer>-->
+
+            <div class="top" title="Наверх">
+                <svg width="53" height="34.78">
+                    <use xlink:href="themes/nuts/assets/images/sprite.svg#scroll_top"></use>
+                </svg>
+            </div>
+
+            <!-- Scripts -->
+                    <script src="{{ 'assets/js/libs/jquery.js'|theme }}"></script>
+
+            <script src="{{ 'assets/js/vendor.min.js'|theme }}"></script>
+    <!--        <script src="{{ 'assets/js/libs/fotorama.js'|theme }}"></script>-->
+            <script src="{{ 'assets/js/main.min.js'|theme }}"></script>
+
+
+            {% framework extras %}
+            {% scripts %}
         </div>
-        <div>
-            {% page %}
-        </div>
-
-        <!-- Footer -->
-<!--        <footer id="layout-footer">-->
-            {% partial 'site/footer' %}
-<!--        </footer>-->
-
-        <!-- Scripts -->
-                <script src="{{ 'assets/js/libs/jquery.js'|theme }}"></script>
-
-        <script src="{{ 'assets/js/vendor.min.js'|theme }}"></script>
-<!--        <script src="{{ 'assets/js/libs/fotorama.js'|theme }}"></script>-->
-        <script src="{{ 'assets/js/main.min.js'|theme }}"></script>
-
-
-        {% framework extras %}
-        {% scripts %}
-
     </body>
 </html>

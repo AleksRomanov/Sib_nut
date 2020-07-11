@@ -1,9 +1,14 @@
+import swiperProductsPacking from "./swiper_products_packing";
 import swiperAbout from "./swiper_about";
 import swiperQuality from "./swiper_quality";
 import swiperSertificates from "./swiper_sertificates";
+import scrollTop from "./scroll_top";
+import scrollPages from "./scroll_pages";
 import swiperProducts from "./swiper_products";
 import salAnimation from "./sal";
 import mmenu from "./mmenu";
+import formsSubmit from "./forms-submit";
+import formsOrderSubmit from "./forms-order-submit";
 
 
 
@@ -20,12 +25,16 @@ class App {
     // }
 
     swiperAbout();
+    swiperProductsPacking();
     swiperQuality();
     swiperSertificates();
     swiperProducts();
+    scrollTop();
+    scrollPages();
     salAnimation();
     mmenu();
-
+    formsSubmit();
+    formsOrderSubmit();
   }
 }
 

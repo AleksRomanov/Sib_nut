@@ -35,9 +35,9 @@ html {
 }
 
 body {
-  position: relative;
-  min-height: 100vh;
-  height: 100%;
+  //position: relative;
+  //min-height: 100vh;
+  //height: 100%;
   margin: 0;
   padding: 0;
   font-family: "akrobat", "Arial", sans-serif;
@@ -50,6 +50,23 @@ body {
   &::-webkit-scrollbar {
     width: 0;
   }
+}
+
+.top {
+  transition: all 1s ease;
+  position: fixed;
+  right: -100px;
+  bottom: 50px;
+  transform: rotate(180deg);
+  z-index: 99899898989898;
+  //display: none;
+}
+
+.active {
+  transition: all 1s ease;
+
+  right: 50px;
+  //display: block;
 }
 
 

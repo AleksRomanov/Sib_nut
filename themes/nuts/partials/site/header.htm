@@ -4,7 +4,7 @@
       <img class="page-header__logo-image" src="themes/nuts/assets/images/svg/logo.svg" width="294" height="120" alt="SibNut" aria-label="Главная">
     </div>
     <div class="page-header__contacts">
-      <button class="page-header__contact-button" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
+      <button class="page-header__contact-button contact-button--feedback-js" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
         <span>Написать нам</span>
         <svg width="53" height="34.78">
           <use xlink:href="themes/nuts/assets/images/sprite.svg#mail"></use>
@@ -20,26 +20,52 @@
     <div class="page-header__language-en" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
       <img class="page-header__language-en-image" src="themes/nuts/assets/images/svg/EN.svg" width="80" height="45" alt="EN" aria-label="EN">
     </div>
-
     <a href="#my-menu" class="hamburger hamburger--emphatic">
       <span class="hamburger-box"><span class="hamburger-inner"></span></span>
     </a>
-
-    <nav id="my-menu">
-      <ul>
-        <li><a href="#section_prices">Главная</a></li>
-        <li><a href="#section_about">О нас</a></li>
-        <li><a href="#section_delivery">Наша продукция</a></li>
-        <li><a href="#section_team">Каталог продукции</a></li>
-        <li><a href="#section_partners">Наша работа</a></li>
-        <li><a href="#section_footer">Фото и видео</a></li>
-        <li><a href="#section_footer">Сертификаты</a></li>
-        <li><a href="#section_footer">Партнерам</a></li>
-        <li><a href="#section_footer">Наша команда</a></li>
-        <li><a href="#section_footer">Мы на карте</a></li>
-      </ul>
-    </nav>
-
   </div>
 
+  <nav id="my-menu">
+    <ul>
+      <li><a href="#" class="my-menu__link--teaser link-to-teaser">Главная</a></li>
+      <li><a href="#" class="my-menu__link--about">О нас</a></li>
+      <li><a href="#" class="my-menu__link--catalog">Наша продукция</a></li>
+      <li><a href="#" class="my-menu__link--quality">Наша работа</a></li>
+      <li><a href="#" class="my-menu__link--gallery">Фото и видео</a></li>
+      <li><a href="#" class="my-menu__link--certificates">Сертификаты</a></li>
+      <li><a href="#" class="my-menu__link--partners">Партнерам</a></li>
+      <li><a href="#" class="my-menu__link--team">Наша команда</a></li>
+      <li><a href="#" class="my-menu__link--map">Мы на карте</a></li>
+    </ul>
+  </nav>
+
 </div>
+
+<section class="feedback-popup">
+  <div class="feedback-popup__form-wrapper">
+    <form class="feedback-popup__form" method="post">
+      <button class="feedback-popup__close">
+        <svg width="50" height="50">
+          <use xlink:href="themes/nuts/assets/images/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <div class="success"><span>Спасибо за заявку!</span></div>
+
+      <input type="hidden" name="project_name" value="Сибирский орех">
+      <input type="hidden" name="admin_email" value="siborekh@mail.ru">
+      <input type="hidden" name="form_subject" value="Заявка с формой обратной связи">
+      <h2>Отправьте ваш вопрос, мы обязательно с вами свяжемся!</h2>
+      <input type="text" name="client_name" placeholder="Как Вас зовут" required>
+      <input type="text" name="client-theme" placeholder="Тема обращения" minlength="18" required>
+      <textarea name="text" class="client-text" placeholder="Текст обращения" required></textarea>
+      <input type="text" name="phone-number" placeholder="Ваш телефон" required>
+      <input type="email" name="client_email" placeholder="Ваш e-mail" pattern="^[a-zA-Z0-9]([a-zA-Z0-9_\-]*\.?[a-zA-Z0-9_\-]+)*@[a-zA-Z0-9][a-zA-Z0-9_\-]*\.[a-zA-Z]{2}[a-zA-Z]*$" required>
+
+      <button type="submit" class="feedback-popup__form-wrapper-button">Отправить форму</button>
+
+      <div class="trigger-consent">Нажимая на кнопку вы принимаете условия передачи
+        <a class="consent" href="#">конфиденциальных данных</a>
+      </div>
+    </form>
+  </div>
+</section>
