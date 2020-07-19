@@ -26,7 +26,7 @@ const scrollPages = () => {
         }
         return y;
     };
-
+7
     var smoothScroll = function (eID) {
         var startY = currentYPosition();
         var stopY = elmYPosition(eID);
@@ -93,6 +93,10 @@ const scrollPages = () => {
             scrollButtonClass: '.my-menu__link--about',
             scrollDestinationID: 'section_about'
         },
+        products: {
+            scrollButtonClass: '.my-menu__link--products',
+            scrollDestinationID: 'section_products'
+        },
         catalog: {
             scrollButtonClass: '.my-menu__link--catalog',
             scrollDestinationID: 'section_catalog'
@@ -123,8 +127,6 @@ const scrollPages = () => {
             scrollDestinationID: 'contact'
         },
 
-
-
     }
 
     for (var key in scrollSettings) {
@@ -136,6 +138,42 @@ const scrollPages = () => {
 
             for (var i = 0; i <= scrollButtons.length - 1; i++) {
                 scrollSetup(scrollButtons[i], sectionID);
+
+            }
+        }
+    }
+
+    var scrollAndShowSettings = {
+        buttons: {
+            scrollButtonClass: '.products__contact-button',
+            scrollDestinationID: 'section_catalog'
+        }
+
+    };
+
+    var scrollAndShowSetup = function (index, scrollButton, scrollDestination) {
+        if (scrollButton) {
+            var showDestinations = document.querySelectorAll('.catalog__wrapper-controls-item');
+
+
+            scrollButton.addEventListener('click', function () {
+                smoothScroll(scrollDestination);
+                // var index = scrollButton.indexOf();
+
+                showDestinations[index].click();
+            });
+        }
+    };
+
+    for (var key in scrollAndShowSettings) {
+
+        var scrollAndShowButtons = document.querySelectorAll(scrollAndShowSettings[key].scrollButtonClass);
+
+        if (scrollAndShowButtons) {
+            var sectionID = scrollAndShowSettings[key].scrollDestinationID;
+
+            for (var i = 0; i <= scrollAndShowButtons.length - 1; i++) {
+                scrollAndShowSetup(i, scrollAndShowButtons[i], sectionID);
 
             }
         }

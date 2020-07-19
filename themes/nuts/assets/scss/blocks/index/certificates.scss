@@ -144,8 +144,9 @@
 .swiper-button-prev,
 .swiper-button-next {
   @include effect-opacity;
+
+  @include mobile-max {
+    display: none;
+  }
 }
 
-.certificates__slide {
-
-}

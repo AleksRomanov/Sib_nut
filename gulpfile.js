@@ -149,7 +149,7 @@ function scripts() {
                 paths.scripts.mode
             )
         )
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(plumber())
         .pipe(rename({suffix: `.min`}))
         .pipe(gulp.dest('themes/' + theme + '/assets/js'));
@@ -160,7 +160,7 @@ function scriptsLibs() {
         .src(paths.scripts.srcLibs)
         .pipe(plumber())
         .pipe(concat(`vendor.js`))
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(rename({suffix: `.min`}))
         .pipe(gulp.dest('themes/' + theme + '/assets/js'));
 }

@@ -5,8 +5,6 @@
   min-height: 1000px;
   background-image: url("../images/teaser/background.jpg");
   background-size: cover;
-  //background-repeat: no-repeat;
-  //background-position: center;
 
   &::before {
     content: " ";
@@ -53,6 +51,10 @@
       min-height: 82%;
     }
 
+  }
+
+  @include mobile-max {
+    min-height: 740px;
   }
 }
 
@@ -166,6 +168,10 @@
     font-size: 53px;
     line-height: 56px;
   }
+
+  @include mobile-max {
+    margin-bottom: 10px;
+  }
 }
 
 .teaser__utp-wrapper span {
@@ -227,6 +233,11 @@
     margin-left: 10px;
     margin-top: 95px;
     text-align: center;
+  }
+
+  @include mobile-max {
+    margin-top: 30px;
+    font-size: 17px;
   }
 }
 
