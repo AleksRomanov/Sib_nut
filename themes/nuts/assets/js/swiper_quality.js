@@ -29,8 +29,8 @@ const swiperQuality = () => {
             320: {
                 direction: 'horizontal',
                 slidesPerView: 1,
-                // height: 640,
-            }
+                height: 640
+            },
         },
 
         navigation: {
