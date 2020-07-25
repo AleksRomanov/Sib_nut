@@ -92,7 +92,7 @@
   }
 
   @include mobile-max {
-    margin-left: 5%;
+    margin-left: 3%;
     padding-top: 320px;
   }
 }
@@ -100,6 +100,10 @@
 .teaser__utp-wrapper {
   position: relative;
   padding-left: 40px;
+
+  @include mobile-max {
+    padding-left: 35px;
+  }
 
 
   &::before {
