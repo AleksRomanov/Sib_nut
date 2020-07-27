@@ -110,6 +110,10 @@
     min-height: 534px;
   }
 
+  @include tablet {
+    border-radius: 92px;
+  }
+
 
   @include mobile {
     padding: 20px;

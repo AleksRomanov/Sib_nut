@@ -1,10 +1,10 @@
 const swiperProductsPacking = () => {
     new Swiper('.catalog__wrapper-box-packing', {
         spaceBetween: 8,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
+        // navigation: {
+        //     nextEl: '.swiper-button-next',
+        //     prevEl: '.swiper-button-prev',
+        // },
 
         breakpoints: {
             1200: {

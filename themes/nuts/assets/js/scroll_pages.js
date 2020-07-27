@@ -56,8 +56,15 @@ const scrollPages = () => {
                     leapY = stopY;
                 }
                 timer++;
+
+                // var panel = document.querySelector( "#my-menu" );
+                // window.mmenuAPI.api.closeAllPanels(panel);
             }
+            // var panel = document.querySelector( "#my-menu" );
+
+            window.mmenuAPI.api.close();
             return;
+            // console.log('!!!!!');
         }
 
         for (var j = startY; j > stopY; j -= step) {
@@ -68,6 +75,8 @@ const scrollPages = () => {
                 leapY = stopY;
             }
             timer++;
+            // console.log('!!!!!');
+
         }
 
     };
@@ -111,7 +120,7 @@ const scrollPages = () => {
         },
         map: {
             scrollButtonClass: '.my-menu__link--map',
-            scrollDestinationID: 'section_map'
+            scrollDestinationID: 'section_maps'
         },
         partners: {
             scrollButtonClass: '.my-menu__link--partners',
@@ -123,8 +132,8 @@ const scrollPages = () => {
         },
 
         contacts: {
-            scrollButtonClass: '.button--contacts',
-            scrollDestinationID: 'contact'
+            scrollButtonClass: '.my-menu__link--contacts',
+            scrollDestinationID: 'section_contacts'
         },
 
     }

@@ -50,6 +50,8 @@ const scss = require('gulp-sass');
 const less = require('gulp-less');
 const styl = require('gulp-stylus');
 const gulp = require('gulp');
+const cache = require('gulp-cache');
+const imagemin = require('gulp-imagemin');
 const cleancss = require('gulp-clean-css');
 const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
@@ -66,6 +68,13 @@ const commonjs = require(`rollup-plugin-commonjs`);
 const nodeResolve = require(`rollup-plugin-node-resolve`);
 const babel = require(`rollup-plugin-babel`);
 
+function imagesMinification() {
+    return gulp.src('themes/' + theme + '/assets/images/**/*.jpg')
+        .pipe(imagemin(
+
+        ))
+        .pipe(gulp.dest('themes/' + theme + '/assets/images/'));
+}
 
 function browsersync() {
     browserSync.init({
@@ -171,4 +180,5 @@ exports.styles = styles;
 exports.scripts = scripts;
 exports.deploy = deploy;
 exports.sprite = sprite;
+exports.imgMinification = imagesMinification;
 exports.default = parallel(sprite, htm, styles, scriptsLibs, scripts, browsersync, startwatch);

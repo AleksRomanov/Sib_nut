@@ -1,9 +1,10 @@
 @import "global/variables";
 @import "global/normalize";
+@import "global/mixins";
 @import "global/global";
 @import "blocks/button";
 @import "global/container";
-@import "global/mixins";
+
 
 
 //libraries styles
@@ -29,6 +30,7 @@
 @import "blocks/index/gallery";
 @import "blocks/index/certificates";
 @import "blocks/index/partners";
+@import "blocks/index/contacts";
 @import "blocks/index/map";
 @import "blocks/feedback-popup";
 @import "blocks/order-popup";

@@ -12,7 +12,7 @@
   margin-bottom: -161px;
 
   @include mobile-max {
-    min-height: 920px;
+    min-height: 710px;
   }
 }
 
@@ -37,8 +37,19 @@
 .map__container-krsk {
   position: relative;
   width: 50%;
-  padding: 20px;
-  padding-right: 10px;
+  //padding: 20px;
+  //padding-right: 10px;
+
+  & h3 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 37px;
+    line-height: 54px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+  }
 
   & iframe {
     @include mobile-max {
@@ -51,14 +62,25 @@
     padding: 10px;
     box-sizing: border-box;
     height: 300px;
-    margin-bottom: 10px;
+    margin-bottom: 92px;
   }
 }
 
 .map__container-moscow {
   width: 50%;
-  padding: 20px;
-  padding-left: 10px;
+  //padding: 20px;
+  //padding-left: 10px;
+
+  & h3 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 37px;
+    line-height: 54px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+  }
 
   & iframe {
     @include mobile-max {
@@ -70,7 +92,7 @@
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
-    height: 300px;
+    //height: 300px;
     margin-bottom: 20px;
   }
 }
