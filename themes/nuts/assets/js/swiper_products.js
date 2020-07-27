@@ -30,14 +30,14 @@ const swiperProducts = () => {
             320: {
                 slidesPerView: 1,
             }
-        },
-        on: {
-            init: function () {
-
-                // mySwiper.update();
-                // mySwiper.destroy();
-            },
         }
+        // on: {
+        //     init: function () {
+        //
+        //         // mySwiper.update();
+        //         // mySwiper.destroy();
+        //     },
+        // }
     });
 };
 

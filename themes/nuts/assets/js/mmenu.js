@@ -2,7 +2,7 @@ const mmenu = () => {
 
     let hamburgerMenu = document.querySelector('.hamburger')
 
-    new Mmenu("#my-menu", {
+    const menu = new Mmenu("#my-menu", {
         // "pageScroll": true,
         navbar: {
             title: "Меню"
@@ -15,7 +15,7 @@ const mmenu = () => {
         hooks: {
             "open:start": (panel) => {
                 hamburgerMenu.classList.add('is-active');
-                console.log("Started opening pane: ");
+                console.log("Started opening panel: ");
             },
             "close:start": (panel) => {
                 hamburgerMenu.classList.remove('is-active');
@@ -27,6 +27,12 @@ const mmenu = () => {
         // configuration
 
     });
+
+    var api = menu.API;
+
+    window.mmenuAPI = {
+        api: api
+    };
 
 
     // document.addEventListener('click', function (evnt) {

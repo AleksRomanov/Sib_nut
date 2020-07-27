@@ -27,6 +27,7 @@
 
 a {
   text-decoration: none;
+  color: #FFFFFF;
 }
 
 html {
@@ -64,9 +65,11 @@ body {
 
 .active {
   transition: all 1s ease;
-
   right: 50px;
-  //display: block;
+
+  @include mobile-max {
+    right: 0;
+  }
 }
 
 
@@ -75,6 +78,7 @@ body {
   width: 100%;
   height: 100%;
 }
+
 //
 //.test-wrapper-2 {
 //  position: relative;

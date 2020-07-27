@@ -5,6 +5,8 @@ import swiperSertificates from "./swiper_sertificates";
 import scrollTop from "./scroll_top";
 import scrollPages from "./scroll_pages";
 import swiperProducts from "./swiper_products";
+import swiperContacts from "./swiper_contacts";
+import swiperMaps from "./swiper_maps";
 import salAnimation from "./sal";
 import mmenu from "./mmenu";
 import formsSubmit from "./forms-submit";
@@ -29,6 +31,8 @@ class App {
     swiperQuality();
     swiperSertificates();
     swiperProducts();
+    swiperContacts();
+    swiperMaps();
     scrollTop();
     scrollPages();
     salAnimation();

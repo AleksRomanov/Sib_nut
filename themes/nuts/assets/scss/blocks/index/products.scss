@@ -96,8 +96,16 @@
     }
 
     @include tablet-max {
+      //font-size: 35px;
+      //line-height: 49px;
+      //margin: 0;
+      font-size: 24px;
+      line-height: 46px;
+    }
+
+    @include tablet {
       font-size: 35px;
-      line-height: 49px;
+      line-height: 30px;
     }
 
     @include mobile-max {
@@ -156,7 +164,23 @@
     background-image: url("../images/products/kolotoe_nut.jpg");
     background-size: cover;
     background-position: center;
-    background-position-x: -235px;
+    background-position-x: -286px;
+
+    @include desktop-min {
+      background-position-x: -210px;
+    }
+
+    @include tablet-max {
+      background-position-x: -206px;
+    }
+
+    @include tablet {
+      background-position-x: -36px;
+    }
+
+    @include mobile-max {
+      background-position-x: -146px;
+    }
   }
 }
 
@@ -171,6 +195,10 @@
 
   @include desktop-min {
     width: 300px;
+  }
+
+  @include tablet-max {
+    margin-bottom: 31px;
   }
 
   @include mobile-max {

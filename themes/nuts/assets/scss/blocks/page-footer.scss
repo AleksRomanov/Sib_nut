@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
   position: absolute;
-  //bottom: 0;
+  bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, .6);
   min-height: 158px;
@@ -138,10 +138,13 @@
 }
 
 .footer__container-rights {
-  //max-width: 464px;
   width: 35%;
   text-align: right;
   color: #FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
 
   @include mobile-max {
     width: 100%;
