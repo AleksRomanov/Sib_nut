@@ -123,7 +123,7 @@ function startwatch() {
 
 function sprite() {
     return gulp
-        .src('themes/' + theme + '/assets/images/svg/**/*.svg')
+        .src('themes/' + theme + '/assets/images/svg/*.svg')
         .pipe(
             svgstore({
                 inlineSvg: true
@@ -133,19 +133,17 @@ function sprite() {
         .pipe(gulp.dest('themes/' + theme + '/assets/images/'));
 }
 
-function htm() {
+function copySpritePartial() {
     return src('themes/' + theme + '/partials/sprite.htm')
+        .pipe(rename('sprite_full.htm'))
+        .pipe(gulp.dest('themes/' + theme + '/partials/'))
+}
+
+function includeSprite() {
+    return src('themes/' + theme + '/partials/sprite_full.htm')
         .pipe(posthtml([include()]))
         .pipe(dest('themes/' + theme + '/partials/'));
 }
-
-// function scripts() {
-//     return src(paths.scripts.src)
-//         .pipe(concat('theme.min.js'))
-//         .pipe(uglify())
-//         .pipe(dest('themes/' + theme + '/assets/js'))
-//         .pipe(browserSync.stream())
-// }
 
 function scripts() {
     return src(paths.scripts.source)
@@ -181,4 +179,5 @@ exports.scripts = scripts;
 exports.deploy = deploy;
 exports.sprite = sprite;
 exports.imgMinification = imagesMinification;
-exports.default = parallel(sprite, htm, styles, scriptsLibs, scripts, browsersync, startwatch);
+exports.spriteInclude = series(copySpritePartial, includeSprite);
+exports.default = parallel(sprite, styles, scriptsLibs, scripts, browsersync, startwatch);

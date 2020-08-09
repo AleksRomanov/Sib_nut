@@ -10,7 +10,7 @@
 }
 
 .feedback-popup__form-wrapper {
-  width: 40%;
+  //width: 50%;
   position: absolute;
   transform: translateX(-50%) translateY(-50%);
   left: 50%;
@@ -28,6 +28,10 @@
   @include mobile-max {
     width: 90%;
   }
+
+  //@include tablet-max {
+  //  width: 50%;
+  //}
 }
 
 .feedback-popup__form {
@@ -36,11 +40,15 @@
 
   & h2 {
     text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+
+    @include tablet-max {
+      font-size: 20px;
+    }
 
     @include mobile-max {
-      margin: 0;
       font-size: 20px;
-      margin-bottom: 20px;
     }
   }
 
@@ -50,8 +58,15 @@
     width: 80%;
     text-align: center;
     margin: 0 0 25px;
+    border: 1px solid grey;
 
     @include mobile-max {
+      font-size: 14px;
+      margin-bottom: 8px;
+      width: 95%;
+    }
+
+    @include tablet-max {
       font-size: 14px;
       margin-bottom: 8px;
       width: 95%;
@@ -59,7 +74,15 @@
   }
 
   & textarea {
+    border: 1px solid grey;
+
     @include mobile-max {
+      font-size: 14px;
+      margin-bottom: 9px;
+      width: 95%;
+    }
+
+    @include tablet-max {
       font-size: 14px;
       margin-bottom: 9px;
       width: 95%;
@@ -89,6 +112,12 @@
   background-color: transparent;
 
   @include mobile-max {
+    right: -11px;
+    top: -33px;
+    padding: 0;
+  }
+
+  @include tablet-max {
     right: -11px;
     top: -33px;
     padding: 0;
@@ -137,11 +166,32 @@
     padding: 7px 19px;
   }
 
+  @include tablet-max {
+    font-size: 16px;
+    padding: 7px 19px;
+  }
+
   @include effect-opacity;
 }
 
 .trigger-consent {
   @include mobile-max {
-    font-size: 12px;
+    font-size: 16px;
+  }
+
+  @include tablet-max {
+    font-size: 16px;
+  }
+}
+
+.trigger-consent a {
+  color: $red;
+
+  @include tablet-max {
+    font-size: 16px;
+  }
+
+  @include mobile-max {
+    font-size: 16px;
   }
 }

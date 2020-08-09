@@ -1,10 +1,11 @@
 const swiperAbout = () => {
     new Swiper('.about__container', {
         // slidesPerView: 3,
+        autoHeight: false,
         spaceBetween: 8,
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.about__swiper-control--next',
+            prevEl: '.about__swiper-control--prev',
         },
 
         breakpoints: {
@@ -21,7 +22,7 @@ const swiperAbout = () => {
                 // height: 1024,
             },
             320: {
-                height: 640,
+                // height: 640,
             }
         }
     });

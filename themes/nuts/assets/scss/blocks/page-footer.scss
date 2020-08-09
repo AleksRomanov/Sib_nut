@@ -15,6 +15,11 @@
 
   @include tablet-max {
     padding: 20px 7.3%;
+    min-height: 0;
+  }
+
+  @include mobile-max {
+    padding: 10px 7.3%;
   }
 
   //&::before {
@@ -51,8 +56,9 @@
   }
 
   @include mobile-max {
-    width: 30%;
+    width: 100%;
     align-items: center;
+    flex-direction: row;
   }
 }
 
@@ -70,6 +76,11 @@
 
   @include tablet {
     padding: 0;
+  }
+
+  @include mobile-max {
+    width: 50%;
+    display: block;
   }
 
   & span {
@@ -121,8 +132,9 @@
   }
 
   @include mobile-max {
-    width: 70%;
-    margin-bottom: 20px;
+    width: 250px;
+    margin: 0 auto;
+    //margin-bottom: 20px;
   }
 }
 

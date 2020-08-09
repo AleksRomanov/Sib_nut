@@ -11,8 +11,8 @@ const swiperProducts = () => {
         spaceBetween: 0,
         direction: 'horizontal',
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.products__slide-controls--next',
+            prevEl: '.products__slide-controls--prev',
         },
         breakpoints: {
             1200: {

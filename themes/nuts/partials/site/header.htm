@@ -7,18 +7,20 @@
       <button class="page-header__contact-button contact-button--feedback-js" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
         <span>Написать нам</span>
         <svg width="53" height="34.78">
-          <use xlink:href="themes/nuts/assets/images/sprite.svg#mail"></use>
+          <use xlink:href="#mail"></use>
         </svg>
       </button>
-      <button class="page-header__contact-button" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
+      <button class="page-header__contact-button my-menu__link--contacts" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
         <span>Связаться с нами</span>
         <svg width="53" height="52">
-          <use xlink:href="themes/nuts/assets/images/sprite.svg#phone"></use>
+          <use xlink:href="#phone"></use>
         </svg>
       </button>
     </div>
     <div class="page-header__language-en" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
-      <img class="page-header__language-en-image" src="themes/nuts/assets/images/svg/EN.svg" width="80" height="45" alt="EN" aria-label="EN">
+      <a href="{{ 'index-eng'|page }}">
+        <img class="page-header__language-en-image" src="themes/nuts/assets/images/teaser/EN.svg" width="80" height="45" alt="EN" aria-label="EN">
+      </a>
     </div>
     <a href="#my-menu" class="hamburger hamburger--emphatic">
       <span class="hamburger-box"><span class="hamburger-inner"></span></span>
@@ -35,7 +37,7 @@
       <li><a href="#" class="my-menu__link--gallery">Фото и видео</a></li>
       <li><a href="#" class="my-menu__link--certificates">Сертификаты</a></li>
       <li><a href="#" class="my-menu__link--partners">Партнерам</a></li>
-      <li><a href="#" class="my-menu__link--contacts">Наша команда</a></li>
+      <li><a href="#" class="my-menu__link--contacts">Контакты</a></li>
       <li><a href="#" class="my-menu__link--map">Мы на карте</a></li>
     </ul>
   </nav>
@@ -47,7 +49,7 @@
     <form class="feedback-popup__form" method="post">
       <button class="feedback-popup__close">
         <svg width="50" height="50">
-          <use xlink:href="themes/nuts/assets/images/sprite.svg#close"></use>
+          <use xlink:href="#close"></use>
         </svg>
       </button>
       <div class="success"><span>Спасибо за заявку!</span></div>

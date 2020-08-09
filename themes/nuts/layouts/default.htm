@@ -16,8 +16,16 @@ description = "Default layout"
         {% styles %}
     </head>
     <body>
-        <!-- Sprite -->
-        {% partial 'sprite' %}
+
+
+    <!-- Sprite -->
+    {% partial 'sprite_full' %}
+
+
+        <!-- Preloader section -->
+        {% partial 'site/preloader' %}
+
+
 
         <div id="my-page">
 
@@ -25,6 +33,8 @@ description = "Default layout"
             {% partial 'site/header' %}
             <!-- Content -->
             <div id="my-content">
+
+
 
                 <!-- Teaser section -->
                 {% partial 'site/teaser' %}

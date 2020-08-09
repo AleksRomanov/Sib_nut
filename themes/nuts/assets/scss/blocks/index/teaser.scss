@@ -1,7 +1,6 @@
 .teaser {
   position: relative;
   width: 100%;
-  //margin: 0 auto;
   min-height: 1000px;
   background-image: url("../images/teaser/background.jpg");
   background-size: cover;
@@ -11,17 +10,10 @@
     position: absolute;
     top: 0;
     left: 0;
-    //display: block;
-    //z-index: -1;
     width: 100%;
     height: 100%;
     min-height: 848px;
-    //height: 546px;
     background-color: rgba(0, 0, 0, .4);
-    //background-image: url(../img/teaser__cover-light.jpg);
-    //background-size: cover;
-    //background-repeat: no-repeat;
-    //background-position: top left;
   }
 
   //&::after {
@@ -45,7 +37,6 @@
     background-image: url("../images/teaser/background_mobile.jpg");
     background-size: cover;
     min-height: 850px;
-    //padding-left: 50px;
 
     &::before {
       min-height: 82%;

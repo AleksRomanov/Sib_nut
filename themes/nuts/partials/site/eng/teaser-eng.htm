@@ -1,0 +1,43 @@
+<section id="section_teaser" class="teaser">
+  <div class="teaser__container" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
+    <div class="teaser__utp-wrapper">
+      <h1 class="teaser__title">PINE NUT KERNELS</h1>
+      <span>from the manufacturer</span>
+      <button class="teaser__button contact-button--feedback-js">MAKE AN ORDER</button>
+    </div>
+  </div>
+  <div class="teaser__address" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
+    <span class="teaser-container__adress">64 A Traktovaya Str., 662520 Berezovka Settlement, Krasnoyarsk City, Russia</span>
+  </div>
+</section>
+
+<section class="order-popup">
+  <div class="order-popup__form-wrapper">
+    <form class="order-popup__form" method="post">
+      <button class="order-popup__close">
+        <svg width="50" height="50">
+          <use xlink:href="themes/nuts/assets/images/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <div class="success"><span>Спасибо за заявку!</span></div>
+
+      <input type="hidden" name="project_name" value="Сибирский орех">
+      <input type="hidden" name="admin_email" value="siborekh@mail.ru">
+      <input type="hidden" name="form_subject" value="Заявка с формой заказа продукта">
+      <h2>Закажите нашу продукцию!</h2>
+      <input type="text" name="client_name" placeholder="Как Вас зовут" required>
+      <input type="text" name="client_city" placeholder="Ваш город" required>
+      <input type="text" name="client-theme" placeholder="Вид продукции" minlength="18" required>
+      <input type="text" name="client-text" placeholder="Вид фасовки" minlength="18" required>
+      <input type="text" name="phone-number" placeholder="Ваш телефон" required>
+      <input type="email" name="client_email" placeholder="Ваш e-mail" pattern="^[a-zA-Z0-9]([a-zA-Z0-9_\-]*\.?[a-zA-Z0-9_\-]+)*@[a-zA-Z0-9][a-zA-Z0-9_\-]*\.[a-zA-Z]{2}[a-zA-Z]*$" required>
+
+      <button type="submit" class="order-popup__form-wrapper-button">Отправить форму</button>
+
+      <div class="trigger-consent">Нажимая на кнопку вы принимаете условия передачи
+        <a class="consent" href="#">конфиденциальных данных</a>
+      </div>
+    </form>
+  </div>
+</section>
+
