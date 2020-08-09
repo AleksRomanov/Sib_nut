@@ -10,7 +10,11 @@ import swiperMaps from "./swiper_maps";
 import salAnimation from "./sal";
 import mmenu from "./mmenu";
 import formsSubmit from "./forms-submit";
-import formsOrderSubmit from "./forms-order-submit";
+import preloader from "./preloader";
+// import buttonHover from "./button_hover";
+// import partnersAutoplaySlide from "./partnersAutoplaySlide";
+import swiperPartners from "./swiper_partners";
+// import formsOrderSubmit from "./forms-order-submit";
 
 
 
@@ -38,7 +42,11 @@ class App {
     salAnimation();
     mmenu();
     formsSubmit();
-    formsOrderSubmit();
+    preloader();
+    // buttonHover();
+    // partnersAutoplaySlide();
+    swiperPartners();
+    // formsOrderSubmit();
   }
 }
 

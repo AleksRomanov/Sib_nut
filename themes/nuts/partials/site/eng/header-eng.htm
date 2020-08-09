@@ -1,0 +1,74 @@
+<div class="page-header" id="layout-header">
+  <div class="page-header__wrapper">
+    <div href="index.html" class="page-header__logo" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
+      <img class="page-header__logo-image" src="themes/nuts/assets/images/svg/logo.svg" width="294" height="120" alt="SibNut" aria-label="Главная">
+    </div>
+    <div class="page-header__contacts">
+      <button class="page-header__contact-button contact-button--feedback-js" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
+        <span>Write to us</span>
+        <svg width="53" height="34.78">
+          <use xlink:href="themes/nuts/assets/images/sprite.svg#mail"></use>
+        </svg>
+      </button>
+      <button class="page-header__contact-button" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
+        <span>Contact us</span>
+        <svg width="53" height="52">
+          <use xlink:href="themes/nuts/assets/images/sprite.svg#phone"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="page-header__language-en" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
+      <a href="{{ 'index'|page }}">
+        <img class="page-header__language-en-image" src="themes/nuts/assets/images/teaser/RU.svg" width="80" height="45" alt="EN" aria-label="EN">
+      </a>
+    </div>
+    <a href="#my-menu" class="hamburger hamburger--emphatic">
+      <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+    </a>
+  </div>
+
+  <nav id="my-menu">
+    <ul>
+      <li><a href="#" class="my-menu__link--teaser link-to-teaser">Main</a></li>
+      <li><a href="#" class="my-menu__link--about">About us</a></li>
+      <li><a href="#" class="my-menu__link--products">Our production</a></li>
+      <li><a href="#" class="my-menu__link--catalog">Catalog</a></li>
+      <li><a href="#" class="my-menu__link--quality">Our work</a></li>
+      <li><a href="#" class="my-menu__link--gallery">Photos and videos</a></li>
+      <li><a href="#" class="my-menu__link--certificates">Certificates</a></li>
+      <li><a href="#" class="my-menu__link--partners">Partners</a></li>
+      <li><a href="#" class="my-menu__link--contacts">Our team</a></li>
+      <li><a href="#" class="my-menu__link--map">We are on the map</a></li>
+    </ul>
+  </nav>
+
+</div>
+
+<section class="feedback-popup">
+  <div class="feedback-popup__form-wrapper">
+    <form class="feedback-popup__form" method="post">
+      <button class="feedback-popup__close">
+        <svg width="50" height="50">
+          <use xlink:href="themes/nuts/assets/images/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <div class="success"><span>Thank you for your request!</span></div>
+
+      <input type="hidden" name="project_name" value="The Siberian nut">
+      <input type="hidden" name="admin_email" value="siborekh@mail.ru">
+      <input type="hidden" name="form_subject" value="Request with feedback form">
+      <h2>Send your question, we will contact you!</h2>
+      <input type="text" name="client_name" placeholder="What is your name" required>
+      <input type="text" name="client-theme" placeholder="Theme of the request" minlength="18" required>
+      <textarea name="text" class="client-text" placeholder="The text of the appeal" required></textarea>
+      <input type="text" name="phone-number" placeholder="Your phone" required>
+      <input type="email" name="client_email" placeholder="Your e-mail" pattern="^[a-zA-Z0-9]([a-zA-Z0-9_\-]*\.?[a-zA-Z0-9_\-]+)*@[a-zA-Z0-9][a-zA-Z0-9_\-]*\.[a-zA-Z]{2}[a-zA-Z]*$" required>
+
+      <button type="submit" class="feedback-popup__form-wrapper-button">Submit a form</button>
+
+      <div class="trigger-consent">By clicking the button you accept the terms of the transfer of
+        <a class="consent" href="#">confidential data</a>
+      </div>
+    </form>
+  </div>
+</section>

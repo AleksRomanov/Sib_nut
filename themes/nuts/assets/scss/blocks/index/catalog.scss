@@ -8,27 +8,36 @@
   padding: 12.5% 7.3% 0;
   box-sizing: border-box;
 
-  @include tablet {
-    padding: 20.5% 7.3% 0;
+  @include tablet-max {
+    padding: 5.5% 7.3% 0;
+    background-image: url("../images/productionUnit/vetki_sverhu_2.jpg");
+    background-size: cover;
   }
 
   @include mobile-max {
     padding: 10% 7.3% 0;
+    background-image: url("../images/productionUnit/vetki_sverhu_3.jpg");
+    background-size: cover;
   }
 
 
-  //&::before {
-  //  content: " ";
-  //  position: absolute;
-  //  top: 0;
-  //  right: 10px;
-  //  width: 100%;
-  //  height: 10px;
-  //  background-image: url("../images/svg/zig-zag.svg");
-  //  background-repeat: repeat-x;
-  //  background-position: top;
-  //  transform: scale(1, -1);
-  //}
+  &::after {
+    content: " ";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    background-image: url(../images/svg/zig-zag.svg);
+    background-repeat: repeat-x;
+    background-position: top;
+    transform: rotate(180deg);
+    width: 100%;
+    height: 10px;
+    z-index: 999999999999;
+
+    @include mobile-max {
+    }
+
+  }
 }
 
 .catalog-item {
@@ -80,6 +89,8 @@
 
     @include tablet-max {
       font-size: 21px;
+      line-height: 21px;
+      padding: 0 10px;
     }
 
     @include tablet {
@@ -89,6 +100,7 @@
 
     @include mobile-max {
       font-size: 17px;
+      padding: 0;
     }
   }
 }
@@ -101,6 +113,7 @@
 
   @include tablet {
     width: 100%;
+    margin: 0;
   }
 
 }
@@ -143,7 +156,7 @@
 #advantage-6:checked ~ .catalog__wrapper-controls label[for="advantage-6"] {
   background-color: #5eaa2f;
   border-radius: 50px 0 0 50px;
-  padding: 4px 0;
+  padding: 9px 0;
   @include tablet {
     border-radius: 50px;
   }
@@ -230,6 +243,7 @@ p.catalog__wrapper-box-item-packing {
   font-weight: 800;
 }
 
+
 .catalog__wrapper-box-packing {
   display: flex;
   flex-wrap: wrap;
@@ -274,6 +288,7 @@ p.catalog__wrapper-box-item-packing {
   justify-content: center;
   flex-direction: row;
   width: 100%;
+  margin-bottom: 20px;
 
   @include tablet-max {
     //width: 50%;
@@ -301,26 +316,12 @@ p.catalog__wrapper-box-item-packing {
     border-radius: 50px;
 
     @include effect-opacity;
-
-    //@include tablet-max {
-    //  width: 60%;
-    //  //margin: 0;
-    //  //flex-wrap: nowrap;
-    //}
   }
 
+}
 
-  //@include tablet-max {
-  //  width: 100%;
-  //}
-  //
-  //@include tablet {
-  //  width: 30%;
-  //}
-  //
-  //@include mobile-max {
-  //  width: 29%;
-  //}
+.catalog__wrapper-box-list {
+  margin-bottom: 20px;
 }
 
 .catalog__wrapper-box-storage {
@@ -343,6 +344,7 @@ p.catalog__wrapper-box-item-packing {
     @include mobile-max {
       width: 100%;
       order: 1;
+      font-size: 17px;
     }
   }
 
@@ -381,10 +383,56 @@ p.catalog__wrapper-box-item-packing {
   @include effect-opacity;
 }
 
-.catalog__slide-prev {
+.catalog__slide-controls::after {
   display: none;
 }
 
-.catalog__slide-next {
-  display: none;
+.catalog__slide-controls {
+  //top: 25%;
+  //background-color: rgba(0, 0, 0, .3);
+  //height: 32px;
+  @include effect-opacity;
 }
+
+.catalog__slide-controls--prev {
+  position: absolute;
+  content: " ";
+  width: 32px;
+  height: 32px;
+  z-index: 9999999999;
+  //top: 54%;
+  display: none;
+
+  @include tablet-max {
+    top: 20%;
+    display: block;
+  }
+
+  @include mobile-max {
+    left: 13px;
+    top: 54%;
+  }
+}
+
+.catalog__slide-controls--next {
+  position: absolute;
+  content: " ";
+  width: 32px;
+  height: 32px;
+  z-index: 9999999999;
+  //top: 54%;
+  display: none;
+
+  @include tablet-max {
+    top: 20%;
+    display: block;
+  }
+
+  @include mobile-max {
+    right: 13px;
+    top: 54%;
+  }
+}
+
+
+

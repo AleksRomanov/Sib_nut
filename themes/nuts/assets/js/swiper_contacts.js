@@ -13,8 +13,8 @@ const swiperContacts = () => {
         spaceBetween: 0,
         direction: 'horizontal',
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.contacts__slide-controls--next',
+            prevEl: '.contacts__slide-controls--prev',
         },
         breakpoints: {
             1200: {

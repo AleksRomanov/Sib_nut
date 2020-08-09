@@ -8,35 +8,34 @@
   background-size: cover;
 
 
-  @include tablet-max {
+  @include tablet {
     background-image: url("../images/quality/background_quality_tablet.jpg");
+    background-size: cover;
   }
 
+  @include mobile-max {
+    background-image: url("../images/quality/background_quality_mobile.jpg");
+    background-size: cover;
+  }
 
-  //&::before {
-  //  content: " ";
-  //  position: absolute;
-  //  top: 0;
-  //  left: 0;
-  //  background-image: url("../images/svg/zig-zag.svg");
-  //  background-repeat: repeat-x;
-  //  background-position: top;
-  //  width: 100%;
-  //  height: 10px;
-  //  transform: scale(1, -1);
-  //}
-  //
-  //&::after {
-  //  content: " ";
-  //  position: absolute;
-  //  bottom: 0;
-  //  left: 0;
-  //  background-image: url("../images/svg/zig-zag.svg");
-  //  background-repeat: repeat-x;
-  //  background-position: bottom;
-  //  width: 100%;
-  //  height: 10px;
-  //}
+  &::after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/svg/zig-zag.svg);
+    background-repeat: repeat-x;
+    background-position: top;
+    //transform: rotate(180deg);
+    width: 100%;
+    height: 10px;
+    z-index: 999999999999;
+
+    @include mobile-max {
+      bottom: -1px;
+    }
+
+  }
 }
 
 .quality__wrapper-box {
@@ -70,6 +69,7 @@
 
 .quality__wrapper-list-item {
   width: 100%;
+  min-height: 255px;
   //text-align: center;
   font-size: 18px;
   //max-width: 1089px;
@@ -158,10 +158,66 @@
       border-radius: 50px;
       top: 45px;
       border: 2px solid #F47220;
+      display: none;
     }
   }
 }
 
-.quality__swiper-control {
+.quality__control::after {
   display: none;
 }
+
+.quality__control {
+  //background-color: rgba(0, 0, 0, .3);
+  //height: 32px;
+  @include effect-opacity;
+}
+
+.quality__control--prev {
+  position: absolute;
+  content: " ";
+  width: 32px;
+  height: 32px;
+  z-index: 9999999999;
+  top: 8%;
+  display: none;
+
+  @include mobile-max {
+    left: 0;
+  }
+
+  @include tablet {
+    top: 12%;
+  }
+
+  @include tablet-max {
+    top: 50%;
+    display: block;
+    left: 6%;
+  }
+}
+
+.quality__control--next {
+  position: absolute;
+  content: " ";
+  width: 32px;
+  height: 32px;
+  z-index: 9999999999;
+  top: 8%;
+  display: none;
+
+  @include mobile-max {
+    right: 0;
+  }
+
+  @include tablet {
+    top: 12%;
+  }
+
+  @include tablet-max {
+    top: 50%;
+    display: block;
+    right: 6%;
+  }
+}
+

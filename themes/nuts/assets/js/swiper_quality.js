@@ -13,11 +13,11 @@ const swiperQuality = () => {
             1790: {
                 direction: 'vertical',
                 slidesPerView: 4,
-                height: 1280,
+                // height: 1280,
             },
             1200: {
                 direction: 'vertical',
-                height: 1400,
+                // height: 1400,
                 // width: 1280,
                 slidesPerView: 4,
             },
@@ -29,13 +29,13 @@ const swiperQuality = () => {
             320: {
                 direction: 'horizontal',
                 slidesPerView: 1,
-                height: 640
+                // height: 640
             },
         },
 
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.quality__control--next',
+            prevEl: '.quality__control--prev',
         }
 
     });

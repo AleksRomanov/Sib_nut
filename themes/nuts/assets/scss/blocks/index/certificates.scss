@@ -5,30 +5,58 @@
   //min-height: 1080px;
   background-image: url("../images/certificates/background_certificates.jpg");
   background-size: cover;
-  padding: 3% 7.3%;
+  padding: 1% 7.3% 3%;
   box-sizing: border-box;
   text-align: center;
 
   @include tablet-max {
-    padding: 4.1% 7.3%;
+    padding: 1% 7.3% 3%;
+    background-image: url("../images/certificates/background_certificates_tablet.jpg");
+    background-size: cover;
   }
 
-  //@include desktop-min {
-  //  background-image: url("../images/certificates/background_about_tablet.jpg");
-  //  background-size: cover;
-  //}
-  //
-  //&::before {
-  //  content: " ";
-  //  position: absolute;
-  //  bottom: 0;
-  //  left: 0;
-  //  background-image: url("../images/svg/zig-zag.svg");
-  //  background-repeat: repeat-x;
-  //  background-position: bottom;
-  //  width: 100%;
-  //  height: 10px;
-  //}
+  @include mobile-max {
+    padding: 1% 7.3% 3%;
+    background-image: url("../images/certificates/background_certificates_mobile.jpg");
+    background-size: cover;
+  }
+
+  &::before {
+    content: " ";
+    position: absolute;
+    top: -8px;
+    left: 0;
+    background-image: url("../images/svg/zig-zag.svg");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    width: 100%;
+    height: 10px;
+    z-index: 99999999999;
+
+    @include mobile-max {
+      top: -8px;
+    }
+
+  }
+
+  &::after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/svg/zig-zag.svg);
+    background-repeat: repeat-x;
+    background-position: top;
+    //transform: rotate(180deg);
+    width: 100%;
+    height: 10px;
+    z-index: 999999999999;
+
+    @include mobile-max {
+      bottom: -1px;
+    }
+
+  }
 }
 
 .certificates__titles {
@@ -43,7 +71,7 @@
     font-size: 60px;
     line-height: 72px;
     font-weight: 700;
-    padding-bottom: 30px;
+    //padding-bottom: 30px;
 
     @include tablet-max {
       font-size: 40px;
@@ -70,30 +98,57 @@
     line-height: 42px;
     font-weight: 400;
     padding-bottom: 40px;
-    letter-spacing: 6px;
+    //letter-spacing: 6px;
 
     @include tablet-max {
       font-size: 22px;
       line-height: 36px;
       padding-bottom: 20px;
-      letter-spacing: 3px;
+      //letter-spacing: 3px;
     }
 
     @include mobile-max {
       font-size: 17px;
-      line-height: 25px;
+      line-height: 20px;
       letter-spacing: 0;
     }
   }
 }
 
 .sertificates__swiper {
-  margin-bottom: 50px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  position: relative;
+  max-width: 1641px;
 }
 
+.fotorama__wrap {
+  margin: 0 auto;
+}
+
+.fotorama__fullscreen-icon {
+  background-color: rgba(0, 0 ,0,.1);
+  border-radius: 25px;
+}
+
+.fotorama__arr--next {
+  background-color: rgba(0, 0 ,0,.1);
+  border-radius: 25px;
+}
+
+.fotorama__arr--prev {
+  background-color: rgba(0, 0 ,0,.1);
+  border-radius: 25px;
+}
+
+.p {
+  font-family: helvetica;
+  font-size: 24px;
+}
 
 .certificates__protocols {
   background-color: rgba(0, 0, 0, .6);
+  border-radius: 25px;
   max-width: 1518px;
   min-height: 167px;
   display: flex;
@@ -125,7 +180,7 @@
 
     @include mobile-max {
       font-size: 17px;
-      line-height: 25px;
+      line-height: 20px;
       margin-bottom: 10px;
     }
   }
@@ -141,12 +196,60 @@
   }
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+.certificates__slider-controls::after {
+  display: none;
+}
+
+.certificates__slider-controls {
+  //background-color: rgba(0, 0, 0, .3);
+  //height: 32px;
   @include effect-opacity;
+}
+
+.certificates__slider-controls--prev {
+  position: absolute;
+  content: " ";
+  width: 32px;
+  height: 32px;
+  z-index: 9999999999;
+  //top: 8%;
+  display: none;
 
   @include mobile-max {
-    display: none;
+    left: 9px;
+  }
+
+  @include tablet {
+    top: 12%;
+  }
+
+  @include tablet-max {
+    top: 53%;
+    display: block;
   }
 }
+
+.certificates__slider-controls--next {
+  position: absolute;
+  content: " ";
+  width: 32px;
+  height: 32px;
+  z-index: 9999999999;
+  //top: 8%;
+  display: none;
+
+  @include mobile-max {
+    right: 9px;
+  }
+
+  @include tablet {
+    top: 12%;
+  }
+
+  @include tablet-max {
+    top: 53%;
+    display: block;
+  }
+}
+
 

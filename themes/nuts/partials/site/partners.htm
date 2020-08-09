@@ -1,59 +1,136 @@
-<!--<div class="zig-zag"></div>-->
 <section id="section_partners" class="partners">
   <div class="partners__title" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
     <h1>Партнерам</h1>
   </div>
   <span data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">Мы работаем с клиентами по всему миру и всегда открыты для новых контактов.</span>
-  <ul class="partners__list" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
-    <li class="partners__list-item">
-      <svg class="partners__list-item-icon" width="56" height="56">
-        <use xlink:href="themes/nuts/assets/images/sprite.svg#ico-list"></use>
+  <div class="swiper-container swiper__partners">
+    <div class="swiper-wrapper swiper__partners-wrapper">
+      <div class="swiper-slide swiper__partners-slide set-height">
+        <svg class="partners__list-item-icon" width="56" height="56">
+          <use xlink:href=" #ico-list"></use>
+        </svg>
+        <span class="partners__slide-title">1. Начало сотрудничества</span>
+        <svg class="partners__list-item-arrow" width="56" height="56">
+          <use xlink:href=" #green_arrow_right"></use>
+        </svg>
+        <span class="partners__slide-description">После оговоренных условий сотрудничества мы подписываем договор.</span>
+
+        <!--        <video id="v0" tabindex="0" autoplay autobufer preload src="https://www.html5rocks.com/tutorials/video/basics/Chrome_ImF.mp4" width="546" height="546"></video>-->
+
+      </div>
+      <div class="swiper-slide swiper__partners-slide">
+        <svg class="partners__list-item-icon" width="56" height="56">
+          <use xlink:href="#ico-cart"></use>
+        </svg>
+        <span class="partners__slide-title">2. Заказ</span>
+        <svg class="partners__list-item-arrow" width="56" height="56">
+          <use xlink:href="#green_arrow_right"></use>
+        </svg>
+        <span class="partners__slide-description">Клиент делает заказ на определенное количество товара, мы выставляем счет.</span>
+      </div>
+
+      <div class="swiper-slide swiper__partners-slide">
+        <svg class="partners__list-item-icon" width="56" height="56">
+          <use xlink:href="#ico-doc"></use>
+        </svg>
+        <span class="partners__slide-title">3. Обработка заказа</span>
+        <svg class="partners__list-item-arrow" width="56" height="56">
+          <use xlink:href="#green_arrow_right"></use>
+        </svg>
+        <span class="partners__slide-description">После оплаты мы подготавливаем товар и все необходимые документы к отправке.</span>
+      </div>
+      <div class="swiper-slide swiper__partners-slide">
+        <svg class="partners__list-item-icon" width="56" height="56">
+          <use xlink:href="#ico-transport"></use>
+        </svg>
+        <span class="partners__slide-title">4. Транспортировка</span>
+        <svg class="partners__list-item-arrow" width="56" height="56">
+          <use xlink:href="#green_arrow_right"></use>
+        </svg>
+        <span class="partners__slide-description">Готовый товар грузится и отправляется покупателю.</span>
+      </div>
+      <div class="swiper-slide swiper__partners-slide">
+        <svg class="partners__list-item-icon" width="56" height="56">
+          <use xlink:href="#ico-delivery"></use>
+        </svg>
+        <span class="partners__slide-title">5. Доставка</span>
+        <svg class="partners__list-item-arrow" width="56" height="56">
+          <use xlink:href="#green_arrow_right"></use>
+        </svg>
+        <span class="partners__slide-description">Товар проходит таможенный контроль и идет на склад покупателя.</span>
+      </div>
+
+    </div>
+    <div class="swiper-button-prev swiper__partners-controls swiper__partners-controls--prev">
+      <svg width="32" height="32">
+        <use xlink:href="#arrow_left"></use>
       </svg>
-      <span>1. Начало сотрудничества</span>
-      <svg class="partners__list-item-arrow" width="56" height="56">
-        <use xlink:href="themes/nuts/assets/images/sprite.svg#green_arrow_right"></use>
+    </div>
+    <div class="swiper-button-next swiper__partners-controls swiper__partners-controls--next">
+      <svg width="32" height="32">
+        <use xlink:href="#arrow_right"></use>
       </svg>
-      <span>После оговоренных условий сотрудничества, мы подписываем договор.</span>
-    </li>
-    <li class="partners__list-item">
-      <svg class="partners__list-item-icon" width="56" height="56">
-        <use xlink:href="themes/nuts/assets/images/sprite.svg#ico-cart"></use>
-      </svg>
-      <span>2. Заказ</span>
-      <svg class="partners__list-item-arrow" width="56" height="56">
-        <use xlink:href="themes/nuts/assets/images/sprite.svg#green_arrow_right"></use>
-      </svg>
-      <span>Клиент делает заказ на определенное количество товара, мы выставляем счет.</span>
-    </li>
-    <li class="partners__list-item">
-      <svg class="partners__list-item-icon" width="56" height="56">
-        <use xlink:href="themes/nuts/assets/images/sprite.svg#ico-list"></use>
-      </svg>
-      <span>3. Обработка заказа</span>
-      <svg class="partners__list-item-arrow" width="56" height="56">
-        <use xlink:href="themes/nuts/assets/images/sprite.svg#green_arrow_right"></use>
-      </svg>
-      <span>После оплаты, мы подготавливаем товар и все необходимые документы к отправке.</span>
-    </li>
-    <li class="partners__list-item">
-      <svg class="partners__list-item-icon" width="56" height="56">
-        <use xlink:href="themes/nuts/assets/images/sprite.svg#ico-transport"></use>
-      </svg>
-      <span>4. Транспортировка</span>
-      <svg class="partners__list-item-arrow" width="56" height="56">
-        <use xlink:href="themes/nuts/assets/images/sprite.svg#green_arrow_right"></use>
-      </svg>
-      <span>Готовый товар грузится и отправляется покупателю.</span>
-    </li>
-    <li class="partners__list-item">
-      <svg class="partners__list-item-icon" width="56" height="56">
-        <use xlink:href="themes/nuts/assets/images/sprite.svg#ico-delivery"></use>
-      </svg>
-      <span>5. Доставка</span>
-      <svg class="partners__list-item-arrow" width="56" height="56">
-        <use xlink:href="themes/nuts/assets/images/sprite.svg#green_arrow_right"></use>
-      </svg>
-      <span>Товар проходит таможенный контроль и идет на склад покупателя.</span>
-    </li>
-  </ul>
+    </div>
+  </div>
+
 </section>
+
+
+<!--<section id="section_partners" class="partners">-->
+<!--  <div class="partners__title" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">-->
+<!--    <h1>Партнерам</h1>-->
+<!--  </div>-->
+<!--  <span data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">Мы работаем с клиентами по всему миру и всегда открыты для новых контактов.</span>-->
+<!--  <ul class="partners__list" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">-->
+<!--    <li class="partners__list-item">-->
+<!--      <svg class="partners__list-item-icon" width="56" height="56">-->
+<!--        <use xlink:href=" #ico-list"></use>-->
+<!--      </svg>-->
+<!--      <span>1. Начало сотрудничества</span>-->
+<!--      <svg class="partners__list-item-arrow" width="56" height="56">-->
+<!--        <use xlink:href=" #green_arrow_right"></use>-->
+<!--      </svg>-->
+<!--      <span>После оговоренных условий сотрудничества, мы подписываем договор.</span>-->
+<!--    </li>-->
+<!--    <li class="partners__list-item">-->
+<!--      <svg class="partners__list-item-icon" width="56" height="56">-->
+<!--        <use xlink:href=" #ico-cart"></use>-->
+<!--      </svg>-->
+<!--      <span>2. Заказ</span>-->
+<!--      <svg class="partners__list-item-arrow" width="56" height="56">-->
+<!--        <use xlink:href=" #green_arrow_right"></use>-->
+<!--      </svg>-->
+<!--      <span>Клиент делает заказ на определенное количество товара, мы выставляем счет.</span>-->
+<!--    </li>-->
+<!--    <li class="partners__list-item">-->
+<!--      <svg class="partners__list-item-icon" width="56" height="56">-->
+<!--        <use xlink:href=" #ico-list"></use>-->
+<!--      </svg>-->
+<!--      <span>3. Обработка заказа</span>-->
+<!--      <svg class="partners__list-item-arrow" width="56" height="56">-->
+<!--        <use xlink:href=" #green_arrow_right"></use>-->
+<!--      </svg>-->
+<!--      <span>После оплаты, мы подготавливаем товар и все необходимые документы к отправке.</span>-->
+<!--    </li>-->
+<!--    <li class="partners__list-item">-->
+<!--      <svg class="partners__list-item-icon" width="56" height="56">-->
+<!--        <use xlink:href=" #ico-transport"></use>-->
+<!--      </svg>-->
+<!--      <span>4. Транспортировка</span>-->
+<!--      <svg class="partners__list-item-arrow" width="56" height="56">-->
+<!--        <use xlink:href=" #green_arrow_right"></use>-->
+<!--      </svg>-->
+<!--      <span>Готовый товар грузится и отправляется покупателю.</span>-->
+<!--    </li>-->
+<!--    <li class="partners__list-item">-->
+<!--      <svg class="partners__list-item-icon" width="56" height="56">-->
+<!--        <use xlink:href=" #ico-delivery"></use>-->
+<!--      </svg>-->
+<!--      <span>5. Доставка</span>-->
+<!--      <svg class="partners__list-item-arrow" width="56" height="56">-->
+<!--        <use xlink:href=" #green_arrow_right"></use>-->
+<!--      </svg>-->
+<!--      <span>Товар проходит таможенный контроль и идет на склад покупателя.</span>-->
+<!--    </li>-->
+<!--  </ul>-->
+<!--</section>-->

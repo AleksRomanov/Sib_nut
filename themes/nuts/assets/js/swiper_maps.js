@@ -2,10 +2,10 @@ const swiperMaps = () => {
     new Swiper('.map__container', {
         slidesPerView: 2,
         spaceBetween: 20,
-        // navigation: {
-        //     nextEl: '.swiper-button-next',
-        //     prevEl: '.swiper-button-prev',
-        // },
+        navigation: {
+            nextEl: '.map__slider-control--next',
+            prevEl: '.map__slider-control--prev',
+        },
 
         breakpoints: {
             1200: {

@@ -3,8 +3,8 @@ const swiperSertificates = () => {
         slidesPerView: 3,
         spaceBetween: 10,
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.certificates__slider-controls--next',
+            prevEl: '.certificates__slider-controls--prev',
         },
 
         breakpoints: {
