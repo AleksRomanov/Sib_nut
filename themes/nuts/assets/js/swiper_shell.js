@@ -1,5 +1,5 @@
 const swiperShell = () => {
-    const swiperX = new Swiper('.catalog__container-shell', {
+    let swiperX = new Swiper('.catalog__container-shell', {
         // slidesPerView: 2,
         init: false,
         spaceBetween: 10,

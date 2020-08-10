@@ -3,12 +3,11 @@ const salAnimation = () => {
 
     if (document.querySelector('.sal--js')) {
         // Запуск анимиции dash иконок при попадании во вьюпорт
-        let salAnimatedElements = document.querySelectorAll('.sal--js');
+        var salAnimatedElements = document.querySelectorAll('.sal--js');
 
         salAnimatedElements.forEach(function (salElement) {
             salElement.addEventListener('sal:in', ({detail}) => {
                 window.swiperShell.swiperX.init();
-                // salElement.classList.add('icons__animated--js');
             });
         });
 
