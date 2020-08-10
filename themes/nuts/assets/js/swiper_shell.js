@@ -1,6 +1,7 @@
 const swiperShell = () => {
-    new Swiper('.catalog__container-shell', {
+    const swiperX = new Swiper('.catalog__container-shell', {
         // slidesPerView: 2,
+        init: false,
         spaceBetween: 10,
         // direction: 'horizontal',
         breakpoints: {
@@ -32,6 +33,10 @@ const swiperShell = () => {
             prevEl: '.catalog__slide-controls-shell--prev',
         },
     });
+
+    window.swiperShell = {
+        swiperX: swiperX,
+    };
 };
 
 export default swiperShell;
