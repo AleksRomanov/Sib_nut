@@ -6,7 +6,7 @@
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, .7);
-  z-index: 9999999;
+  z-index: 99999999999999999999;
 }
 
 .feedback-popup__form-wrapper {
@@ -97,7 +97,7 @@
 
 .popup-show--js {
   display: block;
-  z-index: 999999999999;
+  z-index: 9999999999999999999999999;
 }
 
 .overflow-hidden--js {

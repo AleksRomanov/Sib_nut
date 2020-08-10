@@ -3,7 +3,7 @@ const swiperPartners = () => {
         // slidesPerView: 1,
         autoHeight: false,
         // direction: 'vertical',
-        spaceBetween: 8 ,
+        spaceBetween: 8,
         navigation: {
             nextEl: '.swiper__partners-controls--next',
             prevEl: '.swiper__partners-controls--prev',
