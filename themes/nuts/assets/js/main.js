@@ -1,3 +1,4 @@
+import swiperShell from "./swiper_shell";
 import swiperProductsPacking from "./swiper_products_packing";
 import swiperAbout from "./swiper_about";
 import swiperQuality from "./swiper_quality";
@@ -11,10 +12,13 @@ import salAnimation from "./sal";
 import mmenu from "./mmenu";
 import formsSubmit from "./forms-submit";
 import preloader from "./preloader";
-// import buttonHover from "./button_hover";
-// import partnersAutoplaySlide from "./partnersAutoplaySlide";
+import buttonHover from "./button_hover";
 import swiperPartners from "./swiper_partners";
+import swiperPlenka from "./swiper_plenka";
 // import formsOrderSubmit from "./forms-order-submit";
+// import partnersAutoplaySlide from "./partnersAutoplaySlide";
+
+
 
 
 
@@ -30,6 +34,7 @@ class App {
     //   window.objectFitImages();
     // }
 
+    swiperShell();
     swiperAbout();
     swiperProductsPacking();
     swiperQuality();
@@ -43,10 +48,13 @@ class App {
     mmenu();
     formsSubmit();
     preloader();
-    // buttonHover();
-    // partnersAutoplaySlide();
+    buttonHover();
     swiperPartners();
+    swiperPlenka();
     // formsOrderSubmit();
+    // partnersAutoplaySlide();
+
+
   }
 }
 

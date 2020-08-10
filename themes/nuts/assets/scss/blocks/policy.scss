@@ -1,0 +1,35 @@
+.policy {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  max-width: 1640px;
+  margin: 0 auto;
+}
+
+.row {
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  h1 {
+    @include tablet-max {
+      font-size: 1.5em;
+    }
+  }
+
+  h2 {
+    @include tablet-max {
+      font-size: 1em;
+    }
+  }
+
+  p {
+    @include tablet-max {
+      font-size: 0.8em;
+    }
+  }
+}
