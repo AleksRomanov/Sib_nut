@@ -14,6 +14,10 @@ const swiperPartners = () => {
                 // height: 800,
                 slidesPerView: 5,
             },
+            1790: {
+                // height: 800,
+                slidesPerView: 5,
+            },
             1200: {
                 // height: 800,
                 slidesPerView: 2,

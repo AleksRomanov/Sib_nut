@@ -1,7 +1,7 @@
 .products {
   position: relative;
-  box-sizing: border-box;
-  padding: 0 7.3%;
+  //box-sizing: border-box;
+  //padding: 0 7.3%;
 
   &::before {
     content: " ";
@@ -17,29 +17,30 @@
     @include mobile-max {
       top: -8px;
     }
-
   }
 
   &::after {
     content: " ";
     position: absolute;
-    bottom: -8px;
+    bottom: 0;
     left: 0;
-    background-image: url(../images/svg/zig-zag.svg);
+    background-image: url("../images/svg/zig-zag.svg");
     background-repeat: repeat-x;
-    background-position: top;
-    transform: rotate(180deg);
+    background-position: bottom;
+    background-position-x: 42px;
     width: 100%;
     height: 10px;
-    z-index: 999999999999;
+    z-index: 2;
 
-    @include mobile-max {
-    }
+
+    //@include mobile-max {
+    //  top: -8px;
+    //}
 
   }
 
   @include mobile-max {
-    padding: 0 7.3% 5%;
+    //padding: 0 7.3% 5%;
   }
 
   & h1 {
@@ -78,19 +79,12 @@
 }
 
 .products__swiper {
-  max-width: 1640px;
+  //max-width: 1640px;
 }
 
 
 .products__swiper-wrapper {
-  //display: flex;
-  //flex-wrap: wrap;
-  //flex-direction: row;
-  margin-bottom: 100px;
-
-  @include mobile-max {
-    margin-bottom: 0;
-  }
+  margin: 0;
 }
 
 .products__slide-data {
@@ -185,6 +179,7 @@
     background-size: cover;
     background-position: left;
     background-position-x: 31%;
+    background-position-y: 8%;
   }
 
   &--scorlupa {
@@ -299,43 +294,60 @@
 .products__slide-controls--prev {
   position: absolute;
   content: " ";
-  width: 100px;
-  height: 100px;
-  //background-color: #FFFFFF;
+  width: 70px;
+  height: 70px;
+  //background-color: rgba(255, 255, 255, 0.7);
+  //border-radius: 30px;
   top: 22px;
   left: 0;
   z-index: 9999999999;
   @include effect-opacity;
 
   @include desktop-min {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
   }
 
   @include mobile-max {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+  }
+
+  svg {
+    @include mobile-max {
+      width: 25px;
+      height: 25px;
+    }
   }
 }
 
 .products__slide-controls--next {
   position: absolute;
   content: " ";
-  width: 100px;
-  height: 100px;
-  //background-color: #FFFFFF;
+  width: 70px;
+  height: 70px;
+  //background-color: rgba(255, 255, 255, 0.7);
+  //border-radius: 30px;
   top: 22px;
   right: 0;
   z-index: 9999999999;
   @include effect-opacity;
 
+
   @include desktop-min {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
   }
 
   @include mobile-max {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+  }
+
+  svg {
+    @include mobile-max {
+      width: 25px;
+      height: 25px;
+    }
   }
 }

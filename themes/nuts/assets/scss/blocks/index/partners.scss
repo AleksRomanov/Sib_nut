@@ -31,13 +31,13 @@
     width: 100%;
     height: 10px;
     transform: rotate(180deg);
-    z-index: 99999999999;
+    z-index: 2;
   }
 
   &::after {
     content: " ";
     position: absolute;
-    bottom: 0;
+    bottom: -2px;
     left: 0;
     background-image: url(../images/svg/zig-zag.svg);
     background-repeat: repeat-x;
@@ -45,7 +45,7 @@
     //transform: rotate(180deg);
     width: 100%;
     height: 10px;
-    z-index: 999999999999;
+    z-index: 2;
 
     @include mobile-max {
     }
@@ -389,18 +389,29 @@
   //top: 8%;
   display: none;
 
-  @include mobile-max {
-    left: -18px;
-  }
-
-  @include tablet {
-    top: 12%;
+  @include desktop-min {
+    top: 53%;
+    display: block;
   }
 
   @include tablet-max {
     top: 53%;
     display: block;
   }
+
+  @include tablet {
+    left: 50px;
+    top: 50%;
+  }
+
+  @include mobile-max {
+    left: 50px;
+    top: 50%;
+  }
+
+
+
+
 }
 
 .swiper__partners-controls--next {
@@ -412,16 +423,27 @@
   //top: 8%;
   display: none;
 
-  @include mobile-max {
-    right: -18px;
-  }
-
-  @include tablet {
-    top: 12%;
+  @include desktop-min {
+    top: 53%;
+    display: block;
   }
 
   @include tablet-max {
     top: 53%;
     display: block;
   }
+
+  @include tablet {
+    right: 50px;
+    top: 50%;
+  }
+
+  @include mobile-max {
+    right: 50px;
+    top: 50%;
+  }
+
+
+
+
 }

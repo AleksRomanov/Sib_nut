@@ -90,13 +90,9 @@ const scrollPages = () => {
     };
 
     var scrollSettings = {
-        // teaser: {
-        //     scrollButtonClass: '.my-menu__link--teaser',
-        //     scrollDestinationID: 'section_teaser'
-        // },
         teaser: {
             scrollButtonClass: '.link-to-teaser',
-            scrollDestinationID: 'section_teaser'
+            scrollDestinationID: 'layout-header'
         },
         about: {
             scrollButtonClass: '.my-menu__link--about',

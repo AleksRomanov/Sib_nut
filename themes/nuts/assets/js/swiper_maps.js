@@ -13,7 +13,7 @@ const swiperMaps = () => {
                 // height: 1024,
             },
             768: {
-                slidesPerView: 2,
+                slidesPerView: 1,
             },
             576: {
                 slidesPerView: 1,

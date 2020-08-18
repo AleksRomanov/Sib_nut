@@ -1,8 +1,8 @@
 import swiperShell from "./swiper_shell";
+import swiperCrushed from "./swiper_crushed";
 import swiperProductsPacking from "./swiper_products_packing";
 import swiperAbout from "./swiper_about";
 import swiperQuality from "./swiper_quality";
-import swiperSertificates from "./swiper_sertificates";
 import scrollTop from "./scroll_top";
 import scrollPages from "./scroll_pages";
 import swiperProducts from "./swiper_products";
@@ -14,7 +14,7 @@ import formsSubmit from "./forms-submit";
 import preloader from "./preloader";
 import buttonHover from "./button_hover";
 import swiperPartners from "./swiper_partners";
-import swiperPlenka from "./swiper_plenka";
+import swiperMembrane from "./swiper_membrane";
 // import formsOrderSubmit from "./forms-order-submit";
 // import partnersAutoplaySlide from "./partnersAutoplaySlide";
 
@@ -35,10 +35,10 @@ class App {
     // }
 
     swiperShell();
+    swiperCrushed();
     swiperAbout();
     swiperProductsPacking();
     swiperQuality();
-    swiperSertificates();
     swiperProducts();
     swiperContacts();
     swiperMaps();
@@ -50,7 +50,7 @@ class App {
     preloader();
     buttonHover();
     swiperPartners();
-    swiperPlenka();
+    swiperMembrane();
     // formsOrderSubmit();
     // partnersAutoplaySlide();
 

@@ -1,7 +1,7 @@
 .policy {
+  margin: 0 auto;
   width: 100%;
   position: relative;
-  margin: 0 auto;
 }
 
 .container-fluid {
@@ -19,6 +19,10 @@
     @include tablet-max {
       font-size: 1.5em;
     }
+
+    @include tablet {
+      font-size: 1em;
+    }
   }
 
   h2 {
@@ -33,3 +37,4 @@
     }
   }
 }
+

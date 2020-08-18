@@ -207,3 +207,33 @@
 .client-text {
   width: 80%;
 }
+
+
+.page-header--policy {
+  background-image: url("../images/teaser/back27wood.jpg");
+  background-size: cover;
+  //position: static;
+  position: relative;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    background-image: url("../images/svg/zig-zag.svg");
+    background-repeat: repeat-x;
+    background-position-x: 42px;
+    width: 100%;
+    height: 10px;
+  }
+
+  @include tablet-max {
+    background-image: url("../images/teaser/back27wood_tablet.jpg");
+    background-size: cover;
+  }
+
+  @include mobile-max {
+    background-image: url("../images/teaser/back27wood_mobile.jpg");
+    background-size: cover;
+  }
+}

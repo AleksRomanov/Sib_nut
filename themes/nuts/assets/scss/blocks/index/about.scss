@@ -144,7 +144,7 @@
     }
 
     @include mobile-max {
-      font-size: 1em;
+      font-size: 0.8em;
       margin-bottom: 25px;
     }
 
@@ -222,18 +222,23 @@
   display: none;
   //fill: rgba(244, 114, 32, 1);
 
-  @include mobile-max {
-    left: 1px;
+  @include tablet-max {
+    top: 270px;
+    display: block;
   }
 
   @include tablet {
-    //top: 12%;
+    top: 180px;
   }
 
-  @include tablet-max {
-    //top: 21%;
-    display: block;
+  @include mobile-max {
+    left: 5%;
+    top: 145px;
   }
+
+
+
+
 }
 
 .about__swiper-control--next {
@@ -245,17 +250,18 @@
   //top: 8%;
   display: none;
 
-  @include mobile-max {
-    right: 1px;
+  @include tablet-max {
+    top: 270px;
+    display: block;
   }
 
   @include tablet {
-    //top: 12%;
+    top: 180px;
   }
 
-  @include tablet-max {
-    //top: 21%;
-    display: block;
+  @include mobile-max {
+    right: 5%;
+    top: 145px;
   }
 }
 
