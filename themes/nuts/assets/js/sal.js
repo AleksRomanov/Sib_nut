@@ -1,49 +1,35 @@
 const salAnimation = () => {
     window.sal();
+    //Проверка в DOMe на наличие классов
+    if (document.querySelector('.sal-slider-shell--js')) {
+        // Активация свайпера при попадании во вьюпорт
+        var swiperShell = document.querySelector('.sal-slider-shell--js');
 
-    if (document.querySelector('.sal--js')) {
-        // Запуск анимиции dash иконок при попадании во вьюпорт
-        var salAnimatedElements = document.querySelectorAll('.sal--js');
+        swiperShell.addEventListener('sal:in', ({detail}) => {
+            window.swiperShell.swiper.init();
 
-        salAnimatedElements.forEach(function (salElement) {
-            salElement.addEventListener('sal:in', ({detail}) => {
-                window.swiperShell.swiperX.init();
-            });
         });
+    }
 
-        // // Удаление анимирующего класса у иконок после окончания анимации для последующего анимирования через ховер или фокус
-        // salAnimatedElements.forEach(function (salElement) {
-        //     salElement.addEventListener('animationend', () => {
-        //         salElement.classList.remove('icons__animated--js');
-        //     });
-        // });
+    if (document.querySelector('.sal-slider-membrane--js')) {
+        // Активация свайпера при попадании во вьюпорт
+        var swiperMembrane = document.querySelector('.sal-slider-membrane--js')
+
+        swiperMembrane.addEventListener('sal:in', ({detail}) => {
+            window.swiperMembrane.swiper.init();
+
+        });
+    }
+
+    if (document.querySelector('.sal-slider-crushed--js')) {
+        // Активация свайпера при попадании во вьюпорт
+        var swiperCrushed = document.querySelector('.sal-slider-crushed--js')
+
+        swiperCrushed.addEventListener('sal:in', ({detail}) => {
+            window.swiperCrushed.swiper.init();
+
+        });
     }
 };
 
 export default salAnimation;
-
-
-// const salAnimation = () => {
-//     window.sal();
-//
-//     // if (document.querySelector(`.sal--js`)) {
-//     //     // Запуск анимиции dash иконок при попадании во вьюпорт
-//     //     let salAnimatedElements = document.querySelectorAll(`.sal--js`);
-//     //
-//     //     salAnimatedElements.forEach(function (salElement) {
-//     //         salElement.addEventListener(`sal:in`, ({detail}) => {
-//     //             salElement.classList.add(`icons__animated--js`);
-//     //         });
-//     //     });
-//     //
-//     //     // Удаление анимирующего класса у иконок после окончания анимации для последующего анимирования через ховер или фокус
-//     //     salAnimatedElements.forEach(function (salElement) {
-//     //         salElement.addEventListener(`animationend`, () => {
-//     //             salElement.classList.remove(`icons__animated--js`);
-//     //         });
-//     //     });
-//     // }
-// };
-//
-// export default salAnimation;
-

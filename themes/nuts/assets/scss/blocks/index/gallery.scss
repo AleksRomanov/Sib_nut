@@ -101,3 +101,15 @@
   //  @include effect-opacity;
   //}
 }
+
+.gallery_container .fotorama__fullscreen-icon {
+  background: none;
+  background-image: url("../images/svg/full_screen_gallery.svg");
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+  display: block;
+  opacity: .8;
+}
+
+

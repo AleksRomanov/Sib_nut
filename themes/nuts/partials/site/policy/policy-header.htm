@@ -1,0 +1,77 @@
+<div class="page-header page-header--policy" id="layout-header">
+  <div class="page-header__wrapper">
+    <a href="{{ 'index'|page }}" class="page-header__logo" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
+      <img class="page-header__logo-image" src="themes/nuts/assets/images/svg/logo.svg" width="294" height="120" alt="SibNut" aria-label="Главная">
+    </a>
+    <div class="page-header__contacts">
+      <a class="page-header__contact-button contact-button--feedback-js" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
+        <span>Написать нам</span>
+        <svg width="53" height="34.78">
+          <use xlink:href="#mail"></use>
+        </svg>
+      </a>
+      <a href="{{ 'index'|page }}#section_contacts" class="page-header__contact-button my-menu__link--contacts" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
+        <span>Связаться с нами</span>
+        <svg width="53" height="52">
+          <use xlink:href="#phone"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="page-header__language-en" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
+      <a href="{{ 'policy-eng'|page }}">
+        <img class="page-header__language-en-image" src="themes/nuts/assets/images/teaser/EN.svg" width="80" height="45" alt="EN" aria-label="EN">
+      </a>
+    </div>
+    <a href="#my-menu" class="hamburger hamburger--emphatic">
+      <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+    </a>
+  </div>
+
+  <nav id="my-menu">
+    <ul>
+      <li><a href="{{ 'index'|page }}" class="my-menu__link--teaser">Главная</a></li>
+      <li><a href="{{ 'index'|page }}#section_about" class="my-menu__link--about">О нас</a></li>
+      <li><a href="{{ 'index'|page }}#section_products" class="my-menu__link--products">Наша продукция</a></li>
+      <li><a href="{{ 'index'|page }}#section_catalog" class="my-menu__link--catalog">Каталог</a></li>
+      <li><a href="{{ 'index'|page }}#section_quality" class="my-menu__link--quality">Наша работа</a></li>
+      <li><a href="{{ 'index'|page }}#section_gallery" class="my-menu__link--gallery">Фото и видео</a></li>
+      <li><a href="{{ 'index'|page }}#section_sertificates" class="my-menu__link--certificates">Сертификаты</a></li>
+      <li><a href="{{ 'index'|page }}#section_partners" class="my-menu__link--partners">Партнерам</a></li>
+      <li><a href="{{ 'index'|page }}#section_contacts" class="my-menu__link--contacts">Контакты</a></li>
+      <li><a href="{{ 'index'|page }}#section_maps" class="my-menu__link--map">Мы на карте</a></li>
+    </ul>
+  </nav>
+
+</div>
+
+<section class="feedback-popup">
+  <div class="feedback-popup__form-wrapper">
+    <form class="feedback-popup__form" method="post">
+      <button class="feedback-popup__close">
+        <svg width="50" height="50">
+          <use xlink:href="#close"></use>
+        </svg>
+      </button>
+      <div class="success"><span>Спасибо за заявку!</span></div>
+
+      <input type="hidden" name="project_name" value="Сибирский орех">
+      <input type="hidden" name="admin_email" value="siborekh@mail.ru">
+      <input type="hidden" name="form_subject" value="Заявка с формой обратной связи">
+      <h2>Отправьте ваш вопрос, мы обязательно с вами свяжемся!</h2>
+      <input type="text" name="client_name" placeholder="Как Вас зовут" required>
+      <input type="text" name="client-theme" placeholder="Тема обращения" minlength="18" required>
+      <textarea name="text" class="client-text" placeholder="Текст обращения" required></textarea>
+      <input type="text" name="phone-number" placeholder="Ваш телефон" required>
+      <input type="email" name="client_email" placeholder="Ваш e-mail" pattern="^[a-zA-Z0-9]([a-zA-Z0-9_\-]*\.?[a-zA-Z0-9_\-]+)*@[a-zA-Z0-9][a-zA-Z0-9_\-]*\.[a-zA-Z]{2}[a-zA-Z]*$" required>
+
+      <button type="submit" class="button feedback-popup__form-wrapper-button">
+        <p class="buttton__title">Отправить форму</p>
+        <span></span>
+      </button>
+
+      <div class="trigger-consent">Нажимая на кнопку вы принимаете условия передачи
+        <a class="consent" href="{{ 'index-policy'|page }}">конфиденциальных данных</a>
+      </div>
+    </form>
+  </div>
+</section>

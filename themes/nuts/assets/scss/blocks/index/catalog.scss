@@ -5,21 +5,33 @@
   background-image: url("../images/productionUnit/vetki_sverhu.jpg");
   background-size: contain;
   background-repeat: no-repeat;
-  padding: 12.5% 7.3% 0;
+  padding: 12.5% 7.3% 30px;
   box-sizing: border-box;
 
   @include tablet-max {
-    padding: 5.5% 7.3% 0;
+    padding: 5.5% 7.3% 30px;
     background-image: url("../images/productionUnit/vetki_sverhu_2.jpg");
     background-size: cover;
   }
 
   @include mobile-max {
-    padding: 10% 7.3% 0;
+    padding: 10% 7.3% 30px;
     background-image: url("../images/productionUnit/vetki_sverhu_3.jpg");
     background-size: cover;
   }
 
+  &::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../images/svg/zig-zag.svg");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    width: 100%;
+    height: 10px;
+    transform: rotate(180deg);
+  }
 
   &::after {
     content: " ";
@@ -32,17 +44,14 @@
     transform: rotate(180deg);
     width: 100%;
     height: 10px;
-    z-index: 999999999999;
-
-    @include mobile-max {
-    }
-
+    z-index: 2;
   }
 }
 
 .catalog__slide {
   display: none;
 }
+
 
 .catalog__wrapper-list {
   display: flex;
@@ -52,9 +61,6 @@
   @include desktop-min {
     flex-direction: row;
     flex-wrap: wrap;
-  }
-
-  @include desktop-min {
     padding-bottom: 0;
   }
 }
@@ -82,6 +88,7 @@
     margin: 0;
     margin-bottom: 30px;
     //padding: 10px;
+    padding: 9px 0;
 
     @include tablet-max {
       font-size: 21px;
@@ -119,7 +126,7 @@
   min-width: 424px;
   text-align: center;
   //margin-right: 20px;
-  padding-right: 2%;
+  //padding-right: 2%;
 
   @include desktop-min {
     min-width: 100%;
@@ -141,8 +148,10 @@
   }
 
 
-  @include desktop-min {
-    //width: 50%;
+  @include tablet {
+    &:hover {
+      border-radius: 50px 50px 50px 50px;
+    }
   }
 }
 
@@ -154,9 +163,12 @@
 #advantage-6:checked ~ .catalog__wrapper-controls label[for="advantage-6"] {
   background-color: #5eaa2f;
   border-radius: 50px 0 0 50px;
-  padding: 9px 0;
+  box-sizing: border-box;
+  padding: 9px 0 9px 9px;
+
+
   @include tablet {
-    border-radius: 50px;
+    border-radius: 50px 50px 50px 50px;
   }
 }
 
@@ -169,11 +181,11 @@
   display: flex;
 }
 
-
 .catalog__slide {
   //min-width: 1182px;
-  min-height: 941px;
+  height: 966px;
   border-left: 15px solid #5eaa2f;
+  border-radius: 10px 10px 10px 10px;
   padding-left: 10px;
   flex-wrap: wrap;
   align-items: center;
@@ -247,6 +259,7 @@ p.catalog__wrapper-box-item-packing {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  align-self: flex-end;
   width: 100%;
 
   & span {
@@ -307,15 +320,15 @@ p.catalog__wrapper-box-item-packing {
     margin: 0;
     flex-wrap: wrap;
   }
+}
 
+.catalog__wrapper-box-packing-list-item img {
+  width: 100%;
+  border-radius: 50px;
 
-  & img {
+  @include mobile-max {
     width: 100%;
-    border-radius: 50px;
-
-    @include effect-opacity;
   }
-
 }
 
 .catalog__wrapper-box-list {
@@ -355,6 +368,7 @@ p.catalog__wrapper-box-item-packing {
     text-align: right;
 
     @include mobile-max {
+      font-size: 16px;
       width: 100%;
       text-align: left;
     }
@@ -402,13 +416,13 @@ p.catalog__wrapper-box-item-packing {
   display: none;
 
   @include tablet-max {
-    top: 20%;
+    top: 59%;
     display: block;
   }
 
   @include mobile-max {
     left: 13px;
-    top: 54%;
+    top: 57%;
   }
 }
 
@@ -422,13 +436,13 @@ p.catalog__wrapper-box-item-packing {
   display: none;
 
   @include tablet-max {
-    top: 20%;
+    top: 59%;
     display: block;
   }
 
   @include mobile-max {
     right: 13px;
-    top: 54%;
+    top: 57%;
   }
 }
 
@@ -478,19 +492,49 @@ p.catalog__wrapper-box-item-packing {
   }
 }
 
+.catalog__slide-controls-membrane::after {
+  display: none;
+}
+
+.catalog__container-membrane-slide img {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px;
+  min-height: 350px;
+  width: 80%;
+}
+
+.catalog__container-crushed {
+  align-self: flex-end;
+}
+
+.catalog__slide-controls-crushed::after {
+  display: none;
+}
+
+.catalog__container-crushed-slide img {
+  margin: 0 auto;
+  display: block;
+  width: 70%;
+  min-height: 350px;
+  margin-bottom: 20px;
+}
+
 .catalog__container-shell {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  align-self: flex-end;
 }
-
 
 
 .catalog__container-shell-slide img {
   display: block;
   margin: 0 auto;
+  margin-bottom: 20px;
+  width: 80%;
 }
 
 

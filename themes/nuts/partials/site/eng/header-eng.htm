@@ -10,7 +10,7 @@
           <use xlink:href="themes/nuts/assets/images/sprite.svg#mail"></use>
         </svg>
       </button>
-      <button class="page-header__contact-button" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
+      <button class="page-header__contact-button my-menu__link--contacts" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
         <span>Contact us</span>
         <svg width="53" height="52">
           <use xlink:href="themes/nuts/assets/images/sprite.svg#phone"></use>
@@ -37,7 +37,7 @@
       <li><a href="#" class="my-menu__link--gallery">Photos and videos</a></li>
       <li><a href="#" class="my-menu__link--certificates">Certificates</a></li>
       <li><a href="#" class="my-menu__link--partners">Partners</a></li>
-      <li><a href="#" class="my-menu__link--contacts">Our team</a></li>
+      <li><a href="#" class="my-menu__link--contacts">Contacts</a></li>
       <li><a href="#" class="my-menu__link--map">We are on the map</a></li>
     </ul>
   </nav>
@@ -64,10 +64,13 @@
       <input type="text" name="phone-number" placeholder="Your phone" required>
       <input type="email" name="client_email" placeholder="Your e-mail" pattern="^[a-zA-Z0-9]([a-zA-Z0-9_\-]*\.?[a-zA-Z0-9_\-]+)*@[a-zA-Z0-9][a-zA-Z0-9_\-]*\.[a-zA-Z]{2}[a-zA-Z]*$" required>
 
-      <button type="submit" class="feedback-popup__form-wrapper-button">Submit a form</button>
+      <button type="submit" class="button feedback-popup__form-wrapper-button">
+        <p class="buttton__title">Submit a form</p>
+        <span></span>
+      </button>
 
       <div class="trigger-consent">By clicking the button you accept the terms of the transfer of
-        <a class="consent" href="#">confidential data</a>
+        <a class="consent" href="{{ 'policy-eng'|page }}">confidential data</a>
       </div>
     </form>
   </div>

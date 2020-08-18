@@ -1,6 +1,6 @@
 const swiperQuality = () => {
     new Swiper('.quality__wrapper', {
-        spaceBetween: 20,
+        spaceBetween: 10,
         slidesPerView: 4,
         // width: 1280,
         // slidesPerColumnFill: 'row',
