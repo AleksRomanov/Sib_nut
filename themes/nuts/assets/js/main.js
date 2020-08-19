@@ -1,3 +1,4 @@
+import intersectionObserver from "./intersection-observer";
 import swiperShell from "./swiper_shell";
 import swiperCrushed from "./swiper_crushed";
 import swiperProductsPacking from "./swiper_products_packing";
@@ -34,6 +35,7 @@ class App {
     //   window.objectFitImages();
     // }
 
+    intersectionObserver();
     swiperShell();
     swiperCrushed();
     swiperAbout();
