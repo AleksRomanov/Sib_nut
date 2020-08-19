@@ -1,16 +1,16 @@
 const swiperMembrane = () => {
     let swiperMembrane = new Swiper('.catalog__container-membrane', {
-        spaceBetween: 2,
+        spaceBetween: 10,
         init: false,
         // allowTouchMove: true,
 
         breakpoints: {
             1920: {
                 direction: 'horizontal',
-                slidesPerView: 1,
+                slidesPerView: 3,
             },
             1200: {
-                slidesPerView: 1,
+                slidesPerView: 2,
             },
             768: {
                 slidesPerView: 1,

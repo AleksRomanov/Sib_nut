@@ -1,6 +1,6 @@
 const preloader = () => {
-    var animationDuration = 2500;
-    // var animationDuration = 1;
+    // var animationDuration = 2500;
+    var animationDuration = 1;
     var preloader = document.querySelector("#preloader");
     var pageBody = document.querySelector('body');
 

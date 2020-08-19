@@ -1,13 +1,13 @@
 const swiperCrushed = () => {
     let swiperCrushed = new Swiper('.catalog__container-crushed', {
-        spaceBetween: 2,
+        spaceBetween: 10,
         init: false,
         // allowTouchMove: true,
 
         breakpoints: {
             1920: {
                 direction: 'horizontal',
-                slidesPerView: 1,
+                slidesPerView: 3,
             },
             1200: {
                 slidesPerView: 1,

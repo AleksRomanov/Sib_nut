@@ -2,12 +2,12 @@ const swiperShell = () => {
     let swiperShell = new Swiper('.catalog__container-shell', {
         // slidesPerView: 2,
         init: false,
-        spaceBetween: 2,
+        spaceBetween: 10,
         // direction: 'horizontal',
         breakpoints: {
             1920: {
                 direction: 'horizontal',
-                slidesPerView: 1,
+                slidesPerView: 3,
             },
             1200: {
                 // height: 800,
