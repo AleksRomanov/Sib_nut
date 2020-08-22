@@ -18,6 +18,7 @@
     padding: 10% 7.3% 30px;
     background-image: url("../images/productionUnit/vetki_sverhu_3.jpg");
     background-size: cover;
+    min-height: auto;
   }
 
   &::before {
@@ -97,13 +98,14 @@
     }
 
     @include tablet {
-      padding: 0;
-      margin-bottom: 10px;
+      padding: 9px 0;
+      margin-bottom: 2px;
     }
 
     @include mobile-max {
-      font-size: 17px;
+      font-size: 14px;
       padding: 0;
+      margin-bottom: 2px;
     }
   }
 }
@@ -117,6 +119,10 @@
   @include tablet {
     width: 100%;
     margin: 0;
+  }
+
+  @include mobile-max {
+   min-height: auto;
   }
 
 }
@@ -145,14 +151,19 @@
   &:hover {
     border-radius: 50px 0 0 50px;
     background-color: rgba(94, 170, 47, 0.6);
-  }
 
-
-  @include tablet {
-    &:hover {
+    @include tablet-max {
       border-radius: 50px 50px 50px 50px;
+      //padding: 9px 0;
+    }
+
+    @include mobile-max {
+      padding: 0;
     }
   }
+
+
+
 }
 
 #advantage-1:checked ~ .catalog__wrapper-controls label[for="advantage-1"],
@@ -170,6 +181,10 @@
   @include tablet {
     border-radius: 50px 50px 50px 50px;
   }
+
+  @include mobile-max {
+    padding: 0;
+  }
 }
 
 #advantage-1:checked ~ .catalog__list #advantage-1,
@@ -182,8 +197,8 @@
 }
 
 .catalog__slide {
-  //min-width: 1182px;
-  height: 966px;
+  min-height: 966px;
+  //height: 100%;
   border-left: 15px solid #5eaa2f;
   border-radius: 10px 10px 10px 10px;
   padding-left: 10px;
@@ -198,12 +213,19 @@
 
   @include mobile-max {
     padding-left: 0;
-    //height: auto;
+    height: auto;
+    min-height: auto;
   }
 }
 
 .catalog__wrapper-box {
   min-width: 70%;
+}
+
+.catalog__wrapper-box-item {
+  @include mobile-max {
+    margin-top: 10px;
+  }
 }
 
 .catalog__wrapper-box-item p {
@@ -246,6 +268,7 @@
   @include mobile-max {
     text-align: center;
     font-size: 28px;
+    margin-bottom: 10px;
   }
 }
 
@@ -355,6 +378,22 @@ p.catalog__wrapper-box-item-packing {
 
   .catalog__button {
 
+    display: inline-block;
+    position: relative;
+    padding: 0 19px;
+    border-radius: 30px;
+    color: #FFFFFF;
+    background-color: #F47220;
+    font-size: 30px;
+    font-weight: 700;
+    box-sizing: border-box;
+    width: 25%;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    height: 60px;
+    z-index: 0;
+
     @include tablet-max {
       width: 35%;
     }
@@ -367,6 +406,8 @@ p.catalog__wrapper-box-item-packing {
       width: 100%;
       order: 1;
       font-size: 17px;
+      height: 40px;
+      min-height: 40px;
     }
   }
 
@@ -386,25 +427,11 @@ p.catalog__wrapper-box-item-packing {
   }
 }
 
-.catalog__button {
-  display: inline-block;
-  position: relative;
-  padding: 0 19px;
-  border-radius: 30px;
-  color: #FFFFFF;
-  background-color: #F47220;
-  font-size: 30px;
-  font-weight: 700;
-  box-sizing: border-box;
-  width: 25%;
-  text-align: center;
-  text-transform: uppercase;
-  border: none;
-  height: 60px;
-  z-index: 0;
-
-  @include effect-opacity;
-}
+//.catalog__button {
+//
+//
+//  @include effect-opacity;
+//}
 
 .catalog__slide-controls::after {
   display: none;
@@ -456,7 +483,6 @@ p.catalog__wrapper-box-item-packing {
 //}
 
 
-
 .catalog__slide-controls-membrane::after {
   display: none;
 }
@@ -487,21 +513,21 @@ p.catalog__wrapper-box-item-packing {
   width: 32px;
   height: 32px;
   z-index: 9999999999999999999;
-  //top: 54%;
+  top: 50%;
   //display: none;
   left: 0;
 
   @include tablet-max {
-    top: 30%;
+    //top: 30%;
     display: block;
   }
 
   @include tablet {
-    top: 35%;
+    //top: 35%;
   }
 
   @include mobile-max {
-    top: 60%;
+    //top: 60%;
   }
 }
 
@@ -511,22 +537,22 @@ p.catalog__wrapper-box-item-packing {
   width: 32px;
   height: 32px;
   z-index: 999999999999999999999;
-  //top: 54%;
+  top: 50%;
   //display: none;
   right: 0;
 
   @include tablet-max {
-    top: 30%;
+    //top: 30%;
     display: block;
   }
 
   @include tablet {
-    top: 35%;
+    //top: 35%;
   }
 
   @include mobile-max {
     right: 0;
-    top: 60%;
+    //top: 60%;
   }
 }
 
@@ -572,21 +598,21 @@ p.catalog__wrapper-box-item-packing {
   width: 32px;
   height: 32px;
   z-index: 9999999999999999999;
-  //top: 54%;
+  top: 50%;
   //display: none;
   left: 0;
 
   @include tablet-max {
-    top: 30%;
+    //top: 30%;
     display: block;
   }
 
   @include tablet {
-    top: 35%;
+    //top: 35%;
   }
 
   @include mobile-max {
-    top: 60%;
+    //top: 60%;
   }
 }
 
@@ -596,22 +622,22 @@ p.catalog__wrapper-box-item-packing {
   width: 32px;
   height: 32px;
   z-index: 999999999999999999999;
-  //top: 54%;
+  top: 50%;
   //display: none;
   right: 0;
 
   @include tablet-max {
-    top: 30%;
+    //top: 30%;
     display: block;
   }
 
   @include tablet {
-    top: 35%;
+    //top: 35%;
   }
 
   @include mobile-max {
     right: 0;
-    top: 60%;
+    //top: 60%;
   }
 }
 
@@ -634,6 +660,10 @@ p.catalog__wrapper-box-item-packing {
     width: 44%;
   }
 
+  @include desktop-min {
+    width: 70%;
+  }
+
   @include tablet {
     width: 70%;
   }
@@ -649,21 +679,21 @@ p.catalog__wrapper-box-item-packing {
   width: 32px;
   height: 32px;
   z-index: 9999999999999999999;
-  //top: 54%;
+  top: 50%;
   //display: none;
   left: 0;
 
   @include tablet-max {
-    top: 30%;
+    //top: 30%;
     display: block;
   }
 
   @include tablet {
-    top: 35%;
+    //top: 35%;
   }
 
   @include mobile-max {
-    top: 60%;
+    //top: 60%;
   }
 }
 
@@ -673,21 +703,21 @@ p.catalog__wrapper-box-item-packing {
   width: 32px;
   height: 32px;
   z-index: 999999999999999999999;
-  //top: 54%;
+  top: 50%;
   //display: none;
   right: 0;
 
   @include tablet-max {
-    top: 30%;
+    //top: 30%;
     display: block;
   }
 
   @include tablet {
-    top: 35%;
+    //top: 35%;
   }
 
   @include mobile-max {
     right: 0;
-    top: 60%;
+    //top: 60%;
   }
 }

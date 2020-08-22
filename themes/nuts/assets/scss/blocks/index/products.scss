@@ -55,7 +55,7 @@
 
     @include mobile-max {
       font-size: 39px;
-      line-height: 79px;
+      line-height: 50px;
       margin: 0;
     }
   }
@@ -69,11 +69,11 @@
     letter-spacing: 1.6px;
 
     @include mobile-max {
-      font-size: 33px;
-      line-height: 30px;
+      font-size: 18px;
+      line-height: 29px;
       margin: 0;
-      letter-spacing: 0.1px;
-      margin-bottom: 20px;
+      letter-spacing: .1px;
+      margin-bottom: 10px;
     }
   }
 }

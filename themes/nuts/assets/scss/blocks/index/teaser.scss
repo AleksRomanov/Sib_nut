@@ -45,7 +45,7 @@
   }
 
   @include mobile-max {
-    min-height: 740px;
+    min-height: 680px;
   }
 }
 
@@ -84,7 +84,8 @@
 
   @include mobile-max {
     margin-left: 3%;
-    padding-top: 320px;
+    padding-top: 300px;
+    min-height: auto;
   }
 }
 
@@ -93,7 +94,7 @@
   padding-left: 40px;
 
   @include mobile-max {
-    padding-left: 35px;
+    padding-left: 22px;
   }
 
 
@@ -113,6 +114,10 @@
     left: 22px;
     height: 100%;
     border-left: 1px solid #FFFFFF;
+
+    @include mobile-max {
+      left: 9px;
+    }
   }
 
   @include tablet-max {
@@ -165,7 +170,9 @@
   }
 
   @include mobile-max {
-    margin-bottom: 10px;
+    margin-bottom: 0;
+    font-size: 42px;
+    line-height: 48px;
   }
 }
 
@@ -211,6 +218,8 @@
   @include mobile-max {
     font-size: 24px;
     max-width: 200px;
+    padding: 11px 19px;
+    min-height: auto;
   }
 }
 
@@ -242,7 +251,7 @@
   }
 
   @include mobile-max {
-    margin-top: 30px;
+    margin-top: 50px;
     font-size: 17px;
   }
 }
