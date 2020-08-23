@@ -1,6 +1,6 @@
 // VARIABLES & PATHS
 
-let localhost = 'http://localhost:8888/nuts/', // Local domain
+let localhost = 'http://localhost:8888/SIB_NUT/', // Local domain
     preprocessor = 'scss', // Preprocessor (sass, scss, less, styl) / Preprocessor folder name / Module require const name. Example: themes/mytheme/assets/scss/
     theme = 'nuts', // Theme folder name
     fileswatch = 'html,htm,php,txt,yaml,twig,json,md', // List of files extensions for watching & hard reload (comma separated)
