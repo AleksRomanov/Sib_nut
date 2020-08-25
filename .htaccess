@@ -11,7 +11,7 @@
     ## if you have installed to a subdirectory, enter the name here also.
     ##
     # RewriteBase /
-    
+
     ##
     ## Uncomment following lines to force HTTPS.
     ##
@@ -33,6 +33,7 @@
     ##
     ## White listed folders
     ##
+    RewriteCond %{REQUEST_URI} !^/php
     RewriteCond %{REQUEST_FILENAME} -f
     RewriteCond %{REQUEST_FILENAME} !/.well-known/*
     RewriteCond %{REQUEST_FILENAME} !/storage/app/uploads/.*
