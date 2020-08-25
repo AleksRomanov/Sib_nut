@@ -5,7 +5,7 @@ const formsSubmit = () => {
         var th = $(this);
         $.ajax({
             type: "POST",
-            url: "php/mail.php", //Change
+            url: "./php/mail.php", //Change
             data: th.serialize()
         }).done(function () {
             $(th).find('.success').addClass('activate').css("display", "block").hide().fadeIn();
