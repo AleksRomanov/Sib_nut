@@ -1,4 +1,4 @@
-import intersectionObserver from "./intersection-observer";
+// import intersectionObserver from "./intersection-observer";
 import swiperShell from "./swiper_shell";
 import swiperCrushed from "./swiper_crushed";
 import swiperProductsPacking from "./swiper_products_packing";
@@ -14,8 +14,12 @@ import mmenu from "./mmenu";
 import formsSubmit from "./forms-submit";
 import preloader from "./preloader";
 import buttonHover from "./button_hover";
+import swiperGallery from "./swiper_gallery";
+import swiperCertificates from "./swiper_certificates";
 import swiperPartners from "./swiper_partners";
 import swiperMembrane from "./swiper_membrane";
+import swiperOil from "./swiper_oil";
+import swiperJmikh from "./swiper_jmikh";
 // import formsOrderSubmit from "./forms-order-submit";
 // import partnersAutoplaySlide from "./partnersAutoplaySlide";
 
@@ -35,8 +39,9 @@ class App {
     //   window.objectFitImages();
     // }
 
-    intersectionObserver();
-    swiperShell();
+    // intersectionObserver();
+
+    swiperCertificates();
     swiperCrushed();
     swiperAbout();
     swiperProductsPacking();
@@ -52,7 +57,11 @@ class App {
     preloader();
     buttonHover();
     swiperPartners();
+    swiperGallery();
     swiperMembrane();
+    swiperShell();
+    swiperOil();
+    swiperJmikh();
     // formsOrderSubmit();
     // partnersAutoplaySlide();
 

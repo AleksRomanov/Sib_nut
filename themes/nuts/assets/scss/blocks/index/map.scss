@@ -10,6 +10,7 @@
   padding: 29px 7.3% 0;
   box-sizing: border-box;
   margin-bottom: -161px;
+  z-index: 0;
 
   @include tablet-max {
     background-image: url("../images/map/background_map_tablet.jpg");

@@ -6,7 +6,7 @@
   background-image: url("../images/about/background_about.jpg");
   background-size: cover;
   box-sizing: border-box;
-  padding: 0 7.3% 7.3%;
+  padding: 0 7.3% 3.3%;
 
   @include tablet-max {
     background-image: url("../images/about/background_about_tablet.jpg");
@@ -65,14 +65,14 @@
 .about__list-item {
   width: 25%;
   flex-direction: column;
-  min-height: 595px;
+  min-height: 540px;
   //border: 2px solid red;
   border-radius: 92px;
   //box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.16);
   box-shadow: 0 0 11px rgba(0,0,0,0.16);
   margin: 0;
   background-color: #FFFFFF;
-  padding: 20px;
+  padding: 10px;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
@@ -83,8 +83,7 @@
   }
 
   @include desktop-min {
-    min-height: 646px;
-    font-size: 2rem;
+    min-height: 490px;
     margin-bottom: 20px;
 
     &:hover {
@@ -175,9 +174,9 @@
 
   & span {
     //max-width: 445px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 400;
-    line-height: 38px;
+    line-height: 33px;
     text-align: center;
     margin: 0 auto;
 
