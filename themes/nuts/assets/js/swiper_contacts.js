@@ -17,6 +17,10 @@ const swiperContacts = () => {
             prevEl: '.contacts__slide-controls--prev',
         },
         breakpoints: {
+            1920: {
+                // height: 800,
+                slidesPerView: 3,
+            },
             1200: {
                 // height: 800,
                 slidesPerView: 3,

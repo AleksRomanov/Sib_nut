@@ -38,25 +38,6 @@
     }
 
   }
-
-  &::after {
-    content: " ";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-image: url(../images/svg/zig-zag.svg);
-    background-repeat: repeat-x;
-    background-position: top;
-    //transform: rotate(180deg);
-    width: 100%;
-    height: 10px;
-    z-index: 2;
-
-    @include mobile-max {
-      bottom: -1px;
-    }
-
-  }
 }
 
 .certificates__titles {
@@ -94,8 +75,8 @@
     //top: 100px;
     margin: 0 auto;
     text-align: center;
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 26px;
+    line-height: 28px;
     font-weight: 400;
     padding-bottom: 40px;
     //letter-spacing: 6px;
@@ -115,30 +96,24 @@
   }
 }
 
-.sertificates__swiper {
+.certificates__swiper {
   margin: 0 auto;
   margin-bottom: 30px;
   position: relative;
   max-width: 1641px;
+  z-index: 0;
+
+  @include mobile-max {
+    min-height: 500px;
+  }
 }
 
-.fotorama__wrap {
-  margin: 0 auto;
-}
+.certificates__slide {
+  padding-bottom: 70px;
 
-.fotorama__fullscreen-icon {
-  background-color: rgba(0, 0 ,0,.1);
-  border-radius: 25px;
-}
-
-.fotorama__arr--next {
-  background-color: rgba(0, 0 ,0,.1);
-  border-radius: 25px;
-}
-
-.fotorama__arr--prev {
-  background-color: rgba(0, 0 ,0,.1);
-  border-radius: 25px;
+  @include mobile-max {
+    padding-bottom: 90px;
+  }
 }
 
 .p {
@@ -150,7 +125,7 @@
   background-color: rgba(0, 0, 0, .6);
   border-radius: 25px;
   max-width: 1518px;
-  min-height: 167px;
+  min-height: 95px;
   display: flex;
   align-items: center;
   margin: 0 auto;
@@ -168,8 +143,8 @@
   & span {
     display: block;
     color: #FFFFFF;
-    font-size: 39px;
-    line-height: 47px;
+    font-size: 34px;
+    line-height: 36px;
     font-weight: 200;
     max-width: 1392px;
 
@@ -213,7 +188,7 @@
   height: 32px;
   z-index: 9999999999;
   //top: 8%;
-  display: none;
+  //display: none;
 
   @include mobile-max {
     left: 9px;
@@ -236,7 +211,7 @@
   height: 32px;
   z-index: 9999999999;
   //top: 8%;
-  display: none;
+  //display: none;
 
   @include mobile-max {
     right: 9px;
@@ -252,12 +227,53 @@
   }
 }
 
-.fotorama__wrap .fotorama__fullscreen-icon {
-  background: none;
-  background-image: url("../images/svg/full_screen_gallery.svg");
-  background-size: cover;
-  width: 32px;
-  height: 32px;
+.certificates__full-close {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  border: none;
+  background-color: transparent;
+  z-index: 99999999993994765275468471294898585739577;
+
+  @include mobile-max {
+    top: 30px;
+    right: 0;
+  }
+}
+
+.certificates--full {
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .7);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.show-full-certificates--js {
+  display: flex;
+}
+
+.certificates__swiper--full {
+  padding-bottom: 140px;
+
+  @include mobile-max {
+    padding-bottom: 170px;
+  }
+}
+
+.certificates__slide--full > * {
   display: block;
-  opacity: .8;
+  margin: 0 auto;
+  position: relative;
+  //transform: translateY(-50%);
+  //top: 50%;
+}
+
+.certificates__slide--full img {
+  max-height: 80vh;
 }

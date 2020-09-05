@@ -1,7 +1,7 @@
 .teaser {
   position: relative;
   width: 100%;
-  min-height: 1000px;
+  min-height: 760px;
   background-image: url("../images/teaser/background.jpg");
   background-size: cover;
 
@@ -241,7 +241,7 @@
   color: #FFFFFF;
   font-size: 23px;
   font-weight: 400;
-  margin-top: 10%;
+  margin-top: 6%;
   margin-left: 17%;
 
   @include tablet {

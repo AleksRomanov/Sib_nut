@@ -55,7 +55,6 @@
     ##
     ## Standard routes
     ##
-    RewriteCond %{REQUEST_URI} !^/php
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 

@@ -20,8 +20,8 @@
       </div>
       <!--        </li>-->
       <ul class="catalog__list">
-        <li class="catalog__slide" id="advantage-1">
-          <div class="catalog__wrapper-box-item">
+        <li class="catalog__slide" id="advantage-1" >
+          <div class="catalog__wrapper-box-item" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
             <h3>ЯДРО КЕДРОВОГО ОРЕХА</h3>
             <p>Представляет собой готовый продукт, полученный в процессе переработки семян кедровой сосны сибирской (бот. Pinus Sibirica). Ядро кедрового ореха издавна считается кладезем витаминов и полезных веществ, так необходимых современному человеку сегодня. Имеет приятный сладковатый вкус,
               цвет варьируется от молочного белого до бледно-желтого. Ядро насыщенно макро- и микроэлементами, такими как фосфор, магний, калий, натрий и кальций; железо, марганец, медь, цинк, молибден, кремний, алюминий, йод, бор, никель, кобальт, свинец, стронций. Используется как готовый
@@ -32,45 +32,36 @@
           </div>
 
 
-          <div class="swiper-container catalog__wrapper-box-packing">
+          <div class="swiper-container catalog__wrapper-box-packing sal-slider-kernel--js" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
             <div class="swiper-wrapper catalog__wrapper-box-list">
               <div class="swiper-slide catalog__wrapper-box-packing-slide">
-                <img class="" src="themes/nuts/assets/images/productionUnit/0,1.jpg" alt="0,1кг" aria-label="0,1кг">
+                <img class="catalog__wrapper-box-packing-slide-image" src="themes/nuts/assets/images/productionUnit/0,1.jpg" alt="0,1кг" aria-label="0,1кг">
                 <span>0,1кг</span>
               </div>
               <div class="swiper-slide catalog__wrapper-box-packing-slide">
-                <img class="" src="themes/nuts/assets/images/productionUnit/0,2.jpg" alt="0,2кг" aria-label="0,10,2кг">
+                <img class="catalog__wrapper-box-packing-slide-image" src="themes/nuts/assets/images/productionUnit/0,2.jpg" alt="0,2кг" aria-label="0,2кг">
                 <span>0,2кг</span>
               </div>
               <div class="swiper-slide catalog__wrapper-box-packing-slide">
-                <img class="" src="themes/nuts/assets/images/productionUnit/0,3.jpg" alt="0,3кг" aria-label="0,3кг">
+                <img class="catalog__wrapper-box-packing-slide-image" src="themes/nuts/assets/images/productionUnit/0,3.jpg" alt="0,3кг" aria-label="0,3кг">
                 <span>0,3кг</span>
               </div>
               <div class="swiper-slide catalog__wrapper-box-packing-slide">
-                <img class="" src="themes/nuts/assets/images/productionUnit/0,5.jpg" alt="0,5кг" aria-label="0,5кг">
+                <img class="catalog__wrapper-box-packing-slide-image" src="themes/nuts/assets/images/productionUnit/0,5.jpg" alt="0,5кг" aria-label="0,5кг">
                 <span>0,5кг</span>
               </div>
               <div class="swiper-slide catalog__wrapper-box-packing-slide">
-                <img class="" src="themes/nuts/assets/images/productionUnit/1.jpg" alt="1кг" aria-label="1кг">
+                <img class="catalog__wrapper-box-packing-slide-image" src="themes/nuts/assets/images/productionUnit/1.jpg" alt="1кг" aria-label="1кг">
                 <span>1кг</span>
               </div>
               <div class="swiper-slide catalog__wrapper-box-packing-slide">
-                <img class="" src="themes/nuts/assets/images/productionUnit/12,5.jpg" alt="12,5кг" aria-label="12,5кг">
+                <img class="catalog__wrapper-box-packing-slide-image" src="themes/nuts/assets/images/productionUnit/12,5.jpg" alt="12,5кг" aria-label="12,5кг">
                 <span>12,5кг</span>
               </div>
               <div class="swiper-slide catalog__wrapper-box-packing-slide">
-                <img class="" src="themes/nuts/assets/images/productionUnit/40.jpg" alt="40кг" aria-label="40кг">
+                <img class="catalog__wrapper-box-packing-slide-image" src="themes/nuts/assets/images/productionUnit/40.jpg" alt="40кг" aria-label="40кг">
                 <span>40кг</span>
               </div>
-            </div>
-            <div class="catalog__wrapper-box-storage">
-              <button class="button catalog__button contact-button--feedback-js">
-                <p class="buttton__title">ЗАКАЗАТЬ</p>
-                <span></span>
-              </button>
-              <span>Срок годности:<br>
-            - при температуре от +8°C до +20°C  - 12 месяцев<br>- при температуре от 0°C до +7°C - 24 месяца.
-              </span>
             </div>
             <div class="swiper-button-prev catalog__slide-controls catalog__slide-controls--prev">
               <svg width="32" height="32">
@@ -81,6 +72,15 @@
               <svg width="32" height="32">
                 <use xlink:href="#arrow_right"></use>
               </svg>
+            </div>
+            <div class="catalog__wrapper-box-storage">
+              <button class="button catalog__button contact-button--feedback-js">
+                <p class="buttton__title">ЗАКАЗАТЬ</p>
+                <span></span>
+              </button>
+              <span>Срок годности:<br>
+            - при температуре от +8°C до +20°C  - 12 месяцев<br>- при температуре от 0°C до +7°C - 24 месяца.
+              </span>
             </div>
           </div>
 
@@ -99,13 +99,13 @@
               <span> - стеклянная бутылка объемом 0,25 мл</span>
             </div>
           </div>
-          <div class="catalog__wrapper-box-packing" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
-            <ul class="catalog__wrapper-box-packing-list">
-              <li class="catalog__wrapper-box-packing-list-item">
+          <div class="swiper-container catalog__slider-oil sal-slider-oil--js" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide catalog__slider-oil-slide">
                 <img class="" src="themes/nuts/assets/images/productionUnit/maslo.jpg" width="550" alt="Масло">
-                <span>0,1кг</span>
-              </li>
-            </ul>
+                <span>0,25мл</span>
+              </div>
+            </div>
             <div class="catalog__wrapper-box-storage">
               <button class="button catalog__button contact-button--feedback-js">
                 <p class="buttton__title">ЗАКАЗАТЬ</p>
@@ -130,13 +130,12 @@
               <span> - вакуумный пакет весом 0,5кг и 1 кг</span>
             </div>
           </div>
-          <div class="catalog__wrapper-box-packing" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
-
-            <ul class="catalog__wrapper-box-packing-list">
-              <li class="catalog__wrapper-box-packing-list-item">
+          <div class="swiper-container catalog__slider-jmikh sal-slider-jmikh--js" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
+            <div class="swiper-wrapper catalog__wrapper-box-packing-list">
+              <div class="swiper-slide catalog__slider-jmikh-slide">
                 <img class="" src="themes/nuts/assets/images/productionUnit/jmich.jpg" width="550" alt="Жмых">
-              </li>
-            </ul>
+              </div>
+            </div>
             <div class="catalog__wrapper-box-storage">
               <button class="button catalog__button contact-button--feedback-js">
                 <p class="buttton__title">ЗАКАЗАТЬ</p>
@@ -197,6 +196,7 @@
             </div>
           </div>
         </li>
+
         <li class="catalog__slide" id="advantage-5" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
           <div class="catalog__wrapper-box-items">
             <div class="catalog__wrapper-box-item">
@@ -215,7 +215,6 @@
                 <img class="" src="themes/nuts/assets/images/productionUnit/plenka_podushka.jpg" width="550" alt="Плёнка">
               </div>
               <div class="swiper-slide catalog__container-membrane-slide">
-<!--                <img class="" src="themes/nuts/assets/images/productionUnit/plenka.jpg" width="550" alt="Плёнка">-->
                 <img class="" src="themes/nuts/assets/images/productionUnit/plenka_podushka.jpg" width="550" alt="Плёнка">
               </div>
               <div class="swiper-slide catalog__container-membrane-slide">
@@ -296,3 +295,217 @@
 </section>
 
 
+<section class="catalog__kernel--full">
+  <button class="catalog__full-close">
+    <svg width="50" height="50">
+      <use xlink:href="#close"></use>
+    </svg>
+  </button>
+  <div class="swiper-container catalog__wrapper-box-packing--full">
+    <div class="swiper-wrapper catalog__wrapper-box-list--full">
+      <div class="swiper-slide catalog__wrapper-box-packing-slide--full">
+        <div class="swiper-zoom-container">
+          <img class="" src="themes/nuts/assets/images/productionUnit/0,1.jpg" alt="0,1кг" aria-label="0,1кг">
+          <span>0,1кг</span>
+        </div>
+      </div>
+      <div class="swiper-slide catalog__wrapper-box-packing-slide--full">
+        <div class="swiper-zoom-container">
+          <img class="" src="themes/nuts/assets/images/productionUnit/0,2.jpg" alt="0,2кг" aria-label="0,10,2кг">
+          <span>0,2кг</span>
+        </div>
+      </div>
+      <div class="swiper-slide catalog__wrapper-box-packing-slide--full">
+        <div class="swiper-zoom-container">
+          <img class="" src="themes/nuts/assets/images/productionUnit/0,3.jpg" alt="0,3кг" aria-label="0,3кг">
+          <span>0,3кг</span>
+        </div>
+      </div>
+      <div class="swiper-slide catalog__wrapper-box-packing-slide--full">
+        <div class="swiper-zoom-container">
+          <img class="" src="themes/nuts/assets/images/productionUnit/0,5.jpg" alt="0,5кг" aria-label="0,5кг">
+          <span>0,5кг</span>
+        </div>
+      </div>
+      <div class="swiper-slide catalog__wrapper-box-packing-slide--full">
+        <div class="swiper-zoom-container">
+          <img class="" src="themes/nuts/assets/images/productionUnit/1.jpg" alt="1кг" aria-label="1кг">
+          <span>1кг</span>
+        </div>
+      </div>
+      <div class="swiper-slide catalog__wrapper-box-packing-slide--full">
+        <div class="swiper-zoom-container">
+          <img class="" src="themes/nuts/assets/images/productionUnit/12,5.jpg" alt="12,5кг" aria-label="12,5кг">
+          <span>12,5кг</span>
+        </div>
+      </div>
+      <div class="swiper-slide catalog__wrapper-box-packing-slide--full">
+        <div class="swiper-zoom-container">
+          <img class="" src="themes/nuts/assets/images/productionUnit/40.jpg" alt="40кг" aria-label="40кг">
+          <span>40кг</span>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-prev catalog__slide-controls catalog__slide-controls--prev">
+      <svg width="32" height="32">
+        <use xlink:href="#arrow_left"></use>
+      </svg>
+    </div>
+    <div class="swiper-button-next catalog__slide-controls catalog__slide-controls--next">
+      <svg width="32" height="32">
+        <use xlink:href="#arrow_right"></use>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="catalog__oil--full">
+  <button class="catalog__oil-full-close">
+    <svg width="50" height="50">
+      <use xlink:href="#close"></use>
+    </svg>
+  </button>
+  <div class="swiper-container show-full-oil--js">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+          <img class="swiper-slide-image" src="themes/nuts/assets/images/productionUnit/full/maslo.jpg" alt="Масло">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="catalog__jmikh--full">
+  <button class="catalog__jmikh-full-close">
+    <svg width="50" height="50">
+      <use xlink:href="#close"></use>
+    </svg>
+  </button>
+  <div class="swiper-container show-full-jmikh--js">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+          <img class="swiper-slide-image" src="themes/nuts/assets/images/productionUnit/full/jmich.jpg" alt="Жмых">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="catalog__shell--full">
+  <button class="catalog__shell-full-close">
+    <svg width="50" height="50">
+      <use xlink:href="#close"></use>
+    </svg>
+  </button>
+  <div class="swiper-container show-full-shell--js">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+          <img class="swiper-slide-image" src="themes/nuts/assets/images/productionUnit/full/scorlupa.jpg" alt="Скорлупа">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+          <img class="swiper-slide-image" src="themes/nuts/assets/images/productionUnit/full/scorlupa.jpg" alt="Скорлупа">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+          <img class="swiper-slide-image" src="themes/nuts/assets/images/productionUnit/full/scorlupa.jpg" alt="Скорлупа">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-button-prev catalog__slide-controls-shell catalog__slide-controls-shell--prev">
+    <svg width="32" height="32">
+      <use xlink:href="#arrow_left"></use>
+    </svg>
+  </div>
+  <div class="swiper-button-next catalog__slide-controls-shell catalog__slide-controls-shell--next">
+    <svg width="32" height="32">
+      <use xlink:href="#arrow_right"></use>
+    </svg>
+  </div>
+  </div>
+
+</section>
+
+<section class="catalog__membrane--full">
+  <button class="catalog__membrane-full-close">
+    <svg width="50" height="50">
+      <use xlink:href="#close"></use>
+    </svg>
+  </button>
+  <div class="swiper-container show-full-membrane--js">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+          <img class="swiper-slide-image" src="themes/nuts/assets/images/productionUnit/full/plenka_podushka.jpg" alt=Плёнка>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+          <img class="swiper-slide-image" src="themes/nuts/assets/images/productionUnit/full/plenka_podushka.jpg" alt="Плёнка">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+          <img class="swiper-slide-image" src="themes/nuts/assets/images/productionUnit/full/plenka_podushka.jpg" alt="Плёнка">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-button-prev catalog__slide-controls-membrane catalog__slide-controls-membrane--prev">
+    <svg width="32" height="32">
+      <use xlink:href="#arrow_left"></use>
+    </svg>
+  </div>
+  <div class="swiper-button-next catalog__slide-controls-membrane catalog__slide-controls-membrane--next">
+    <svg width="32" height="32">
+      <use xlink:href="#arrow_right"></use>
+    </svg>
+  </div>
+  </div>
+
+</section>
+
+
+<section class="catalog__crushed--full">
+  <button class="catalog__crushed-full-close">
+    <svg width="50" height="50">
+      <use xlink:href="#close"></use>
+    </svg>
+  </button>
+  <div class="swiper-container show-full-crushed--js">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+          <img class="swiper-slide-image" src="themes/nuts/assets/images/productionUnit/full/kolotoe_yadro.jpg" alt="Колотое ядро">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+          <img class="swiper-slide-image" src="themes/nuts/assets/images/productionUnit/full/kolotoe_yadro.jpg" alt="Колотое ядро">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+          <img class="swiper-slide-image" src="themes/nuts/assets/images/productionUnit/full/kolotoe_yadro.jpg" alt="Колотое ядро">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-button-prev catalog__slide-controls-crushed catalog__slide-controls-crushed--prev">
+    <svg width="32" height="32">
+      <use xlink:href="#arrow_left"></use>
+    </svg>
+  </div>
+  <div class="swiper-button-next catalog__slide-controls-crushed catalog__slide-controls-crushed--next">
+    <svg width="32" height="32">
+      <use xlink:href="#arrow_right"></use>
+    </svg>
+  </div>
+
+</section>
