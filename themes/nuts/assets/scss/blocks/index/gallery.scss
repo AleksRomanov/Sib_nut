@@ -75,11 +75,11 @@
   }
 
   @include tablet-max {
-    padding-bottom: 20%;
+    padding-bottom: 14%;
   }
 
   @include tablet {
-    padding-bottom: 26%;
+    padding-bottom: 21%;
   }
 
   @include mobile-max {
@@ -142,7 +142,7 @@
   }
 
   @include mobile-max {
-    max-height: 40vh;
+    max-height: 36vh;
   }
 
   @include mobile {

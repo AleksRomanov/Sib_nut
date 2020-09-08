@@ -83,7 +83,7 @@
   }
 
   @include desktop-min {
-    min-height: 490px;
+    min-height: 530px;
     margin-bottom: 20px;
 
     &:hover {
@@ -175,7 +175,7 @@
 
   & span {
     //max-width: 445px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 33px;
     text-align: center;
