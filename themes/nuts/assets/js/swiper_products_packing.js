@@ -2,7 +2,7 @@ const swiperProductsPacking = () => {
     var swiperProductsPacking = new Swiper('.sal-slider-kernel--js', {
         init: false,
         // zoom: true,
-        // spaceBetween: 8,
+        spaceBetween: 8,
         // autoHeight: true,
         navigation: {
             nextEl: '.catalog__slide-controls--next',
