@@ -4,6 +4,12 @@ const swiperGallery = () => {
         centeredSlides: true,
         spaceBetween: 20,
         // autoHeight: true,
+        //
+        // on: {
+        //     slideChange: function () {
+        //     },
+        // },
+
         navigation: {
             nextEl: '.gallery-control--next',
             prevEl: '.gallery-control--prev',
@@ -53,7 +59,15 @@ const swiperGallery = () => {
                     popupFullScreen.classList.remove('show-full-gallery--js');
                     pageBody.classList.remove('overflow-hidden--js');
                 })
-            }
+            },
+
+            slideChange: function () {
+                var galleryVideos = document.querySelectorAll('.video-gallery');
+
+                galleryVideos.forEach(function (slidePause) {
+                    slidePause.pause();
+                });
+            },
         }
     });
 
@@ -83,6 +97,17 @@ const swiperGallery = () => {
                 return '<img class="' + className + ' swiper--bullet" src="themes/nuts/assets/images/gallery/bullets/' + index + '-bullet.jpg">';
             }
         },
+
+        on: {
+
+            slideChange: function () {
+                var galleryVideos = document.querySelectorAll('.video-gallery');
+
+                galleryVideos.forEach(function (slidePause) {
+                    slidePause.pause();
+                });
+            },
+        }
     });
 };
 
