@@ -43,7 +43,7 @@ const swiperCrushed = () => {
                         pageBody.classList.add('overflow-hidden--js');
                         swiperFull.init();
                         swiperFull.slideReset();
-                        swiperFull.slideTo(swiperProductsPacking.clickedIndex);
+                        swiperFull.slideTo(swiperCrushed.clickedIndex);
                     })
                 })
                 closeButton.addEventListener('click', function () {
