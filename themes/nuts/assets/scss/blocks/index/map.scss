@@ -1,8 +1,9 @@
 .map {
   position: relative;
   width: 100%;
+  min-height: 960px;
+
   //height: auto;
-  min-height: 1000px;
   background-image: url("../images/map/background_map.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,15 +13,30 @@
   margin-bottom: -161px;
   z-index: 0;
 
+  @include desktop {
+  }
+
+  @include desktop-min {
+    min-height: 960px;
+  }
+
   @include tablet-max {
     background-image: url("../images/map/background_map_tablet.jpg");
     background-size: cover;
   }
 
+  @include tablet {
+    min-height: 920px;
+  }
+
   @include mobile-max {
-    min-height: 740px;
+    min-height: 785px;
     background-image: url("../images/map/background_map_mobile.jpg");
     background-size: cover;
+  }
+
+  @include mobile {
+    min-height: 740px;
   }
 }
 
