@@ -267,6 +267,14 @@
   }
 }
 
+.certificates__swiper-en--full {
+  padding-bottom: 140px;
+
+  @include mobile-max {
+    padding-bottom: 170px;
+  }
+}
+
 .certificates__slide--full > * {
   display: block;
   margin: 0 auto;

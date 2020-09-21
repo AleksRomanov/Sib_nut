@@ -1,5 +1,5 @@
 const swiperCertificates = () => {
-    var swiper = new Swiper('.certificates__swiper', {
+    var swiperCertificates = new Swiper('.certificates__swiper', {
         slidesPerView: 1,
         centeredSlides: true,
         spaceBetween: 20,
@@ -46,7 +46,7 @@ const swiperCertificates = () => {
                         pageBody.classList.add('overflow-hidden--js');
                         swiperFull.init();
                         swiperFull.slideReset();
-                        swiperFull.slideTo(swiper.activeIndex);
+                        swiperFull.slideTo(swiperCertificates.activeIndex);
                     })
                 })
                 closeButton.addEventListener('click', function () {
@@ -84,6 +84,9 @@ const swiperCertificates = () => {
             }
         },
     });
+    window.swiperCertificates = {
+        swiper: swiperCertificates
+    };
 };
 
 export default swiperCertificates;
