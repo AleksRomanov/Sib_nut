@@ -15,6 +15,7 @@ import formsSubmit from "./forms-submit";
 import preloader from "./preloader";
 import buttonHover from "./button_hover";
 import swiperGallery from "./swiper_gallery";
+import swiperCertificatesEng from "./swiper_certificates_eng";
 import swiperCertificates from "./swiper_certificates";
 import swiperPartners from "./swiper_partners";
 import swiperMembrane from "./swiper_membrane";
@@ -41,6 +42,7 @@ class App {
 
     // intersectionObserver();
 
+    swiperCertificatesEng();
     swiperCertificates();
     swiperCrushed();
     swiperAbout();
