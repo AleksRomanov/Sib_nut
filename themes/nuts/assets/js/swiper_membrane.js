@@ -2,8 +2,8 @@ const swiperMembrane = () => {
     var swiperMembrane = new Swiper('.catalog__container-membrane', {
         spaceBetween: 10,
         init: false,
-        // allowTouchMove: true,
-
+        preloadImages: false,
+        lazy: true,
         breakpoints: {
             1920: {
                 // direction: 'horizontal',
@@ -56,10 +56,8 @@ const swiperMembrane = () => {
 
     var swiperFull = new Swiper('.show-full-membrane--js', {
         init: false,
-        // Disable preloading of all images
-        // preloadImages: false,
-        // Enable lazy loading
-        // lazy: true,
+        preloadImages: false,
+        lazy: true,
         zoom: true,
         centeredSlides: true,
         slidesPerView: 1,

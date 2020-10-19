@@ -2,8 +2,8 @@ const swiperCrushed = () => {
     var swiperCrushed = new Swiper('.catalog__container-crushed', {
         spaceBetween: 10,
         init: false,
-        // allowTouchMove: true,
-
+        preloadImages: false,
+        lazy: true,
         breakpoints: {
             1920: {
                 // direction: 'horizontal',
@@ -56,10 +56,8 @@ const swiperCrushed = () => {
 
     var swiperFull = new Swiper('.show-full-crushed--js', {
         init: false,
-        // Disable preloading of all images
-        // preloadImages: false,
-        // Enable lazy loading
-        // lazy: true,
+        preloadImages: false,
+        lazy: true,
         zoom: true,
         centeredSlides: true,
         slidesPerView: 1,

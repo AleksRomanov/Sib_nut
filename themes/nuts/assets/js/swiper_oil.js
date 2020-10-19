@@ -3,8 +3,8 @@ const swiperOil = () => {
         spaceBetween: 10,
         init: false,
         centeredSlides: true,
-        // allowTouchMove: true,
-
+        preloadImages: false,
+        lazy: true,
         breakpoints: {
             1920: {
                 // direction: 'horizontal',
@@ -57,10 +57,8 @@ const swiperOil = () => {
 
     var swiperFull = new Swiper('.show-full-oil--js', {
         init: false,
-        // Disable preloading of all images
-        // preloadImages: false,
-        // Enable lazy loading
-        // lazy: true,
+        preloadImages: false,
+        lazy: true,
         zoom: true,
         centeredSlides: true,
         slidesPerView: 1,

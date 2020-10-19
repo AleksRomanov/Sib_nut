@@ -3,7 +3,9 @@ const swiperShell = () => {
         // slidesPerView: 2,
         init: false,
         spaceBetween: 10,
-        // direction: 'horizontal',
+        preloadImages: false,
+        lazy: true,
+
         breakpoints: {
             1920: {
                 // direction: 'horizontal',
@@ -56,10 +58,8 @@ const swiperShell = () => {
 
     var swiperFull = new Swiper('.show-full-shell--js', {
         init: false,
-        // Disable preloading of all images
-        // preloadImages: false,
-        // Enable lazy loading
-        // lazy: true,
+        preloadImages: false,
+        lazy: true,
         zoom: true,
         centeredSlides: true,
         slidesPerView: 1,

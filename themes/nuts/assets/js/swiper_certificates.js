@@ -3,7 +3,9 @@ const swiperCertificates = () => {
         slidesPerView: 1,
         centeredSlides: true,
         spaceBetween: 20,
-        autoHeight: true,
+        autoHeight: false,
+        preloadImages: false,
+        lazy: true,
         navigation: {
             nextEl: '.certificates__slider-controls--next',
             prevEl: '.certificates__slider-controls--prev',
@@ -59,14 +61,12 @@ const swiperCertificates = () => {
 
     var swiperFull = new Swiper('.certificates__swiper--full', {
         init: false,
-        // Disable preloading of all images
-        // preloadImages: false,
-        // Enable lazy loading
-        // lazy: true,
+        preloadImages: false,
+        lazy: true,
         zoom: true,
         centeredSlides: true,
         slidesPerView: 1,
-        autoHeight: true,
+        autoHeight: false,
 
         navigation: {
             nextEl: '.certificates__slider-controls--next',
