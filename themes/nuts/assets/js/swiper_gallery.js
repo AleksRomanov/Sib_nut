@@ -3,12 +3,9 @@ const swiperGallery = () => {
         slidesPerView: 1,
         centeredSlides: true,
         spaceBetween: 20,
-        // autoHeight: true,
-        //
-        // on: {
-        //     slideChange: function () {
-        //     },
-        // },
+        preloadImages: false,
+        lazy: true,
+
 
         navigation: {
             nextEl: '.gallery-control--next',
@@ -73,10 +70,8 @@ const swiperGallery = () => {
 
     var swiperFull = new Swiper('.gallery_container--full', {
         init: false,
-        // Disable preloading of all images
-        // preloadImages: false,
-        // Enable lazy loading
-        // lazy: true,
+        preloadImages: false,
+        lazy: true,
         zoom: true,
         centeredSlides: true,
         slidesPerView: 1,

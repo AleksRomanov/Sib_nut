@@ -28,15 +28,15 @@ const salAnimation = () => {
         });
     }
 
-    if (document.querySelector('.sal-slider-kernel--js')) {
-        // Активация свайпера при попадании во вьюпорт
-        var swiperProductsPacking = document.querySelector('.sal-slider-kernel--js');
-
-        swiperProductsPacking.addEventListener('sal:in', ({detail}) => {
-            window.swiperProductsPacking.swiper.init();
-
-        });
-    }
+    // if (document.querySelector('.sal-slider-kernel--js')) {
+    //     // Активация свайпера при попадании во вьюпорт
+    //     var swiperProductsPacking = document.querySelector('.sal-slider-kernel--js');
+    //
+    //     swiperProductsPacking.addEventListener('sal:in', ({detail}) => {
+    //         window.swiperProductsPacking.swiper.init();
+    //
+    //     });
+    // }
 
 
     if (document.querySelector('.sal-slider-membrane--js')) {

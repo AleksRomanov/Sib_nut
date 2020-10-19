@@ -44,17 +44,9 @@
   }
 }
 
-//.contacts__swiper {
-//  max-width: 1640px;
-//}
-
-//.contacts__swiper-wrapper {
-//  margin-bottom: 10px;
-//
-//  @include mobile-max {
-//    margin-bottom: 0;
-//  }
-//}
+.contacts__swiper {
+  z-index: 0;
+}
 
 .contacts__slide-wrapper {
   display: flex;

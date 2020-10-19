@@ -1,9 +1,10 @@
 const swiperProductsPacking = () => {
     var swiperProductsPacking = new Swiper('.sal-slider-kernel--js', {
-        init: false,
+        // init: false,
         // zoom: true,
         spaceBetween: 8,
-        // autoHeight: true,
+        // preloadImages: false,
+        lazy: true,
         navigation: {
             nextEl: '.catalog__slide-controls--next',
             prevEl: '.catalog__slide-controls--prev',
@@ -54,10 +55,8 @@ const swiperProductsPacking = () => {
 
     var swiperFull = new Swiper('.catalog__wrapper-box-packing--full', {
         init: false,
-        // Disable preloading of all images
-        // preloadImages: false,
-        // Enable lazy loading
-        // lazy: true,
+        preloadImages: false,
+        lazy: true,
         zoom: true,
         centeredSlides: true,
         slidesPerView: 1,

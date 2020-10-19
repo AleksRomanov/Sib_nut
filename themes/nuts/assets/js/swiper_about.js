@@ -3,6 +3,8 @@ const swiperAbout = () => {
         // slidesPerView: 3,
         autoHeight: false,
         spaceBetween: 8,
+        preloadImages: false,
+        lazy: true,
         navigation: {
             nextEl: '.about__swiper-control--next',
             prevEl: '.about__swiper-control--prev',
