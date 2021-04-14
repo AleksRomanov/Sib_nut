@@ -2,6 +2,7 @@
 import swiperShell from "./swiper_shell";
 import swiperCrushed from "./swiper_crushed";
 import swiperProductsPacking from "./swiper_products_packing";
+import swiperEastPacking from "./swiper_east_packing";
 import swiperAbout from "./swiper_about";
 import swiperQuality from "./swiper_quality";
 import scrollTop from "./scroll_top";
@@ -47,6 +48,7 @@ class App {
     swiperCrushed();
     swiperAbout();
     swiperProductsPacking();
+    swiperEastPacking();
     swiperQuality();
     swiperProducts();
     swiperContacts();

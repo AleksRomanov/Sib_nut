@@ -13,7 +13,7 @@ const swiperCertificatesEn = () => {
         pagination: {
             el: '.swiper-certificates-pagination',
             dynamicBullets: true,
-            dynamicMainBullets: 3,
+            dynamicMainBullets: 1,
             clickable: true,
 
             renderBullet(index, className) {
@@ -76,7 +76,7 @@ const swiperCertificatesEn = () => {
         pagination: {
             el: '.swiper-certificates-pagination',
             dynamicBullets: true,
-            dynamicMainBullets: 3,
+            dynamicMainBullets: 1,
             clickable: true,
 
             renderBullet(index, className) {

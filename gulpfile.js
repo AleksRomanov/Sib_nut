@@ -176,6 +176,7 @@ exports.browsersync = browsersync;
 exports.assets = parallel(styles, scripts);
 exports.styles = styles;
 exports.scripts = scripts;
+// exports.scriptsLibs = scriptsLibs;
 exports.deploy = deploy;
 exports.sprite = sprite;
 exports.imgMinification = imagesMinification;

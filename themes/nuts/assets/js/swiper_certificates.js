@@ -2,9 +2,9 @@ const swiperCertificates = () => {
     var swiperCertificates = new Swiper('.certificates__swiper', {
         slidesPerView: 1,
         centeredSlides: true,
-        spaceBetween: 20,
-        autoHeight: false,
+        zoom: true,
         preloadImages: false,
+        autoHeight: false,
         lazy: true,
         navigation: {
             nextEl: '.certificates__slider-controls--next',
@@ -13,7 +13,7 @@ const swiperCertificates = () => {
         pagination: {
             el: '.swiper-certificates-pagination',
             dynamicBullets: true,
-            dynamicMainBullets: 3,
+            dynamicMainBullets: 1,
             clickable: true,
 
             renderBullet(index, className) {
@@ -64,9 +64,8 @@ const swiperCertificates = () => {
         preloadImages: false,
         lazy: true,
         zoom: true,
-        centeredSlides: true,
         slidesPerView: 1,
-        autoHeight: false,
+        centeredSlides: true,
 
         navigation: {
             nextEl: '.certificates__slider-controls--next',
@@ -76,7 +75,7 @@ const swiperCertificates = () => {
         pagination: {
             el: '.swiper-certificates-pagination',
             dynamicBullets: true,
-            dynamicMainBullets: 3,
+            dynamicMainBullets: 1,
             clickable: true,
 
             renderBullet(index, className) {

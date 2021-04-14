@@ -1,6 +1,16 @@
 const salAnimation = () => {
     window.sal();
     //Проверка в DOMe на наличие классов
+
+    if (document.querySelector('.sal-slider-east--js')) {
+        // Активация свайпера при попадании во вьюпорт
+        var swiperProductsPacking = document.querySelector('.sal-slider-east--js');
+
+        swiperProductsPacking.addEventListener('sal:in', ({detail}) => {
+            window.swiperProductsPacking.swiper.init();
+        });
+    }
+
     if (document.querySelector('.catalog__container-shell')) {
         // Активация свайпера при попадании во вьюпорт
         var swiperShell = document.querySelector('.catalog__container-shell');

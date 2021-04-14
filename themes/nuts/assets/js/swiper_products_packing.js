@@ -5,6 +5,7 @@ const swiperProductsPacking = () => {
         spaceBetween: 8,
         // preloadImages: false,
         lazy: true,
+
         navigation: {
             nextEl: '.catalog__slide-controls--next',
             prevEl: '.catalog__slide-controls--prev',
@@ -60,7 +61,7 @@ const swiperProductsPacking = () => {
         zoom: true,
         centeredSlides: true,
         slidesPerView: 1,
-        autoHeight: true,
+        autoHeight: false,
 
         navigation: {
             nextEl: '.catalog__slide-controls--next',

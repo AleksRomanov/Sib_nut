@@ -1,6 +1,6 @@
 const swiperGallery = () => {
     var swiper = new Swiper('.gallery_container', {
-        slidesPerView: 1,
+        // slidesPerView: 1,
         centeredSlides: true,
         spaceBetween: 20,
         preloadImages: false,
@@ -46,7 +46,7 @@ const swiperGallery = () => {
                 fullScreenImageSlide.forEach(function (imageSlide) {
                     imageSlide.addEventListener('click', function () {
                         popupFullScreen.classList.add('show-full-gallery--js');
-                        pageBody.classList.add('overflow-hidden--js');
+                        pageBody.classList.add('overflow-	hidden--js');
                         swiperFull.init();
                         swiperFull.slideReset();
                         swiperFull.slideTo(swiper.activeIndex);
@@ -75,7 +75,7 @@ const swiperGallery = () => {
         zoom: true,
         centeredSlides: true,
         slidesPerView: 1,
-        autoHeight: true,
+        // autoHeight: true,
 
         navigation: {
             nextEl: '.gallery-control--next',
