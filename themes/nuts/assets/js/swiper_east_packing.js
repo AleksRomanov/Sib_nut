@@ -1,19 +1,24 @@
 const swiperEastPacking = () => {
-    var swiperEastPacking = new Swiper('.sal-slider-east--js', {
-        // init: false,
-        // zoom: true,
-        spaceBetween: 8,
+    let swiperEastPacking = new Swiper('.catalog__container-east', {
+        init: false,
         // preloadImages: false,
+        // lazy: true,
+        spaceBetween: 10,
+        preloadImages: false,
         lazy: true,
 
         navigation: {
-            nextEl: '.catalog__slide-controls--next',
-            prevEl: '.catalog__slide-controls--prev',
+            nextEl: '.catalog__slide-controls-east--next',
+            prevEl: '.catalog__slide-controls-east--prev',
         },
 
         breakpoints: {
+            1920: {
+                // direction: 'horizontal',
+                slidesPerView: 3,
+            },
             1200: {
-                slidesPerView: 4,
+                slidesPerView: 1,
                 // allowTouchMove: false,
             },
             768: {
@@ -31,15 +36,15 @@ const swiperEastPacking = () => {
 
         on: {
             init: function () {
-                var fullScreenImageSlide = document.querySelectorAll('.catalog__wrapper-box-packing-slide');
+                var fullScreenImageSlide = document.querySelectorAll('.catalog__container-east-slide');
                 var popupFullScreen = document.querySelector('.catalog__east--full');
                 var pageBody = document.querySelector('body');
-                var closeButton = document.querySelector('.catalog__full-close');
+                var closeButton = document.querySelector('.catalog__east-full-close');
 
 
                 fullScreenImageSlide.forEach(function (imageSlide) {
                     imageSlide.addEventListener('click', function () {
-                        popupFullScreen.classList.add('show-full-catalog--js');
+                        popupFullScreen.classList.add('catalog__east-show');
                         pageBody.classList.add('overflow-hidden--js');
                         swiperFull.init();
                         swiperFull.slideReset();
@@ -47,14 +52,14 @@ const swiperEastPacking = () => {
                     })
                 })
                 closeButton.addEventListener('click', function () {
-                    popupFullScreen.classList.remove('show-full-catalog--js');
+                    popupFullScreen.classList.remove('catalog__east-show');
                     pageBody.classList.remove('overflow-hidden--js');
                 })
             }
         }
     });
 
-    var swiperFull = new Swiper('.catalog__wrapper-box-packing--full', {
+    let swiperFull = new Swiper('.show-full-east--js', {
         init: false,
         preloadImages: false,
         lazy: true,
@@ -64,8 +69,8 @@ const swiperEastPacking = () => {
         autoHeight: false,
 
         navigation: {
-            nextEl: '.catalog__slide-controls--next',
-            prevEl: '.catalog__slide-controls--prev',
+            nextEl: '.catalog__slide-controls-east--next',
+            prevEl: '.catalog__slide-controls-east--prev',
         },
 
     });

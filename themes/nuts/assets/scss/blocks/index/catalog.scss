@@ -718,6 +718,10 @@ p.catalog__wrapper-box-item-packing {
   display: none;
 }
 
+.catalog__container-east-slide {
+  text-align: center;
+}
+
 .catalog__container-east-slide img {
   margin: 0 auto;
   display: block;
@@ -948,6 +952,11 @@ p.catalog__wrapper-box-item-packing {
 
 .catalog__east-show img{
   max-height: 80vh;
+}
+
+.catalog__wrapper-box-items span {
+  display: block;
+  text-align: center;
 }
 
 .catalog__east-full-close {

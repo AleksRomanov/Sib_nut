@@ -1,5 +1,5 @@
-const swiperProductsPacking = () => {
-    var swiperProductsPacking = new Swiper('.sal-slider-kernel--js', {
+const swiperProductsPackingKernel = () => {
+    let swiperProductsPackingKernel = new Swiper('.sal-slider-kernel--js', {
         // init: false,
         // zoom: true,
         spaceBetween: 8,
@@ -43,7 +43,7 @@ const swiperProductsPacking = () => {
                         pageBody.classList.add('overflow-hidden--js');
                         swiperFull.init();
                         swiperFull.slideReset();
-                        swiperFull.slideTo(swiperProductsPacking.clickedIndex);
+                        swiperFull.slideTo(swiperProductsPackingKernel.clickedIndex);
                     })
                 })
                 closeButton.addEventListener('click', function () {
@@ -54,7 +54,7 @@ const swiperProductsPacking = () => {
         }
     });
 
-    var swiperFull = new Swiper('.catalog__wrapper-box-packing--full', {
+    let swiperFull = new Swiper('.catalog__wrapper-box-packing--full', {
         init: false,
         preloadImages: false,
         lazy: true,
@@ -69,9 +69,9 @@ const swiperProductsPacking = () => {
         },
 
     });
-    window.swiperProductsPacking = {
-        swiper: swiperProductsPacking
+    window.swiperProductsPackingKernel = {
+        swiper: swiperProductsPackingKernel
     };
 };
 
-export default swiperProductsPacking;
+export default swiperProductsPackingKernel;

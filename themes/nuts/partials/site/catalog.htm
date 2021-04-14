@@ -81,7 +81,7 @@
   <div class="catalog__wrapper">
     <div class="catalog__wrapper-list">
       <input class="visually-hidden" type="radio" value="1" id="advantage-1" name="toggle" checked>
-      <input class="visually-hidden" type="radio" value="1" id="advantage-0" name="toggle">
+      <input class="visually-hidden" type="radio" value="0" id="advantage-0" name="toggle">
       <input class="visually-hidden" type="radio" value="2" id="advantage-2" name="toggle">
       <input class="visually-hidden" type="radio" value="3" id="advantage-3" name="toggle">
       <input class="visually-hidden" type="radio" value="4" id="advantage-4" name="toggle">
@@ -89,7 +89,7 @@
       <input class="visually-hidden" type="radio" value="6" id="advantage-6" name="toggle">
       <div class="catalog__wrapper-controls" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
         <label class="catalog__controls catalog__wrapper-controls-item catalog__wrapper-controls-item--1" for="advantage-1">ОЧИЩЕННОЕ ЯДРО КЕДРОВОГО ОРЕХА</label>
-        <label class="catalog__controls catalog__wrapper-controls-item catalog__wrapper-controls-item--1" for="advantage-0">ЯДРО ДАЛЬНЕВОСТОЧНОГО ОРЕХА</label>
+        <label class="catalog__controls catalog__wrapper-controls-item catalog__wrapper-controls-item--0" for="advantage-0">ЯДРО ДАЛЬНЕВОСТОЧНОГО ОРЕХА</label>
         <label class="catalog__controls catalog__wrapper-controls-item catalog__wrapper-controls-item--2" for="advantage-2">МАСЛО КЕДРОВОЕ НЕРАФИНИРОВАННОЕ</label>
         <label class="catalog__controls catalog__wrapper-controls-item catalog__wrapper-controls-item--3" for="advantage-3">КЕДРОВЫЙ ЖМЫХ</label>
         <label class="catalog__controls catalog__wrapper-controls-item catalog__wrapper-controls-item--4" for="advantage-4">СКОРЛУПА КЕДРОВОГО ОРЕХА</label>
@@ -97,7 +97,7 @@
         <label class="catalog__controls catalog__wrapper-controls-item catalog__wrapper-controls-item--6" for="advantage-6">КОЛОТОЕ ЯДРО КЕДРОВОГО ОРЕХА (НЕКОНДИЦИЯ)</label>
       </div>
       <ul class="catalog__list">
-        <li class="catalog__slide" id="advantage-1">
+        <li class="catalog__slide" id="advantage-1" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
           <div class="catalog__wrapper-box-item" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
             <h3>ЯДРО КЕДРОВОГО ОРЕХА</h3>
             <p>Представляет собой готовый продукт, полученный в процессе переработки семян кедровой сосны сибирской (бот. Pinus Sibirica). Ядро кедрового ореха издавна считается кладезем витаминов и полезных веществ, так необходимых современному человеку сегодня. Имеет приятный сладковатый вкус,
@@ -169,67 +169,49 @@
 
         </li>
 
-        <li class="catalog__slide" id="advantage-0">
-          <div class="catalog__wrapper-box-item" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
+        <li class="catalog__slide" id="advantage-0" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
+          <div class="catalog__wrapper-box-items" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
             <h3>ЯДРО ДАЛЬНЕВОСТОЧНОГО ОРЕХА</h3>
             <p>На нашем заводе мы производим ядро двух разных видов, а именно ядро, полученное путем переработки семян:
               - Сосны́ сиби́рской (лат. Pínus sibírica);
               - Сосны коре́йской (лат. Pínus koraiénsis).
-              Ядра сибирского и дальневосточного ореха отличаются размером, цветом и вкусом. Молочно-белые и светло-желтые небольшие ядра сибирского ореха имеют чуть сладковатый характерный вкус. Ядро дальневосточного ореха имеет насыщенный желтый цвет, а также оно гораздо крупнее, чем ядро сибирского ореха. Дальневосточный орех не имеет ярко выраженной сладости, но имеет легкий смолянистый вкус, который напомнит Вам запах леса в летнюю ночь.
+              Ядра сибирского и дальневосточного ореха отличаются размером, цветом и вкусом. Молочно-белые и светло-желтые небольшие ядра сибирского ореха имеют чуть сладковатый характерный вкус. Ядро дальневосточного ореха имеет насыщенный желтый цвет, а также оно гораздо крупнее, чем ядро
+              сибирского ореха. Дальневосточный орех не имеет ярко выраженной сладости, но имеет легкий смолянистый вкус, который напомнит Вам запах леса в летнюю ночь.
               Сбор кедровой шишки осуществляется только в экологически чистых районах России. Основные места сбора урожая дальневосточного ореха – Дальний Восток (Амурская область), а сибирского – Бурятия, Томская область и Забайкальский край.
             </p>
             <p class="catalog__wrapper-box-item-packing">Фасовка</p>
             <span>Вакуумные пакеты весом:</span>
           </div>
-          <div class="swiper-container catalog__wrapper-box-packing sal-slider-east--js" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
-            <div class="swiper-wrapper catalog__wrapper-box-list">
 
-              <div class="swiper-slide catalog__wrapper-box-packing-slide">
-                <img class="catalog__wrapper-box-packing-slide-image swiper-lazy" data-src="themes/nuts/assets/images/productionUnit/100g.jpg" alt="0,1кг" aria-label="0,1кг">
-                <div class="swiper-lazy-preloader"></div>
-                <span>0,1кг</span>
-              </div>
-              <div class="swiper-slide catalog__wrapper-box-packing-slide">
-                <img class="catalog__wrapper-box-packing-slide-image swiper-lazy" data-src="themes/nuts/assets/images/productionUnit/0,2.jpg" alt="0,2кг" aria-label="0,2кг">
-                <div class="swiper-lazy-preloader"></div>
-                <span>0,2кг</span>
-              </div>
-              <div class="swiper-slide catalog__wrapper-box-packing-slide">
-                <img class="catalog__wrapper-box-packing-slide-image swiper-lazy" data-src="themes/nuts/assets/images/productionUnit/0,3.jpg" alt="0,3кг" aria-label="0,3кг">
-                <div class="swiper-lazy-preloader"></div>
-                <span>0,3кг</span>
-              </div>
-              <div class="swiper-slide catalog__wrapper-box-packing-slide">
-                <img class="catalog__wrapper-box-packing-slide-image swiper-lazy" data-src="themes/nuts/assets/images/productionUnit/0,5.jpg" alt="0,5кг" aria-label="0,5кг">
-                <div class="swiper-lazy-preloader"></div>
-                <span>0,5кг</span>
-              </div>
-              <div class="swiper-slide catalog__wrapper-box-packing-slide">
-                <img class="catalog__wrapper-box-packing-slide-image swiper-lazy" data-src="themes/nuts/assets/images/productionUnit/1.jpg" alt="1кг" aria-label="1кг">
+          <div class="swiper-container catalog__container-east sal-slider-east--js" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
+            <div class="swiper-wrapper catalog__wrapper-box-list">
+              <div class="swiper-slide catalog__container-east-slide">
+                <img class="swiper-lazy" src="themes/nuts/assets/images/productionUnit/1EastVZ.jpg" width="550" alt="1кг">
                 <div class="swiper-lazy-preloader"></div>
                 <span>1кг</span>
               </div>
-              <div class="swiper-slide catalog__wrapper-box-packing-slide">
-                <img class="catalog__wrapper-box-packing-slide-image swiper-lazy" data-src="themes/nuts/assets/images/productionUnit/12,5.jpg" alt="12,5кг" aria-label="12,5кг">
+              <div class="swiper-slide catalog__container-east-slide">
+                <img class="swiper-lazy" src="themes/nuts/assets/images/productionUnit/12,5EastVZ.jpg" width="550" alt="12,5кг">
                 <div class="swiper-lazy-preloader"></div>
                 <span>12,5кг</span>
               </div>
-              <div class="swiper-slide catalog__wrapper-box-packing-slide">
-                <img class="catalog__wrapper-box-packing-slide-image swiper-lazy" data-src="themes/nuts/assets/images/productionUnit/40.jpg" alt="40кг" aria-label="40кг">
+              <div class="swiper-slide catalog__container-east-slide">
+                <img class="swiper-lazy" src="themes/nuts/assets/images/productionUnit/40.jpg" width="550" alt="40кг">
                 <div class="swiper-lazy-preloader"></div>
                 <span>40кг</span>
               </div>
+              <div class="swiper-button-prev catalog__slide-controls-east catalog__slide-controls-east--prev">
+                <svg width="32" height="32">
+                  <use xlink:href="#arrow_left"></use>
+                </svg>
+              </div>
+              <div class="swiper-button-next catalog__slide-controls-east catalog__slide-controls-east--next">
+                <svg width="32" height="32">
+                  <use xlink:href="#arrow_right"></use>
+                </svg>
+              </div>
             </div>
-            <div class="swiper-button-prev catalog__slide-controls catalog__slide-controls--prev">
-              <svg width="32" height="32">
-                <use xlink:href="#arrow_left"></use>
-              </svg>
-            </div>
-            <div class="swiper-button-next catalog__slide-controls catalog__slide-controls--next">
-              <svg width="32" height="32">
-                <use xlink:href="#arrow_right"></use>
-              </svg>
-            </div>
+
             <div class="catalog__wrapper-box-storage">
               <button class="button catalog__button contact-button--feedback-js">
                 <p class="buttton__title">ЗАКАЗАТЬ</p>
@@ -243,7 +225,7 @@
 
         </li>
 
-        <li class="catalog__slide" id="advantage-2">
+        <li class="catalog__slide" id="advantage-2" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
           <div class="catalog__wrapper-box-items">
             <div class="catalog__wrapper-box-item" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
               <h3>МАСЛО КЕДРОВОЕ НЕРАФИНИРОВАННОЕ</h3>
@@ -259,7 +241,7 @@
           <div class="swiper-container catalog__slider-oil sal-slider-oil--js" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
             <div class="swiper-wrapper">
               <div class="swiper-slide catalog__slider-oil-slide">
-                <img class="" src="themes/nuts/assets/images/productionUnit/maslo.jpg" width="550" alt="Масло">
+                <img class="swiper-lazy" src="themes/nuts/assets/images/productionUnit/maslo.jpg" width="550" alt="Масло">
                 <span>0,25мл</span>
               </div>
             </div>
@@ -307,7 +289,7 @@
           </div>
         </li>
 
-        <li class="catalog__slide " id="advantage-4" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
+        <li class="catalog__slide" id="advantage-4" data-sal="slide-up" data-sal-duration="2000" data-sal-easing="ease-out-back">
           <div class="catalog__wrapper-box-items">
             <div class="catalog__wrapper-box-item">
               <h3>СКОРЛУПА КЕДРОВОГО ОРЕХА</h3>
@@ -462,7 +444,6 @@
     <div class="swiper-wrapper catalog__wrapper-box-list--full">
       <div class="swiper-slide catalog__wrapper-box-packing-slide--full">
         <div class="swiper-zoom-container">
-
           <picture>
             <source media="(max-width: 767px)" data-srcset="themes/nuts/assets/images/productionUnit/full/100g-full-mobile.jpg">
             <img class="swiper-lazy catalog__wrapper-box-packing-slide-image" data-src="themes/nuts/assets/images/productionUnit/full/100g-full-2k.jpg" alt="0,1кг" aria-label="0,1кг">
@@ -542,17 +523,12 @@
   </button>
   <div class="swiper-container show-full-east--js">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">
+      <div class="swiper-slide catalog__wrapper-box-packing-slide--full">
         <div class="swiper-zoom-container">
-          <img class="swiper-slide-image" src="themes/nuts/assets/images/productionUnit/full/plenka_meshok.jpg" alt=Плёнка>
+          <img class="" src="themes/nuts/assets/images/productionUnit/full/1EastVZ.jpg" alt="1000гр" aria-label="1000гр">
+          <span>0,2кг</span>
         </div>
       </div>
-      <div class="swiper-slide">
-        <div class="swiper-zoom-container">
-          <img class="swiper-slide-image" src="themes/nuts/assets/images/productionUnit/full/plenka_podushka.jpg" alt=Плёнка>
-        </div>
-      </div>
-
     </div>
   </div>
   <div class="swiper-button-prev catalog__slide-controls-east catalog__slide-controls-east--prev">

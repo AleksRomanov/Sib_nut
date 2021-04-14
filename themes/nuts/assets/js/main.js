@@ -1,7 +1,7 @@
 // import intersectionObserver from "./intersection-observer";
 import swiperShell from "./swiper_shell";
 import swiperCrushed from "./swiper_crushed";
-import swiperProductsPacking from "./swiper_products_packing";
+import swiperProductsPackingKernel from "./swiper_products_packing_kernel";
 import swiperEastPacking from "./swiper_east_packing";
 import swiperAbout from "./swiper_about";
 import swiperQuality from "./swiper_quality";
@@ -47,7 +47,7 @@ class App {
     swiperCertificates();
     swiperCrushed();
     swiperAbout();
-    swiperProductsPacking();
+    swiperProductsPackingKernel();
     swiperEastPacking();
     swiperQuality();
     swiperProducts();

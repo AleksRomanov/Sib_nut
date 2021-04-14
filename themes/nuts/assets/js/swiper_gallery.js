@@ -46,7 +46,7 @@ const swiperGallery = () => {
                 fullScreenImageSlide.forEach(function (imageSlide) {
                     imageSlide.addEventListener('click', function () {
                         popupFullScreen.classList.add('show-full-gallery--js');
-                        pageBody.classList.add('overflow-	hidden--js');
+                        pageBody.classList.add('overflow-hidden--js');
                         swiperFull.init();
                         swiperFull.slideReset();
                         swiperFull.slideTo(swiper.activeIndex);

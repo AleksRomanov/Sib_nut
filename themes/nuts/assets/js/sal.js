@@ -2,56 +2,58 @@ const salAnimation = () => {
     window.sal();
     //Проверка в DOMe на наличие классов
 
-    if (document.querySelector('.sal-slider-east--js')) {
-        // Активация свайпера при попадании во вьюпорт
-        var swiperProductsPacking = document.querySelector('.sal-slider-east--js');
 
-        swiperProductsPacking.addEventListener('sal:in', ({detail}) => {
-            window.swiperProductsPacking.swiper.init();
+    if (document.querySelector('.sal-slider-kernel--js')) {
+        // Активация свайпера при попадании во вьюпорт
+        let swiperProductsPackingKernel = document.querySelector('.sal-slider-kernel--js');
+
+        swiperProductsPackingKernel.addEventListener('sal:in', ({detail}) => {
+            window.swiperProductsPackingKernel.swiper.init();
+
         });
     }
 
-    if (document.querySelector('.catalog__container-shell')) {
+    if (document.querySelector('.sal-slider-east--js')) {
         // Активация свайпера при попадании во вьюпорт
-        var swiperShell = document.querySelector('.catalog__container-shell');
+        let swiperEastPacking = document.querySelector('.sal-slider-east--js');
+
+        swiperEastPacking.addEventListener('sal:in', ({detail}) => {
+            window.swiperEastPacking.swiper.init();
+
+        });
+    }
+
+    if (document.querySelector('.sal-slider-shell--js')) {
+        // Активация свайпера при попадании во вьюпорт
+        let swiperShell = document.querySelector('.sal-slider-shell--js');
 
         swiperShell.addEventListener('sal:in', ({detail}) => {
             window.swiperShell.swiper.init();
         });
     }
 
-    if (document.querySelector('.catalog__slider-jmikh')) {
+    if (document.querySelector('.sal-slider-jmikh--js')) {
         // Активация свайпера при попадании во вьюпорт
-        var swiperJmikh = document.querySelector('.catalog__slider-jmikh');
+        let swiperJmikh = document.querySelector('.sal-slider-jmikh--js');
 
         swiperJmikh.addEventListener('sal:in', ({detail}) => {
             window.swiperJmikh.swiper.init();
         });
     }
 
-    if (document.querySelector('.catalog__slider-oil')) {
+    if (document.querySelector('.sal-slider-oil--js')) {
         // Активация свайпера при попадании во вьюпорт
-        var swiperOil = document.querySelector('.catalog__slider-oil');
+        let swiperOil = document.querySelector('.sal-slider-oil--js');
 
         swiperOil.addEventListener('sal:in', ({detail}) => {
             window.swiperOil.swiper.init();
         });
     }
 
-    // if (document.querySelector('.sal-slider-kernel--js')) {
-    //     // Активация свайпера при попадании во вьюпорт
-    //     var swiperProductsPacking = document.querySelector('.sal-slider-kernel--js');
-    //
-    //     swiperProductsPacking.addEventListener('sal:in', ({detail}) => {
-    //         window.swiperProductsPacking.swiper.init();
-    //
-    //     });
-    // }
-
 
     if (document.querySelector('.sal-slider-membrane--js')) {
         // Активация свайпера при попадании во вьюпорт
-        var swiperMembrane = document.querySelector('.sal-slider-membrane--js')
+        let swiperMembrane = document.querySelector('.sal-slider-membrane--js')
 
         swiperMembrane.addEventListener('sal:in', ({detail}) => {
             window.swiperMembrane.swiper.init();
@@ -61,7 +63,7 @@ const salAnimation = () => {
 
     if (document.querySelector('.sal-slider-crushed--js')) {
         // Активация свайпера при попадании во вьюпорт
-        var swiperCrushed = document.querySelector('.sal-slider-crushed--js')
+        let swiperCrushed = document.querySelector('.sal-slider-crushed--js')
 
         swiperCrushed.addEventListener('sal:in', ({detail}) => {
             window.swiperCrushed.swiper.init();
