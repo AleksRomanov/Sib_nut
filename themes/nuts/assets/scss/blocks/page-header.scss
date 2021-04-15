@@ -34,6 +34,10 @@
   min-height: 152px;
   position: relative;
 
+  @include desktop-min {
+min-height: 130px;
+  }
+
   @include mobile-max {
     flex-wrap: wrap;
     //justify-content: center;
@@ -56,6 +60,10 @@
 
 .page-header__logo-image {
   @include effect-opacity;
+
+  @include desktop-min {
+    height: 102px;
+  }
 
   @include tablet {
     margin: 0 auto;
@@ -112,16 +120,25 @@
   align-items: center;
   padding: 8px 0;
   justify-content: flex-end;
-
   @include effect-opacity;
 
   & span {
     margin-right: 28px;
-    font-size: 20px;
+    font-size: 24px;
+    letter-spacing: .4px;
     font-weight: bold;
+  }
 
-    @include desktop-min {
+  @include desktop-min {
+    padding: 4px 0;
+
+    & span {
+      font-size: 17px;
       justify-content: flex-end;
+    }
+
+    & svg {
+      width: 40px;
     }
   }
 
@@ -166,7 +183,7 @@
   width: 12%;
   margin: 0 8px;
 
-  @include  tablet {
+  @include tablet {
     width: 130px;
   }
 
@@ -178,8 +195,11 @@
 .page-header__language-en-image {
   display: block;
   margin: 0 auto;
-
   @include effect-opacity;
+
+  @include desktop-min {
+    width: 65px;
+  }
 
   @include tablet {
     width: 100%;
