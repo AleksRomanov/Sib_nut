@@ -10,7 +10,9 @@
   z-index: 1;
 
   @include desktop-min {
-    padding: 20px 80px;
+    padding: 0 80px;
+    display: flex;
+    min-height: 130px;
   }
 
   @include tablet-max {
@@ -43,6 +45,11 @@
   max-width: 1640px;
   margin: 0 auto;
   flex-direction: row;
+
+  @include desktop-min {
+    justify-content: unset;
+    align-items: center;
+  }
 }
 
 .footer__container-contacts {
@@ -70,9 +77,13 @@
   display: flex;
   align-items: center;
   padding: 8px 0;
-
   @include effect-opacity;
 
+  & svg {
+    @include desktop-min {
+      width: 40px;
+    }
+  }
 
   @include tablet {
     padding: 0;
@@ -88,6 +99,10 @@
     margin-left: 28px;
     font-size: 20px;
     font-weight: bold;
+
+    @include desktop-min {
+      font-size: 17px;
+    }
 
     @include tablet-max {
       font-size: 17px;
@@ -144,10 +159,14 @@
   margin: 0 auto;
   @include effect-opacity;
 
-  @include tablet {
-    //margin: 0 auto;
-    display: block;
+  @include desktop-min {
+    height: 102px;
   }
+}
+
+@include tablet {
+  //margin: 0 auto;
+  display: block;
 }
 
 .footer__container-rights {
@@ -169,7 +188,7 @@
     font-weight: 700;
     margin: 0;
 
-    @include tablet-max {
+    @include desktop-min {
       font-size: 24px;
     }
 
@@ -189,6 +208,10 @@
     font-size: 20px;
     line-height: 24px;
     font-weight: 400;
+
+    @include desktop-min {
+      font-size: 18px;
+    }
 
     @include tablet-max {
       font-size: 10px;

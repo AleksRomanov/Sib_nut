@@ -78,7 +78,7 @@
   flex-wrap: wrap;
 
   @include desktop-min {
-    //margin-left: 40px;
+    padding-top: 250px;
   }
 
   @include tablet-max {
