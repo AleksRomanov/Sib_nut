@@ -18,7 +18,7 @@ const swiperEastPacking = () => {
                 slidesPerView: 3,
             },
             1200: {
-                slidesPerView: 1,
+                slidesPerView: 3,
                 // allowTouchMove: false,
             },
             768: {

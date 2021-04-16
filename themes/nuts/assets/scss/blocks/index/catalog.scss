@@ -381,6 +381,7 @@ p.catalog__wrapper-box-item-packing {
 
 .catalog__wrapper-box-list {
   margin-bottom: 20px;
+  align-items: center;
 }
 
 .catalog__wrapper-box-storage {
@@ -726,15 +727,17 @@ p.catalog__wrapper-box-item-packing {
   margin: 0 auto;
   display: block;
   //width: 100%;
-  min-height: 350px;
+  //min-height: 350px;
+  height: 100%;
+  min-height: unset;
   margin-bottom: 20px;
 
   @include desktop {
-    width: 70%;
+    width: 98%;
   }
 
   @include desktop-min {
-    width: 40%;
+    width: 98%;
   }
 
   @include tablet {
