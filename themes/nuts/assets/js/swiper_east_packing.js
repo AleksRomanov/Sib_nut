@@ -1,8 +1,6 @@
 const swiperEastPacking = () => {
     let swiperEastPacking = new Swiper('.catalog__container-east', {
         init: false,
-        // preloadImages: false,
-        // lazy: true,
         spaceBetween: 10,
         preloadImages: false,
         lazy: true,
@@ -14,12 +12,10 @@ const swiperEastPacking = () => {
 
         breakpoints: {
             1920: {
-                // direction: 'horizontal',
                 slidesPerView: 3,
             },
             1200: {
                 slidesPerView: 3,
-                // allowTouchMove: false,
             },
             768: {
                 slidesPerView: 2,
@@ -68,10 +64,10 @@ const swiperEastPacking = () => {
         slidesPerView: 1,
         autoHeight: false,
 
-        navigation: {
-            nextEl: '.catalog__slide-controls-east--next',
-            prevEl: '.catalog__slide-controls-east--prev',
-        },
+        // navigation: {
+        //     nextEl: '.catalog__slide-controls-east--next',
+        //     prevEl: '.catalog__slide-controls-east--prev',
+        // },
 
     });
     window.swiperEastPacking = {
